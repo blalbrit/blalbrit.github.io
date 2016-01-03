@@ -1,11 +1,13 @@
 
-http://username.github.io/archive
-http://username.github.io/atom.xml
-http://username.github.io/categories
-http://username.github.io/
-http://username.github.io/pages
-http://username.github.io/rss.xml
-http://username.github.io/sitemap.txt
-http://username.github.io/tags
+http://blalbrit.github.io/archive
+http://blalbrit.github.io/atom.xml
+http://blalbrit.github.io/categories
+http://blalbrit.github.io/courses/dlcl122_2016/
+http://blalbrit.github.io/
+http://blalbrit.github.io/pages
+http://blalbrit.github.io/rss.xml
+http://blalbrit.github.io/sitemap.txt
+http://blalbrit.github.io/tags
+http://blalbrit.github.io/teaching
 
-http://username.github.io/lessons/2011/12/29/jekyll-introduction
+http://blalbrit.github.io/2016/01/02/hello-world
