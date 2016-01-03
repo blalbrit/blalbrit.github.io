@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Machaut Data Part 1</title>
+    
+    <meta name="author" content="Benjamin Albritton">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes//css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes//css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Benjamin L Albritton</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/teaching">Teaching</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Machaut Data Part 1</h1>
+</div>
+
+<div class="row">
+  <div class="span10">
+    <h3>Introduction </h3><br />For those who are interested in the fourteenth-century French poet and composer Guillaume de Machaut, one resource has remained indispensable for the last seventeen years:&nbsp; Lawrence Earp's <a href="http://books.google.com/books/about/Guillaume_De_Machaut.html?id=GQLpI9E4dUsC" target="_blank"><i>Guillaume de Machaut: A Guide to Research</i></a> (Garland Publishing Inc., 1995).&nbsp; The brilliance of the book lies in the fact that Earp went far beyond even the stated goal, articulated in his preface to the volume, of "a guide to secondary sources" [p. xii].&nbsp; No, what he did - for the field - was provide a framework for organizing the objects of study (source manuscripts, works, documentary evidence) as a preliminary step to navigation of the body of secondary sources that had been produced up to the time of publication.<br /><br />Machaut studies is rife with alternate numbering systems, with some works having two or three competing identifiers, some manuscripts bearing multiple sigla, etc.&nbsp; <i>A Guide to Research</i> provided, in a single volume, a clarification of the primary sources and the conceptual works contained in them.&nbsp; This didn't necessarily make it easier for later authors to easily index the Machaut corpus in their own publications (as Elizabeth Eva Leach has discussed <a href="http://eeleach.wordpress.com/2010/12/23/publishing-a-scholarly-book/" target="_blank">here</a>), but it provides a handy cross-reference for anyone working in the field.<br /><br />No publication has rivaled Earp's guide in nearly two decades, and there does not appear to be a revised edition on the horizon (though I would be happy to hear otherwise).&nbsp; Meanwhile, publication on Machaut has continued apace (or increased, with major articles, collections, and monographs appearing regularly, and a new <a href="http://machaut.exeter.ac.uk/" target="_blank">complete edition</a> in the works).&nbsp; New recordings of Machaut's music continue to be produced, and the burgeoning digitization efforts of national and academic libraries and specialist sites like <a href="http://www.diamm.ac.uk/" target="_blank">DIAMM</a> mean that high-resolution facsimiles of the manuscript sources are increasingly available (an up-to-date list of available digitized facsimiles of Machaut sources can be found <a href="http://www.stanford.edu/group/dmstech/cgi-bin/drupal/machautmss" target="_blank">here</a>).<br /><br />This situation got me thinking about the relationship humanities scholars have to the data that we work with.&nbsp; As more of our work takes place in the digital world, how do we translate a massive effort, like Earp's, into an ongoing, sustainable, and extensible dataset?&nbsp; How do we enable others in the field to aggregate snapshots of the state of research?&nbsp; How do we make our digital resources useful and, more importantly, how do we express the relationships between them in a way that is not dependent on a single scholar (or team of scholars) for maintenance and updating?<br /><br />Earp's guide remains relevant because the basic description of resources it provides remains accessible (though increasingly expensive if one were to try to buy the printed object now).&nbsp; While the list of secondary sources is increasingly out of date, the delivery technology will remain functional for generations.<br /><br />In the digital world, we have to flip that expectation.&nbsp; Delivery technologies will change - and they will change rapidly.&nbsp; A Machaut-oriented website built today will not have a 100-year lifespan.&nbsp; It won't have a 50-year lifespan.&nbsp; It probably won't even have a 17-year lifespan.&nbsp; Rather than focus on the delivery mechanism, we should focus on building extensible data and using robust ontologies, standards, and common identifiers for our primary objects.&nbsp; Further, we should be publishing those datasets freely for re-use by others so that the information available in our areas of interest becomes part of a growing network of data that can be assembled, aggregated, re-used, expanded.&nbsp; The value is not in creating the next "online Earp" or something similar, the value is in building a framework of identifiers so that new resources can be added to the collection, new relationships expressed between resources,&nbsp; scholarly by-products (transcription and analysis) be integrated into the network of information - and so that we can easily take a snap-shot of that network of information.<br /><br />This argument is not new.&nbsp; This approach is not new. However, we don't seem to be seeing a lot of uptake in humanities projects for any number of reasons, including the underlying values of humanities scholars and entrenched structures of evaluation for promotion. However, the technologies are emerging and scholarship outside of the humanities is making increased use of them. <a href="http://linkeddata.org/" target="_blank">Linked data</a> provides a tempting approach for building a Machaut data framework - with enough freely available tools to provide access to that data in ways that might be useful in the near term and could easily be replaced as new tools supersede them.<br /><br />In this series of posts, I will document the creation of a graph of data for Machaut studies focusing on a subset of the resources that form the objects of study:<br /><ul><li>manuscript sources containing Machaut's works</li><li>works attributed to (or likely authored by) Machaut</li><li>works not by Machaut but that appear in manuscript sources alongside his works</li><li>documentary evidence about Machaut, his works, or the manuscripts sources containing them.</li></ul>I will use existing tools to visualize this data - starting with the <a href="http://www.simile-widgets.org/exhibit3/" target="_blank">Simile Exhibit tools</a>, though possibly exploring others along the way.<br /><br />As a caveat - I'm new to a lot of this, so will be learning along the way.&nbsp; I want to produce something useful to the field, with data that can be re-used by others.&nbsp; In the next post, I will talk about building the data for a list of the manuscript sources containing Machaut's works.&nbsp; A preliminary snapshot of that data is <a href="http://guillaumedemachaut.com/machautdata/machautsources.html" target="_blank">here</a>, but this is really just a first pass - dates, provenance, choice of ontology, etc. still need some thought and will probably be revised multiple times in the months ahead (clicking on the "scissors" icon on the right-hand side of the page in the link above will give access to the data as it stands right now).
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev disabled"><a>&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/2013/01/24/returning-to-fountain" title="Returning to the Fountain">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>13 January 2013</span></div>
+
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Benjamin Albritton 2016 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+
+
+
+  </body>
+</html>
+
