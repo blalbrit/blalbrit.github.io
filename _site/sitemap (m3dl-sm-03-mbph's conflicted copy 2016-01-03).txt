@@ -2,7 +2,6 @@
 http://blalbrit.github.io/archive
 http://blalbrit.github.io/atom.xml
 http://blalbrit.github.io/categories
-http://blalbrit.github.io/courses/dlcl122_2016/
 http://blalbrit.github.io/
 http://blalbrit.github.io/theme-the-program/manifest.yml
 http://blalbrit.github.io/pages
