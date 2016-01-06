@@ -133,6 +133,113 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 
 ##Course Schedule
 
+###Week 1: Discovering
+* Overview  
+	* Syllabus, introductions, discussion of assignments.
+	* Stanford’s digitized medieval manuscripts.
+	* Discovering and evaluating digital medieval resources.
+* 4 January  
+	* Complete [Markdown tutorial](http://markdowntutorial.com/)
+	* Create [github](https://github.com/) account
+	* Complete [Git tutorial](https://try.github.io/levels/1/challenges/1)
+	* Exercise 1 (see description above)
+* 6 January  
+	* Reading
+		* Raymond Clemens and Timothy Graham, “Manuscript Description,” in *Introduction to Manuscript Studies*, pp. 129-134.
+		* “[Digitization](http://toolingup.stanford.edu/?page_id=123)” in *Tooling Up for Digital Humanities*.
+		* Richard Gartner, Lou Burnard, and Peter Kidd, “[A TEI extension for the description of medieval manuscripts](http://cds.library.brown.edu/conferences/tei10/tei10.papers/gartner.html)”, 2003.
+		* Elaine Treharne, Suzanne Paul, “[Shelf  marks and catalogs](https://www.youtube.com/watch?v=5ApccnEawfs),” 2015. (video)
+
+###Week 2: Annotating
+* 11 January  
+	* Reading  
+		* John Unsworth, “[Scholarly Primitives: what methods do humanities researchers have in common, and how might our tools reflect this?](http://people.brandeis.edu/~unsworth/Kings.5-00/primitives.html)”, May 2000.
+		* Daniel Paul O'Donnell, “[Disciplinary Impact and Technological Obsolescence](http://www.digitalhumanities.org/companion/view?docId=blackwell/9781405148641/9781405148641.xml&chunk.id=ss1-4-2&toc.depth=1&toc.id=ss1-4-2&brand=9781405148641_brand),” in *Digital Medieval Studies*, 2008.
+		* Explore (http://projectmirador.org/) and watch [screencast](https://www.youtube.com/watch?v=9b1ReCZh9-E).
+	* Blog post for Exercise 1 due
+	* Exercise 2 (see description above)
+* 13 January  
+	* Reading
+		* Maidie Hilmo, “The Power of Images in the Auchinleck, Vernon, Pearl, and Two Piers Plowman Manuscripts,” in *Opening Up Middle English Manuscripts: Literary & Visual Approaches*, pp. 153-205.
+
+###Week 3: More Annotating
+* 18 January: Holiday – **NO CLASS**  
+* 20 January  
+	* Reading
+		* Clemens and Graham, “Correction, Glossing, and Annotations,” in Introduction to Manuscript Studies, pp. 35-48.
+		* Martin Foys, Shannon Bradshaw, “Developing Digital Mappaemundi: An Agile Mode for Annotating Medieval Maps,” 2011.
+		* Roberto A. Busa, “Foreword: Perspectives on the Digital Humanities,” in A Companion to Digital Humanities, 2004.
+
+###Week 4: Transcribing
+* 25 January  
+	* Reading
+		* Kathryn Kerby-Fulton, “How to Transcribe Middle English,” in Opening Up Middle English Manuscripts: Literary & Visual Approaches, pp. 2-5
+		* “A Walkthrough of T-PEN” (video)
+		* Allen H. Renear, “Text Encoding,” in A Companion to Digital Humanities, 2004.
+	* Exercise 3 (see description above)
+* 27 January
+	* Reading
+		* Raymond Clemens and Timothy Graham, “Selected Scripts,” in Introduction to Manuscript Studies, pp. 135-178.
+
+###Week 5: Comparing
+* 1 February
+	* Reading
+		* Maidie Hilmo, “Illuminating Chaucer’s Canterbury Tales: Portraits of the Author and Selected Pilgrim Authors,” in Opening Up Middle English Manuscripts: Literary & Visual Approaches, pp. 245-289.
+		* Vanessa Wilkie, “Medieval Manuscripts in the Digital Age”, 2015.
+		* Albritton, Benjamin, “Fellow Travelers: The Canterbury Tales and IIIF,” 2015.
+	* Exercise 4 (see description above)
+* 3 February
+	* Reading
+		* Peter A. Stokes, “Using DigiPal: A Quick Introduction to the Framework,” 2015.
+		* Stuart Snydman, Robert Sanderson, Tom Cramer, “The International Image Interoperability Framework (IIIF): A community & technology approach for web-based images,” 2015.
+
+###Week 6: Referring
+* 8 February
+	* Reading
+		* “Liturgical Libellus… ; known as the Prayerbook of Elizabeth of York: manuscript codex”
+		* Smith, Shang, Kim, Detzner, Barnet, Ashton, Arias, Aiello, Abbott, “MSS Codex 0877: The Prayerbook of Elizabeth of York,” 2014.
+* 10 February
+	* Reading
+		* Tom Heath, Christian Bizer, Chapters 1-2 in Linked Data: Evolving the Web into a Global Data Space, 2011.
+		* More resources: http://linkeddata.org/guides-and-tutorials
+
+###Week 7: Sampling & Illustrating
+* 15 February: Holiday – **NO CLASS**
+* 17 February
+	* Reading
+		* John Burrows, “Textual Analysis,” in A Companion to Digital Humanities, 2004.
+		* “Text Analysis” in Tooling Up for Digital Humanities.
+		* Matthew L. Jockers, “Macroanalysis,” in Macroanalysis: Digital Methods and Literary History, 2013.
+		* Getting Started with Voyant Tools
+		* Using Voyant Tools for Basic Text Analysis
+		* Peruse the TAPOR site.
+	* Exercise 5 (see description above)
+
+###Week 8: More Sampling & Illustrating
+* 22 February
+	* Reading
+		* Scott Weingart, Demystifying Networks, 2011.
+		* Martin Grandjean, Introduction to Network Visualization with GEPHI, 2013.
+		* “Data Visualization” in Tooling Up for Digital Humanities.
+* 24 February
+	* Reading
+	* To be announced (either GIS-related or Topic Modeling-related depending on project needs).
+
+###Week 9: Representing & Deforming
+* 29 February
+	* Reading
+		* Marilyn Deegan and Simon Tanner, “Conversion of Primary Sources,” in A Companion to Digital Humanities, 2004.
+		* Abby Smith, “What is Preservation and Why Does it Matter?” in A Companion to Digital Humanities, 2004.
+		* Roy Rosenzweig, “Scarcity or Abundance? Preserving the Past in a Digital Era,” in American Historical Review 108, 2003.
+* 2 March
+	* Presentation of final projects in class.
+
+###Week 10: Creating & Sharing
+* 7 March
+	*Exhibit Launch.
+* 9 March
+	*Final Paper Due.
+
 ##Course Policies
 
 ####Office Hours and Communications

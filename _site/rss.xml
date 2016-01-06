@@ -5,10 +5,42 @@
         <description>Benjamin L Albritton - Benjamin Albritton</description>
         <link>http://blalbrit.github.io</link>
         <atom:link href="http://blalbrit.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Wed, 06 Jan 2016 13:00:18 -0800</lastBuildDate>
-        <pubDate>Wed, 06 Jan 2016 13:00:18 -0800</pubDate>
+        <lastBuildDate>Wed, 06 Jan 2016 13:41:40 -0800</lastBuildDate>
+        <pubDate>Wed, 06 Jan 2016 13:41:40 -0800</pubDate>
         <ttl>60</ttl>
 
+
+        <item>
+                <title>DLCL122-2016 - Discussion Questions Week 1</title>
+                <description>&lt;h2 id=&quot;discussion-questions-for-the-readings-for-week-1&quot;&gt;Discussion questions for the readings for Week 1&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Raymond Clemens and Timothy Graham, “Manuscript Description,” in &lt;em&gt;Introduction to Manuscript Studies&lt;/em&gt;, pp. 129-134.&lt;/li&gt;
+  &lt;li&gt;“&lt;a href=&quot;http://toolingup.stanford.edu/?page_id=123&quot;&gt;Digitization&lt;/a&gt;” in &lt;em&gt;Tooling Up for Digital Humanities&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;Richard Gartner, Lou Burnard, and Peter Kidd, “&lt;a href=&quot;http://cds.library.brown.edu/conferences/tei10/tei10.papers/gartner.html&quot;&gt;A TEI extension for the description of medieval manuscripts&lt;/a&gt;”, 2003.&lt;/li&gt;
+  &lt;li&gt;Elaine Treharne, Suzanne Paul, “&lt;a href=&quot;https://www.youtube.com/watch?v=5ApccnEawfs&quot;&gt;Shelf  marks and catalogs&lt;/a&gt;,” 2015. (video)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;liz-fischer&quot;&gt;Liz Fischer:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;The Clemens and Graham reading gives a very extensive list of things that should be included in a catalog description. Supposing one has limited resources for a cataloging effort, what falls (or should fall) by the wayside? At what level of lack-of-detail does a description become useless?&lt;/li&gt;
+  &lt;li&gt;What happens to descriptions when information can’t be found? How does this affect digital cataloging, specifically?&lt;/li&gt;
+  &lt;li&gt;Related to both of the above: with online cataloging, to what extent can you rely on knowing your audience?&lt;/li&gt;
+  &lt;li&gt;In the section of Digitization that discussed TEI, the following was written:
+&amp;gt; “Many initiatives such as Google Books are attempting to automate the process in order to enhance millions of digitized sources. This leads to its own set of problems, as subtle distinctions can be lost. As Worthey says, “It’s dangerous for a humanities scholar to entrust too much to a programmer or mathematician.”&lt;/li&gt;
+  &lt;li&gt;How do we balance maintaining subtlety with making the most of digital tools? How might this “loss of subtlety” make us rethink what is important to know?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;christina-smith&quot;&gt;Christina Smith:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;A somewhat broad question: If, according to Clemens and Graham, the work of a paleographer depends upon careful attention to the physical characteristics of a folio, how might we–as makers and users of digital technology–simulate the workings of a real page?  Here I note attempts at using a “page flipping” feature.  This also got me to thinking about the need for a repository to have a “full size” button which allows one to view the full size of the manuscript on the screen, even if it covers more than what the screen can see in one fell swoop (rather than ‘full size’ which usually just blows up the manuscript to the dimensions of the computer screen, without thought to the differing sizes in manuscripts which can tell us a lot about production and use).&lt;/li&gt;
+  &lt;li&gt;A more specific question: In Elaine Treharne and Suzanne Paul’s video on shelf marks, Suzanne mentions that shelf marks are, themselves, a medieval invention.  How might we digitally represent where a medieval book was kept on its shelf (or, does this even do anything productive)?  Suzanne also mentions that one must often try to search for misspellings of names/collections (ie: Cotton Nero, etc.) in order to find as much information as they can find on a given manuscript.  Otherwise, she says, large quantities of information/resources can be left out.  How might our technologies accommodate these misspellings and correct spellings–all in one–so that a user can access as much material together at once?  (I’m not phrasing this well, but hopefully will be able to say it clearly in class tomorrow).&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <link>http://blalbrit.github.io/2016/01/06/dlcl122_discussion1</link>
+                <guid>http://blalbrit.github.io/2016/01/06/dlcl122_discussion1</guid>
+                <pubDate>Wed, 06 Jan 2016 00:00:00 -0800</pubDate>
+        </item>
 
         <item>
                 <title>Fellow Travelers: The Canterbury Tales and IIIF</title>
