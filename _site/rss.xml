@@ -5,10 +5,45 @@
         <description>Benjamin L Albritton - Benjamin Albritton</description>
         <link>http://blalbrit.github.io</link>
         <atom:link href="http://blalbrit.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Wed, 06 Jan 2016 13:41:40 -0800</lastBuildDate>
-        <pubDate>Wed, 06 Jan 2016 13:41:40 -0800</pubDate>
+        <lastBuildDate>Mon, 11 Jan 2016 11:23:24 -0800</lastBuildDate>
+        <pubDate>Mon, 11 Jan 2016 11:23:24 -0800</pubDate>
         <ttl>60</ttl>
 
+
+        <item>
+                <title>DLCL122-2016 - Christina&#39;s Discussion Questions, Week 2</title>
+                <description>&lt;h1 id=&quot;week2-discussion-questions&quot;&gt;Week2 discussion questions&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;The first question deals with how we decide upon our digital priorities: Unsworth says that while we can create all the software we want, but without it being “developed and tested in the context of real scholarly use” it can be useless.  Furthermore, he warns against “customization, because purpose-built or project-centered software is unlikely to provide broad support for functional primitives.”  This claim makes sense, yet how is it best put to action in the ‘real-world’?  For example, does every scholar working on Blake manuscripts (which Unsworth makes mention of in his talk on Inote) need to have a process by which they ‘try out’ a specific digital archive, so we can have as large a sample set of scholars as we can, trying out certain software?  This got me to thinking about the nature of the digital humanities.  It seems we often make software, or rework an old online repository, to fulfill a specific need—or to advance a certain university’s (or professor’s) specific project.  But what happens to other material that won’t be touched, or that doesn’t garner the digital attention that other material gets?  I understand that we must start somewhere—and that somewhere is better than nowhere—but how do we determine our priorities in digitizing and creating new software?&lt;/li&gt;
+  &lt;li&gt;To quote O’Donnell, “Technology ages faster than information.”  O’Donnell gives a fairly balanced perspective on the positives and negatives of digital scholarship in the medieval realm.  One of his most interesting examples, the Electronic Domesday Book—initiated by the BBC—turned out to be a catastrophic failure.  It was not only too expensive for its target audience and was also designed for certain computers only, both elements that condemned it to its own obsolescence.  This is a rather large question to tackle, but how can we work to make sure we don’t produce ‘failures’ of this sort, schemes where vast quantities of time, energy, and money seem to be wasted in the end?  O’Donnell’s overall impression of Wikipedia seems quite positive, illumining his opinion that collaboration is the key to solving many of these problems.  Do repositories and databases, then, need to have a way in which users can collaborate and edit—like Wikipedia?  What do we sacrifice with regards to accuracy and legitimacy when doing so?  Is it worth it?&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <link>http://blalbrit.github.io/2016/01/11/week2christinaquestions</link>
+                <guid>http://blalbrit.github.io/2016/01/11/week2christinaquestions</guid>
+                <pubDate>Mon, 11 Jan 2016 00:00:00 -0800</pubDate>
+        </item>
+
+        <item>
+                <title>DLCL122-2016 - Liz&#39;s Discussion Questions, Week 2</title>
+                <description>&lt;h1 id=&quot;discussion-questions-week-2&quot;&gt;Discussion Questions, Week 2&lt;/h1&gt;
+&lt;p&gt;## Monday&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Unsworth gives 7 “scholarly primatives”:  Discovering, Annotating, Comparing, Referring, Sampling, Illustrating, and Representing. Discovering, annotating, comparing, referring, and sampling are intuitive enough, but what is the difference between illustrating and representing in this context?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“information that is for all intents and purposes lost… [content] produced using computers or operating systems that ultimately lost out to more popular competitors” This line in the O’Donnell reading got me thinking– are we on our way to a more stable technological situation, or is standardization a false sense of security?&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;What exactly is meant by “unnegotiated interactions”? He says, “Developers produce content assuming users will be able to process it; users access content assuming it will be suitable for use with their processors.” Is this just another way of talking about standarization?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <link>http://blalbrit.github.io/2016/01/10/lizweek2questions</link>
+                <guid>http://blalbrit.github.io/2016/01/10/lizweek2questions</guid>
+                <pubDate>Sun, 10 Jan 2016 00:00:00 -0800</pubDate>
+        </item>
 
         <item>
                 <title>DLCL122-2016 - Discussion Questions Week 1</title>
