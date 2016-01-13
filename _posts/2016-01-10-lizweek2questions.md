@@ -15,3 +15,10 @@ author: lizfischer
 	* What exactly is meant by "unnegotiated interactions"? He says, "Developers produce content assuming users will be able to process it; users access content assuming it will be suitable for use with their processors." Is this just another way of talking about standarization?
 
 ##Wednesday
+* 
+* This is not, strictly speaking, a question; it is just something I noticed and would like to discuss.
+Taking a page straight from Unsworth's examples of primitives, I present the following passage from Hilmo, and a deformation of it.
+
+| Text with Image      |  Image with Text  | 
+|:-------------:|:-------------:|
+|The visual adds to, complements, and sometimes changes the verbal text; it rarely literally reproduces it. Images placed before a text create certain kinds of expectaion and anticipation, while those placed at the end can be particularly important in determining what the reader is to take away from the reading experience."|The verbal adds to, complements, and sometimes changes the image; it rarely literally reproduces it. Text placed before an image creates certain kinds of expectaion and anticipation, while that placed at the end can be particularly important in determining what the viewer is to take away from the viewing experience."|
