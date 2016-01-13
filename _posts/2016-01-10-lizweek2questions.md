@@ -15,7 +15,8 @@ author: lizfischer
 	* What exactly is meant by "unnegotiated interactions"? He says, "Developers produce content assuming users will be able to process it; users access content assuming it will be suitable for use with their processors." Is this just another way of talking about standarization?
 
 ##Wednesday
-* 
+* While reading Hilmo, I found myself thinking more about the act of reading about images than about what was actually being said. Of course not every point can be made by simply showing the image in question; how might we, if we were to produce a new version of this reading in a digital format, improve on the experience?
+ * Mirador idea: ability to link annotations to one another.
 * This is not, strictly speaking, a question; it is just something I noticed and would like to discuss.
 Taking a page straight from Unsworth's examples of primitives, I present the following passage from Hilmo, and a deformation of it.
 
