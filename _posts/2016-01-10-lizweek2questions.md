@@ -7,6 +7,7 @@ author: lizfischer
 ---
 
 #Discussion Questions, Week 2
+
 ## Monday
 
 * Unsworth gives 7 "scholarly primatives":  Discovering, Annotating, Comparing, Referring, Sampling, Illustrating, and Representing. Discovering, annotating, comparing, referring, and sampling are intuitive enough, but what is the difference between illustrating and representing in this context?
