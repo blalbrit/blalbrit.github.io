@@ -167,8 +167,8 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 * 20 January  
 	* Reading
 		* Clemens and Graham, “Correction, Glossing, and Annotations,” in Introduction to Manuscript Studies, pp. 35-48.
-		* Martin Foys, Shannon Bradshaw, “Developing Digital Mappaemundi: An Agile Mode for Annotating Medieval Maps,” 2011.
-		* Roberto A. Busa, “Foreword: Perspectives on the Digital Humanities,” in A Companion to Digital Humanities, 2004.
+		* Martin Foys, Shannon Bradshaw, “[Developing Digital Mappaemundi: An Agile Mode for Annotating Medieval Maps](http://www.digitalmedievalist.org/journal/7/foys/),” 2011.
+		* Roberto A. Busa, “[Foreword: Perspectives on the Digital Humanities](http://digitalhumanities.org:3030/companion/view?docId=blackwell/9781405103213/9781405103213.xml&chunk.id=ss1-1-2&toc.depth=1&toc.id=ss1-1-2&brand=9781405103213_brand),” in A Companion to Digital Humanities, 2004.
 
 ###Week 4: Transcribing
 * 25 January  
