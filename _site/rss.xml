@@ -5,10 +5,28 @@
         <description>Benjamin L Albritton - Benjamin Albritton</description>
         <link>http://blalbrit.github.io</link>
         <atom:link href="http://blalbrit.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Tue, 19 Jan 2016 21:06:36 -0800</lastBuildDate>
-        <pubDate>Tue, 19 Jan 2016 21:06:36 -0800</pubDate>
+        <lastBuildDate>Wed, 20 Jan 2016 09:17:58 -0800</lastBuildDate>
+        <pubDate>Wed, 20 Jan 2016 09:17:58 -0800</pubDate>
         <ttl>60</ttl>
 
+
+        <item>
+                <title>DLCL122-2016 - Liz&#39;s Discussion Questions, Week 3</title>
+                <description>&lt;h1 id=&quot;discussion-questions-week-3&quot;&gt;Discussion Questions, Week 3&lt;/h1&gt;
+&lt;p&gt;##Monday
+No class.&lt;/p&gt;
+
+&lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;In the reading on Digital Mappaemundi the authors mentioned features of plans for features that addressed each of the scholarly primitives we have discussed previously. I’ve noticed a trend, between the Mirador Github issues, this reading, and technology generally  toward expecting one platform/application to address all our needs– is this desirable?&lt;/li&gt;
+  &lt;li&gt;Is it defeatist to say there are problems that aren’t worth trying to solve, at least until there is a complete overhaul of the current approach? When is it okay to give up on a project?&lt;/li&gt;
+  &lt;li&gt;What can physical annotation do that the tools we’ve seen so far does not replicate sufficiently? Are these tools still working to replace physical annotation, or strictly building on it?&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <link>http://blalbrit.github.io/2016/01/20/liz-discussion-w3</link>
+                <guid>http://blalbrit.github.io/2016/01/20/liz-discussion-w3</guid>
+                <pubDate>Wed, 20 Jan 2016 00:00:00 -0800</pubDate>
+        </item>
 
         <item>
                 <title>DLCL122-2016 - Christina&#39;s Discussion Questions, Week 2, part 2</title>
@@ -105,8 +123,12 @@
         <item>
                 <title>DLCL122-2016 - Liz&#39;s Discussion Questions, Week 2</title>
                 <description>&lt;h1 id=&quot;discussion-questions-week-2&quot;&gt;Discussion Questions, Week 2&lt;/h1&gt;
+&lt;p&gt;«««&amp;lt; HEAD&lt;/p&gt;
 
 &lt;h2 id=&quot;monday&quot;&gt;Monday&lt;/h2&gt;
+&lt;p&gt;=======
+##Monday
+»»»&amp;gt; liz-fischer&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -115,10 +137,25 @@
   &lt;li&gt;
     &lt;p&gt;“information that is for all intents and purposes lost… [content] produced using computers or operating systems that ultimately lost out to more popular competitors” This line in the O’Donnell reading got me thinking– are we on our way to a more stable technological situation, or is standardization a false sense of security?&lt;/p&gt;
     &lt;ul&gt;
-      &lt;li&gt;What exactly is meant by “unnegotiated interactions”? He says, “Developers produce content assuming users will be able to process it; users access content assuming it will be suitable for use with their processors.” Is this just another way of talking about standarization?&lt;/li&gt;
+      &lt;li&gt;What exactly is meant by “unnegotiated interactions”? He says, “Developers produce content assuming users will be able to process it; users access content assuming it will be suitable for use with their processors.” Is this just another way of talking about standarization?
+«««&amp;lt; HEAD
+=======&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;While reading Hilmo, I found myself thinking more about the act of reading about images than about what was actually being said. Of course not every point can be made by simply showing the image in question; how might we, if we were to produce a new version of this reading in a digital format, improve on the experience?&lt;/li&gt;
+  &lt;li&gt;Mirador idea: ability to link annotations to one another.&lt;/li&gt;
+  &lt;li&gt;This is not, strictly speaking, a question; it is just something I noticed and would like to discuss.
+Taking a page straight from Unsworth’s examples of primitives, I present the following passage from Hilmo, and a deformation of it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;| Text with Image      |  Image with Text  | 
+|:————-:|:————-:|
+|The visual adds to, complements, and sometimes changes the verbal text; it rarely literally reproduces it. Images placed before a text create certain kinds of expectaion and anticipation, while those placed at the end can be particularly important in determining what the reader is to take away from the reading experience.”|The verbal adds to, complements, and sometimes changes the image; it rarely literally reproduces it. Text placed before an image creates certain kinds of expectaion and anticipation, while that placed at the end can be particularly important in determining what the viewer is to take away from the viewing experience.”|
+»»»&amp;gt; liz-fischer&lt;/p&gt;
 </description>
                 <link>http://blalbrit.github.io/2016/01/10/lizweek2questions</link>
                 <guid>http://blalbrit.github.io/2016/01/10/lizweek2questions</guid>

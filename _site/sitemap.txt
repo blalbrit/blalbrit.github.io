@@ -11,6 +11,7 @@ http://blalbrit.github.io/sitemap.txt
 http://blalbrit.github.io/tags
 http://blalbrit.github.io/teaching
 
+http://blalbrit.github.io/2016/01/20/liz-discussion-w3
 http://blalbrit.github.io/2016/01/13/week2discussionquestions
 http://blalbrit.github.io/2016/01/11/week2christinaquestions
 http://blalbrit.github.io/2016/01/11/lizblog1
