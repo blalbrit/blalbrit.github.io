@@ -5,10 +5,25 @@
         <description>Benjamin L Albritton - Benjamin Albritton</description>
         <link>http://blalbrit.github.io</link>
         <atom:link href="http://blalbrit.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Wed, 20 Jan 2016 09:17:58 -0800</lastBuildDate>
-        <pubDate>Wed, 20 Jan 2016 09:17:58 -0800</pubDate>
+        <lastBuildDate>Wed, 20 Jan 2016 09:20:34 -0800</lastBuildDate>
+        <pubDate>Wed, 20 Jan 2016 09:20:34 -0800</pubDate>
         <ttl>60</ttl>
 
+
+        <item>
+                <title>DLCL122-2016 - Christina&#39;s Discussion Questions, Week 3</title>
+                <description>&lt;h1 id=&quot;week-3-discussion-questions&quot;&gt;Week 3 discussion questions&lt;/h1&gt;
+
+&lt;p&gt;1) Clemens and Graham’s chapter on correction, glossing, and annotation talks about the scribal tools and techniques involved in the “nitty-gritty” elements of manuscript production. As someone new to digital renditions of manuscripts (having transcribed them solely by hand in the past) how do digital humanists usually account for erasures and re-writing over those marked-out areas?  If we believe a medieval scribe to have made the error of “eyeskip” (which C&amp;amp;G define as omitting the same word, phrase, or sequence of letters that appear twice in close succession) how can we make note of this in our digital annotation?&lt;br /&gt;
+—-And now a question of glossing: do we treat the location of where certain glosses are (cf. glossae collectae–those fully separate from the text itself; interlinear glosses; glosses in the main text) and what type they are (lexical/synonym vs. suppletive/omissions) &lt;em&gt;differently&lt;/em&gt; when we go into annotating them digitally?&lt;/p&gt;
+
+&lt;p&gt;2) Digital Mappaemundi (Maps of the World) disusses the use of digital ‘layers,’ whereby “different research questions involving a single image may be addressed separately through annotation (also allowing one to choose precisely how &lt;em&gt;many&lt;/em&gt; layers they would like to view at one time). This seems to present a solution to our frustration with the BL’s excess of metadata in lengthy, sometimes-bordering-upon-impenetrable, paragraphs. How common are digital layers in literary manuscripts?  As its name suggests, the Mappaemundi project focuses on maps mostly.
+—-Think more about: Geospatial bias and how it can relate to literary/biblical/philosophical texts too? (cf. C&amp;amp;G’s term “archaeology of the book” and idea of the book as a space)&lt;/p&gt;
+</description>
+                <link>http://blalbrit.github.io/2016/01/20/week3discussionquestions</link>
+                <guid>http://blalbrit.github.io/2016/01/20/week3discussionquestions</guid>
+                <pubDate>Wed, 20 Jan 2016 00:00:00 -0800</pubDate>
+        </item>
 
         <item>
                 <title>DLCL122-2016 - Liz&#39;s Discussion Questions, Week 3</title>
