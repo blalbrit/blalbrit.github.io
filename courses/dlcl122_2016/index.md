@@ -175,11 +175,12 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 	* Reading
 		* Kathryn Kerby-Fulton, “How to Transcribe Middle English,” in Opening Up Middle English Manuscripts: Literary & Visual Approaches, pp. 2-5
 		* “A Walkthrough of T-PEN” (video)
-		* Allen H. Renear, “Text Encoding,” in A Companion to Digital Humanities, 2004.
+		* Postpone: (Allen H. Renear, “Text Encoding,” in A Companion to Digital Humanities, 2004.)
 	* Exercise 3 (see description above)
 * 27 January
 	* Reading
-		* Raymond Clemens and Timothy Graham, “Selected Scripts,” in Introduction to Manuscript Studies, pp. 135-178.
+		* Optional Resource: (Raymond Clemens and Timothy Graham, “Selected Scripts,” in Introduction to Manuscript Studies, pp. 135-178.)
+		* Reading catch-up from weeks 2-3.
 
 ###Week 5: Comparing
 * 1 February
