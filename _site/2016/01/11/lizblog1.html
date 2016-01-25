@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DLCL122-2016 - Liz's Blog Post, Exercise 1</title>
+    
+    <meta name="author" content="Benjamin Albritton">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes//css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes//css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Benjamin L Albritton</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/teaching">Teaching</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>DLCL122-2016 - Liz's Blog Post, Exercise 1</h1>
+</div>
+
+<div class="row">
+  <div class="span10">
+    <h1 id="exercise-1-discovering">Exercise 1: Discovering</h1>
+<p>For this exercise, I examined both the <a href="http://www.bl.uk/manuscripts/Default.aspx">British Library’s digitized manuscripts viewer</a> and the <a href="http://wamcp.bibalex.org/">Wellcome Arabic Manuscripts Online</a>. As a part-time computer scientist, the user interface of each repository is what grabbed my attention– let’s begin with a brief overview of the features.</p>
+
+<h3 id="british-library">British Library</h3>
+<p>Manuscripts can be searched for by keyword, date range, shelfmark, title, author or scribe, provenance, and/or bibliography. Searching returns a thumbnail, shelfmark, date, and brief description for every manuscript found, and the results sortable by shelfmark, author, title, or date (interestingly, not sortable by all the potential search parameters). Alternatively, manuscripts can be browsed by shelfmark, author, scribe, or title. When browsing, the user is presented with a list of every manuscript, sorted by the selected field.</p>
+
+<p>Once choosing a particular manuscript, search and browse both put you to that manuscript’s description page. This page offers the expected metadata, when available: shelfmark, content description, dates, a thumbnail image, language, location, author, title, provenance, a bibliography. For many manuscripts, much of this information is missing– either unknown or simply not supplied (in the case of a content or physical description).</p>
+
+<p>Clicking on the thumbnail leads to the image viewer. This is one area that leaves much to be desired. The controls to navigate through the manuscript are placed at the top right, while a different set of controls to manipulate the current image (limited to full screen and zoom) are located lower on the left. There is some sort of page header without a clear function, and only one object can be viewed at a time (leaving it to the intrepid user to open multiple browser windows themselves).</p>
+
+<h3 id="wellcome-arabic-manuscripts-online">Wellcome Arabic Manuscripts Online</h3>
+<p>The Wellcome website is, from the start, much less welcoming than the British Library site. The design looks quite clunky and dated. It also presents a search tool on the homepage, but the functionality is hit or miss. Manuscripts in the browse view can be filtered by approximate date, librarian date, scribal date, decorations, and language; they can be browsed by shelfmark, author, title, colophon, tahmid, scribe, and mistra height. The distinction between a search-like way of finding a text and browsing a bit fuzzy.</p>
+
+<p>On selecting a particular manuscript, both the metadata for that object and the image viewer are presented, side-by-side. Metadata is tabbed into a summary, content description, physical description, and history. The viewer displays thumbnail navigation on the side, and a scrolling-view of the larger images in the main portion of the window. It also offers the option to download the current image in a variety of formats.</p>
+
+<p>Crucially, the Wellcome experience stands out in its ability to display two different objects side-by-side in a single window. After viewing one manuscript, all other manuscripts in the search or browse results will display a button which says “Compare with <first manuscript="">". This shows two instances of the viewer, with the manuscript metadata pushed below.</first></p>
+
+<h3 id="reflection">Reflection</h3>
+<p>When desiging a tool, a  major concer of the developers must be their audience. Who is using the tool should dictate which features are implemented and how simple, or complecated, the user is allowed to make their experience.</p>
+
+<p>I would think the target audience of the British Library’s digital collection would be a less scholarly, more “general public” audience (the casual user) than most repositories. They are, afterall, a big institution with a big, recognizable name. The user experience, however, seems to contradict that. The interface is much cleaner than that of the Wellcome collection, for sure, but the steps of getting to the actual viewing of an object might intimidate a casual user. Searching and browsing are straight forward enough. Once on a manuscript description page, though, trouble starts. The more famous manuscripts, especially those highlighted on the home page are more likely to be viewed by a casual user. Those are also precicely the manuscripts for which the description is monstrously intimidating. Impenetrable walls of text describing every detail of the object are not inviting to a casual user. If they do make it past that to the viewer, it feels odd and dated, with less than desirable controls.</p>
+
+<p>The Wellcome collection, on the other hand, I would not expect to be friendly to those not versed in the subject. It is a very particular set of manuscripts, all Arabic texts dealing with health and medicine, not exactly the sort of thing a casual user would seek out. The target audience is very specifically scholars interested in Arabic manuscripts about medicine, so it is fair of the design to assume a knowledgable audience.</p>
+
+<p>Or is it? When a tool is made publiclly available on the internet, there is no telling who will be using it. The target audience in mind during development may turn out not to be the audience reached, at all. In the case of the British Library, they may very well have intended for the experience to be pleasant for the general public as well as scholars. Whether or not they succeeded is very subjective, but it does not seem unreasonable to claim they are losing part of that audience with intimidating presentation of information. With Wellcome, they may have only had a small audience in mind, but their manuscript information and image representation is quite friendly and usable for a broader audience.</p>
+
+<p>This is entirely a question of interface design, but it has an impact on how readily people can discover and use texts (or anything) from online repositories. It is my (admittedly untested) opinion that there is always happy medium between functionality and friendliness. The perfect example, from these two repositories, is the difference in handling of metadata. Both supply the same information, but Wellcome hides much of it upfront, sparing a casual visitor from information they don’t care to see, while still allowing easy access to that information for those who <em>do</em> want to see it. A tool can be full-featured <strong>and</strong> simple to use, if you keep in mind that you have no gaurantees of your audience.</p>
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2016/01/11/BlogPost1" title="Blog Post 1">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/2016/01/11/week2christinaquestions" title="DLCL122-2016 - Christina's Discussion Questions, Week 2">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>11 January 2016</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#DLCL122-2016-ref">DLCL122-2016 <span>8</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Benjamin Albritton 2016 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+
+
+
+  </body>
+</html>
+
