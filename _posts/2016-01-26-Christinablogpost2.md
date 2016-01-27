@@ -1,3 +1,10 @@
+---
+layout: post
+title: DLCL122-2016 - Christina's Blog Post, Exercise 2
+date: '2016-01-24'
+tags: DLCL122-2016
+author: csmith17
+---
 Christina’s Blog post on exercise 2
 
 In embarking upon exercise 2—which involved utilizing Mirador to digitally annotate folia held in Stanford’s online repository—I was initially skeptical of the program’s benefits.  Indeed, it impressed me that you could store annotations for others to use, reference, or edit in future, but other than that I was unsure about the merits of Mirador.  
