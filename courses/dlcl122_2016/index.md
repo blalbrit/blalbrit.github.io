@@ -80,7 +80,7 @@ There will be five exercises over to complete during the course. The exercises a
 
 ####Exercise 4
 
-* Choose three versions of a medieval lyric of your choice.
+* Using the text you transcribed in Exercise 3, compare it to an edition or another witness of the same text
 * Mark these up for presentation in the [Versioning Machine](http://v-machine.org/)
 * Think about the differences in the versions, and why they might be of interest – be prepared to discuss in class.
 * Present your versions in a blog post following class discussion.
@@ -185,24 +185,29 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 ###Week 5: Comparing
 * 1 February
 	* Reading
-		* Maidie Hilmo, “Illuminating Chaucer’s Canterbury Tales: Portraits of the Author and Selected Pilgrim Authors,” in Opening Up Middle English Manuscripts: Literary & Visual Approaches, pp. 245-289.
-		* Vanessa Wilkie, “Medieval Manuscripts in the Digital Age”, 2015.
-		* Albritton, Benjamin, “Fellow Travelers: The Canterbury Tales and IIIF,” 2015.
-	* Exercise 4 (see description above)
+		* Kevin S. Hawkins, "[Introduction to XML for Text](http://www.ultraslavonic.info/intro-to-xml/)"
+		* "[A very gentle introduction to the TEI markup language](http://www.tei-c.org/Support/Learn/mueller-index.htm)"
+		* Vanessa Wilkie, “[Medieval Manuscripts in the Digital Age](http://huntingtonblogs.org/2015/08/medieval-manuscripts-in-the-digital-age/)”, 2015.
+		* Albritton, Benjamin, “[Fellow Travelers: The Canterbury Tales and IIIF](http://web.stanford.edu/group/dmstech/cgi-bin/wordpress/fellow-travelers-the-canterbury-tales-and-iiif/),” 2015.
+	* Exercise 3 due
+	* Exercise 4 starts (see description above)
 * 3 February
 	* Reading
-		* Peter A. Stokes, “Using DigiPal: A Quick Introduction to the Framework,” 2015.
-		* Stuart Snydman, Robert Sanderson, Tom Cramer, “The International Image Interoperability Framework (IIIF): A community & technology approach for web-based images,” 2015.
+		* Peter A. Stokes, “[Using DigiPal: A Quick Introduction to the Framework](http://www.digipal.eu/blog/a-quick-introduction-to-the-digipal-framework/),” 2015.
+		* Stuart Snydman, Robert Sanderson, Tom Cramer, “[The International Image Interoperability Framework (IIIF): A community & technology approach for web-based images](https://purl.stanford.edu/df650pk4327),” 2015.
+		* Sanderson, Albritton, et al. "[SharedCanvas: A Collaborative Model for Medieval Manuscript Layout Dissemination](http://arxiv.org/pdf/1104.2925v1.pdf)"
 
 ###Week 6: Referring
 * 8 February
 	* Reading
-		* “Liturgical Libellus… ; known as the Prayerbook of Elizabeth of York: manuscript codex”
-		* Smith, Shang, Kim, Detzner, Barnet, Ashton, Arias, Aiello, Abbott, “MSS Codex 0877: The Prayerbook of Elizabeth of York,” 2014.
+		* “[Liturgical Libellus… ; known as the Prayerbook of Elizabeth of York: manuscript codex](https://purl.stanford.edu/cb532cr9486)”
+		* Smith, Shang, Kim, Detzner, Barnet, Ashton, Arias, Aiello, Abbott, “[MSS Codex 0877: The Prayerbook of Elizabeth of York](https://purl.stanford.edu/pb903ny9688),” 2014.
+	* Exercise 4 due
 * 10 February
 	* Reading
-		* Tom Heath, Christian Bizer, Chapters 1-2 in Linked Data: Evolving the Web into a Global Data Space, 2011.
+		* Tom Heath, Christian Bizer, [Chapters 1-2 in Linked Data: Evolving the Web into a Global Data Space](http://linkeddatabook.com/editions/1.0/), 2011.
 		* More resources: http://linkeddata.org/guides-and-tutorials
+	* Blog post for Exercise 4 due
 
 ###Week 7: Sampling & Illustrating
 * 15 February: Holiday – **NO CLASS**
@@ -214,7 +219,7 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 		* Getting Started with Voyant Tools
 		* Using Voyant Tools for Basic Text Analysis
 		* Peruse the TAPOR site.
-	* Exercise 5 (see description above)
+	* Exercise 5 starts (see description above)
 
 ###Week 8: More Sampling & Illustrating
 * 22 February
@@ -222,9 +227,11 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 		* Scott Weingart, Demystifying Networks, 2011.
 		* Martin Grandjean, Introduction to Network Visualization with GEPHI, 2013.
 		* “Data Visualization” in Tooling Up for Digital Humanities.
+	* Exercise 5 due
 * 24 February
 	* Reading
 	* To be announced (either GIS-related or Topic Modeling-related depending on project needs).
+	* Blog post for Exercise 5 due
 
 ###Week 9: Representing & Deforming
 * 29 February
