@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blog Post Annotations and Transcriptions
+title: DLCL122-2016 - Laney's Blog Post Annotations and Transcriptions
 date: '2016-01-26'
 tags: DLCL122-2016
 author: laneymcg

@@ -11,6 +11,8 @@ MW: 03:00p-04:20p
 School of Education, Rm 313  
 Course Site: http://blalbrit.github.io/courses/dlcl122_2016  
 
+####[Course Blog](../dlcl122_2016/archive.html)
+
 #The Digital Middle Ages  
 
 Benjamin Albritton  

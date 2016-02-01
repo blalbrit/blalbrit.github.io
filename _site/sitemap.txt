@@ -1,4 +1,5 @@
 
+http://blalbrit.github.io/courses/dlcl122_2016/archive
 http://blalbrit.github.io/archive
 http://blalbrit.github.io/atom.xml
 http://blalbrit.github.io/categories
