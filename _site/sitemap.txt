@@ -12,6 +12,7 @@ http://blalbrit.github.io/sitemap.txt
 http://blalbrit.github.io/tags
 http://blalbrit.github.io/teaching
 
+http://blalbrit.github.io/2016/02/03/csmith-week5discussion-questions
 http://blalbrit.github.io/2016/01/31/lizdiscussionw5
 http://blalbrit.github.io/2016/01/26/laneymcg-BlogPost
 http://blalbrit.github.io/2016/01/24/Christinablogpost2

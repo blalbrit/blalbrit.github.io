@@ -4,13 +4,26 @@
  <title>Benjamin L Albritton</title>
  <link href="http://blalbrit.github.io/atom.xml" rel="self"/>
  <link href="http://blalbrit.github.io"/>
- <updated>2016-02-03T13:19:24-08:00</updated>
+ <updated>2016-02-03T13:49:07-08:00</updated>
  <id>http://blalbrit.github.io</id>
  <author>
    <name>Benjamin Albritton</name>
    <email>blalbritton@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>DLCL122-2016 - Christina&#39;s Discussion Questions, Week 5</title>
+   <link href="http://blalbrit.github.io/2016/02/03/csmith-week5discussion-questions"/>
+   <updated>2016-02-03T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2016/02/03/csmith-week5discussion questions</id>
+   <content type="html">&lt;h1 id=&quot;week-5-discussion-questions&quot;&gt;Week 5 discussion questions&lt;/h1&gt;
+
+&lt;p&gt;1.) Does every major institution make their image avaliable via the IIIF image API? Your (Ben Albritton’s) post mentions that more and more institutions are supporting the IIIF image API. Just out of curiosity, which ones aren’t yet? What platforms other than Mirador are utilizing this IIIF image API, allowing for comparisons across manuscripts?&lt;/p&gt;
+
+&lt;p&gt;2.) On the “A very gentle introduction to the TEI markup language,” there’s a discussion of preservation and creating standards for “scholarly memory in an evolving digital culture.”  Since I am a ‘newbie’ to all this, is it correct that TEI is mainly used by humanities scholars?&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>DLCL122-2016 - Liz&#39;s Discussion Questions, Week 5</title>
