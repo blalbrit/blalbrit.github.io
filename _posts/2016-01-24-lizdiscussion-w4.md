@@ -12,3 +12,4 @@ author: lizfischer
 * How do we transcribe abbreviations for which we do not know the expansion?
 
 ##Wednesday
+No questions for today.
