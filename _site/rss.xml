@@ -5,10 +5,30 @@
         <description>Benjamin L Albritton - Benjamin Albritton</description>
         <link>http://blalbrit.github.io</link>
         <atom:link href="http://blalbrit.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Sun, 31 Jan 2016 20:22:41 -0800</lastBuildDate>
-        <pubDate>Sun, 31 Jan 2016 20:22:41 -0800</pubDate>
+        <lastBuildDate>Wed, 03 Feb 2016 12:48:04 -0800</lastBuildDate>
+        <pubDate>Wed, 03 Feb 2016 12:48:04 -0800</pubDate>
         <ttl>60</ttl>
 
+
+        <item>
+                <title>DLCL122-2016 - Liz&#39;s Discussion Questions, Week 5</title>
+                <description>&lt;h1 id=&quot;discussion-questions-week-5&quot;&gt;Discussion Questions, Week 5&lt;/h1&gt;
+&lt;p&gt;## Monday
+* What does it take for an institution to adpot IIIF? Are there economic considerations that might be slowing more adopting?
+* Are there different versions of the TEI DTD? Do they vary significantly?
+ * In the examples in the Introduction to TEI, I noticed they use a link to a dtd file that doesn’t exist anymore in the doctype declaration. Advantages and disadvantages of hotlinking…&lt;/p&gt;
+
+&lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Who generates the content of DigiPal?&lt;/li&gt;
+  &lt;li&gt;How might IIIF (or a thing like it) work with tools that use polygons rather than rectangles?&lt;/li&gt;
+  &lt;li&gt;i.e. is there any value in selecting a polygonal region of an image? We’ve discussed non-rectangular selection in other areas… (though of course any non-rectangular image would secretly be living inside a transparent rectangle)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                <link>http://blalbrit.github.io/2016/01/31/lizdiscussionw5</link>
+                <guid>http://blalbrit.github.io/2016/01/31/lizdiscussionw5</guid>
+                <pubDate>Sun, 31 Jan 2016 00:00:00 -0800</pubDate>
+        </item>
 
         <item>
                 <title>DLCL122-2016 - Laney&#39;s Blog Post Annotations and Transcriptions</title>
@@ -29,19 +49,25 @@
 
         <item>
                 <title>DLCL122-2016 - Christina&#39;s Blog Post, Exercise 2</title>
-                <description>&lt;p&gt;Christina’s Blog post on exercise 2&lt;/p&gt;
+                <description>&lt;p&gt;Christina’s Blog post on, jointly, exercise 2 and exercise 3 (updated to reflect this)&lt;/p&gt;
 
 &lt;p&gt;In embarking upon exercise 2—which involved utilizing Mirador to digitally annotate folia held in Stanford’s online repository—I was initially skeptical of the program’s benefits.  Indeed, it impressed me that you could store annotations for others to use, reference, or edit in future, but other than that I was unsure about the merits of Mirador.&lt;/p&gt;
 
-&lt;p&gt;However, after using it myself to begin digitally annotating the illuminated capitals of Stanford’s c.1450 Book of Hours and Psalter (with prayers ascribe to Saint Jerome and the Venerable Bede), my mind was changed!&lt;/p&gt;
+&lt;p&gt;However, after using it myself to begin digitally annotating the illuminated capitals of Stanford’s c.1450 Book of Hours and Psalter (with prayers ascribed to Saint Jerome and the Venerable Bede), my mind was changed!&lt;/p&gt;
 
-&lt;p&gt;As someone trained in rigorous visual analysis—something instilled in me by countless medieval art historians—Mirador allowed me to look at the mis-en-page and iconographic program of a codex’s folio in a new light.  For example, as I spent time a fair bit of time looking at folio 13 (the first digitized folio of the MS), I was struck anew thinking about what—and how—I wanted to annotate.  Mirador’s relatively easy-to-use user interface permitted me to engage with the illuminated capitals of this folio in a way I had never done before.  It’s easy ‘tag’ feature made me think about how I would characterize certain decoration, letter size, and style.  I had never before had to think about making annotations consistent and understandable to a viewer other than myself—for that is how one would interact with my annotations normally, since I wouldn’t be able to explain them in person!&lt;/p&gt;
+&lt;p&gt;As someone trained in rigorous visual analysis—something instilled in me by countless medieval art historians—Mirador allowed me to look at the mis-en-page and iconographic program of a codex’s folio in a new light.  For example, as I spent a fair bit of time looking at folio 13 (the first digitized folio of the MS), I was struck anew thinking about what—and how—I wanted to annotate.  Mirador’s relatively easy-to-use user interface permitted me to engage with the illuminated capitals of this folio in a way I had never done before.  Its easy ‘tag’ feature made me think about how I would characterize certain decoration, letter size, and style.  I had never before had to think about making annotations consistent and understandable to a viewer other than myself—for that is how one would interact with my annotations normally, since I wouldn’t be able to explain them in person!  Added to this is the idea that, with Mirador (like many digital technologies), my annotations remain long after I’m ‘gone.’ (Or so they should!) This gives me the responsibility and task of making sure that my annotations are consistent and can be read, understood, and reused by a myriad audience.&lt;/p&gt;
 
 &lt;p&gt;Additionally, Mirador’s side-by-side comparative feature is wonderfully useful.  In fact, I wish every digital repository allowed one to do this! Viewing annotations for various folia within one manuscript, or across differing manuscripts, holds immense value.&lt;/p&gt;
 
 &lt;p&gt;For me, one of the most difficult elements of trying to digitally annotate the illuminated capitals of this 1450 Book of Hours and Psalter was the fact that I didn’t know precisely how much information I should include.  At a certain point, tags (and even writing annotations within the text box) become no longer useful if there is simply &lt;em&gt;too&lt;/em&gt; much information to wade through.  In this, the ‘bold’ text feature in the text box can be used to usefully pull apart key words and terms for the casual viewer, as they engage with an illuminated initial you’ve spent much time with.  (The ‘italic’ option for text has its own problems, probably a bug—for it doesn’t allow you to make text italic and instead hides the annotation frame altogether).&lt;/p&gt;
 
 &lt;p&gt;In all, digitally annotating using the Mirador program made me rethink how I approach study of a medieval manuscript’s visual layout—down to its most basic level.  Digitally annotating on Mirador forces the annotator to make decisions about how they will categorize what they see so that it can be (hopefully) easily searchable and usable in contexts not just within a given manuscript…but also across manuscripts.  I look forward to using the Mirador tool a LOT more, not just in our projects for this class, but in my future work as a medievalist-in-training.  In fact, I think that using Mirador would be a good exercise whenever I engage in an essay or project in which I need to closely-look (which should be almost any visually-centered endeavor).  Through the very act of having to make decisions on what you mention (or do not mention) in annotations, one is forced to engage with the text and image in a more active manner.  Using Mirador, in conjunction with viewing the &lt;em&gt;real&lt;/em&gt; manuscript (if one can), can help us as medievalists not only track and utilize our obversations later on, but also help us to question why we make certain distinctions (or not) and why these may—or may not—be important.&lt;/p&gt;
+
+&lt;p&gt;Here, I add my thoughts on using T-PEN for online transcription. Prior to my using this program, I had done all annotations by hand. T-PEN not only (usually) sped up the process, but it also allowed me to more easily look up abbreviations on the fly.  In this, I appreciated the Latin dictionary linked to the transcription bar.  T-PEN also has excellent zoom-in features and tracking allowing you to clearly see where it is that you’re transcribing on the page (and how much you have left!).&lt;/p&gt;
+
+&lt;p&gt;One of my favorite features of T-PEN is the comment feature, allowing you to add a note which appears below your transcription.  I appreciated that I could do this as I went along line-by-line, rather than waiting at the end.  The only thing that could have made this more user-friendly, however, would be to not only note but highlight…allowing one to more clearly point out what letterform or feature of the MS line they were commenting on.  Maybe, though, this falls more along the lines of annotation and thus is better done on Mirador.  (Ben could answer this better, though, since he knows Mirador inside out!).&lt;/p&gt;
+
+&lt;p&gt;While these elements made T-PEN good to use, I have been struggling for a while with some bugs in the program.  For example, many &lt;em&gt;many&lt;/em&gt; times I would go back lines in my transcription (using the “previous line” feature), only to then go back to my original place (using “enter” multiple times) and find that it had grouped together lines of my text again and again.  I found this immensely frustrating!  Perhaps there is a solution to this, but I have tried to look up other users comments on T-PEN, and haven’t yet found an answer to it.  Unfortunately, this colored my appreciation of T-PEN, but I hope to figure out a way for this not to happen in the coming week(s). Overall, it speeds up the process of transcription and is quite enjoyable to use…making one feel quite productive at the end, when you see all the hard, densely-abbreviated lines you’ve ably (or not-so-ably) transcribed!&lt;/p&gt;
 </description>
                 <link>http://blalbrit.github.io/2016/01/24/Christinablogpost2</link>
                 <guid>http://blalbrit.github.io/2016/01/24/Christinablogpost2</guid>
@@ -70,6 +96,7 @@
 * How do we transcribe abbreviations for which we do not know the expansion?&lt;/p&gt;
 
 &lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
+&lt;p&gt;No questions for today.&lt;/p&gt;
 </description>
                 <link>http://blalbrit.github.io/2016/01/24/lizdiscussion-w4</link>
                 <guid>http://blalbrit.github.io/2016/01/24/lizdiscussion-w4</guid>
