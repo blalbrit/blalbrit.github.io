@@ -11,9 +11,9 @@ MW: 03:00p-04:20p
 School of Education, Rm 313  
 Course Site: http://blalbrit.github.io/courses/dlcl122_2016  
 
-####[Course Blog](../dlcl122_2016/archive.html)
+#### [Course Blog](../dlcl122_2016/archive.html)
 
-#The Digital Middle Ages  
+# The Digital Middle Ages  
 
 Benjamin Albritton  
 Email: <blalbrit@stanford.edu>  
@@ -21,12 +21,12 @@ Office: Lathrop Library, 3rd Floor
 Office Hours: By appointment  
 
 
-##Course Description  
+## Course Description  
 Medieval Studies is entering a phase of digital abundance. In the last five years, more medieval material has been put online than has ever been available for study at any point in the past. How can we engage with the growing mass of digitized material available to us? How does this sudden access impact the work we do, the types of questions we ask, the connections we make, and the audiences we write for? 
 
 In this course, we will examine and evaluate digital medieval resources and software that has been created for interacting with those resources. Students will have the opportunity to design and create an innovative project based on medieval primary sources held at Stanford, applying current digital methods in the analysis of those resources.
 
-##Course Goals  
+## Course Goals  
 By the end of the course, committed students will be able to:
 
 * Evaluate current tools for approaching historical objects and texts
@@ -35,7 +35,7 @@ By the end of the course, committed students will be able to:
 * Describe different forms of medieval cultural production
 * Produce a project that integrates social and historical methods with contemporary scholarly tools
 
-##Assessment
+## Assessment
 Your final grade will reflect the sum of your work over the quarter, with the following weighting:
 
 * Readings and Discussions	20%
@@ -46,16 +46,16 @@ Your final grade will reflect the sum of your work over the quarter, with the fo
 	* Contribution to Exhibit (15%)
 	* Paper (15%)
 
-##Assignments
+## Assignments
 
-###Readings and Discussions
+### Readings and Discussions
 Reading assignments are posted in the course schedule below, though there will be some changes or additions depending on the overall direction of the final projects (all updates will be reflected on the course website). You will be required to submit at least two discussion questions based on the readings for each day that the class meets. **These questions should be posted to the course blog by midnight of the day before class.**
 
-###Practical Exercises
+### Practical Exercises
 
 There will be five exercises over to complete during the course. The exercises are all designed to allow you the opportunity to work with software and materials to produce content that can be re-used as part of your final project. Upon completion of the exercise, you will be asked to write a short blog post reflecting upon aspects of the exercise. **These reflective posts should be added to the blog no later than the start of the next class AFTER the exercise has been completed.**
 
-####Exercise 1
+#### Exercise 1
 
 * Find two online medieval manuscript repositories.
 * Critique them – prepared to discuss in class.
@@ -66,21 +66,21 @@ There will be five exercises over to complete during the course. The exercises a
 	* ability to interact with the resources
 * Your critique and class discussion will fuel a blog post.
 
-####Exercise 2
+#### Exercise 2
 
 * Formulate a question about one or more primary resources available digitally at Stanford (preferably from the data set to be used in the final project).
 * Using the Mirador tool, annotate primary resources to provide evidence for answering you question.
 * Be prepared to discuss your question and evidence in class.
 * Write up the question and supporting evidence in a blog post following class discussion.
 
-####Exercise 3
+#### Exercise 3
 
 * Choose an object that you wish to transcribe from the data set to be used in the final project.
 * Using the [T-PEN tool](http://t-pen.org), transcribe that object (noting anything unusual in the “notes” field as you work).
 * Be prepared to discuss the process and outcomes in class.
 * Present your transcription in a blog post following class discussion.
 
-####Exercise 4
+#### Exercise 4
 
 * Using the text you transcribed in Exercise 3, compare it to an edition or another witness of the same text
 * Mark these up for presentation in the [Versioning Machine](http://v-machine.org/)
@@ -94,7 +94,7 @@ There will be five exercises over to complete during the course. The exercises a
 * Reflect on limitations and possibilities of this tool and this approach to analysis as they relate to the final project.
 * Present your analysis in a blog post following class discussion.
 
-###Blogging
+### Blogging
 
 This class is a community, and together we are producing a public outcome (the final project). As a community, sharing our thoughts, reflections, and intermediate outputs is critical – as is learning to work publicly. While our blog will not likely be widely read, it is a key component of tracking and building our course (and an opportunity to practice writing for different audiences). You will be **required** to provide regular updates to the blog as follows:
 
@@ -103,7 +103,7 @@ This class is a community, and together we are producing a public outcome (the f
 
 Additionally, you can optionally use the blog to raise questions, provide additional materials to share with the other participants, or present ideas for course critique.
 
-###Final Project
+### Final Project
 
 The outcome of this class will be a final project dedicated to sharing your research in a useful way with the world. There are three components to this:
 
@@ -133,9 +133,9 @@ Significant dates:
 
 NB: You are welcome to submit a draft of your paper to me for review at any time after February 17. We will be building the exhibit together as a class on an ongoing basis.
 
-##Course Schedule
+## Course Schedule
 
-###Week 1: Discovering
+### Week 1: Discovering
 * Overview  
 	* Syllabus, introductions, discussion of assignments.
 	* Stanford’s digitized medieval manuscripts.
@@ -152,7 +152,7 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 		* Richard Gartner, Lou Burnard, and Peter Kidd, “[A TEI extension for the description of medieval manuscripts](http://cds.library.brown.edu/conferences/tei10/tei10.papers/gartner.html)”, 2003.
 		* Elaine Treharne, Suzanne Paul, “[Shelf  marks and catalogs](https://www.youtube.com/watch?v=5ApccnEawfs),” 2015. (video)
 
-###Week 2: Annotating
+### Week 2: Annotating
 * 11 January  
 	* Reading  
 		* John Unsworth, “[Scholarly Primitives: what methods do humanities researchers have in common, and how might our tools reflect this?](http://people.brandeis.edu/~unsworth/Kings.5-00/primitives.html)”, May 2000.
@@ -164,7 +164,7 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 	* Reading
 		* Maidie Hilmo, “The Power of Images in the Auchinleck, Vernon, Pearl, and Two Piers Plowman Manuscripts,” in *Opening Up Middle English Manuscripts: Literary & Visual Approaches*, pp. 153-205.
 
-###Week 3: More Annotating
+### Week 3: More Annotating
 * 18 January: Holiday – **NO CLASS**  
 * 20 January  
 	* Reading
@@ -172,7 +172,7 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 		* Martin Foys, Shannon Bradshaw, “[Developing Digital Mappaemundi: An Agile Mode for Annotating Medieval Maps](http://www.digitalmedievalist.org/journal/7/foys/),” 2011.
 		* Roberto A. Busa, “[Foreword: Perspectives on the Digital Humanities](http://digitalhumanities.org:3030/companion/view?docId=blackwell/9781405103213/9781405103213.xml&chunk.id=ss1-1-2&toc.depth=1&toc.id=ss1-1-2&brand=9781405103213_brand),” in A Companion to Digital Humanities, 2004.
 
-###Week 4: Transcribing
+### Week 4: Transcribing
 * 25 January  
 	* Reading
 		* Kathryn Kerby-Fulton, “How to Transcribe Middle English,” in Opening Up Middle English Manuscripts: Literary & Visual Approaches, pp. 2-5
@@ -184,7 +184,7 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 		* Optional Resource: (Raymond Clemens and Timothy Graham, “Selected Scripts,” in Introduction to Manuscript Studies, pp. 135-178.)
 		* Reading catch-up from weeks 2-3.
 
-###Week 5: Comparing
+### Week 5: Comparing
 * 1 February
 	* Reading
 		* Kevin S. Hawkins, "[Introduction to XML for Text](http://www.ultraslavonic.info/intro-to-xml/)"
@@ -199,7 +199,7 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 		* Stuart Snydman, Robert Sanderson, Tom Cramer, “[The International Image Interoperability Framework (IIIF): A community & technology approach for web-based images](https://purl.stanford.edu/df650pk4327),” 2015.
 		* Sanderson, Albritton, et al. "[SharedCanvas: A Collaborative Model for Medieval Manuscript Layout Dissemination](http://arxiv.org/pdf/1104.2925v1.pdf)"
 
-###Week 6: Referring
+### Week 6: Referring
 * 8 February
 	* Reading
 		* “[Liturgical Libellus… ; known as the Prayerbook of Elizabeth of York: manuscript codex](https://purl.stanford.edu/cb532cr9486)”
@@ -211,7 +211,7 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 		* More resources: http://linkeddata.org/guides-and-tutorials
 	* Blog post for Exercise 4 due
 
-###Week 7: Sampling & Illustrating
+### Week 7: Sampling & Illustrating
 * 15 February: Holiday – **NO CLASS**
 * 17 February
 	* Reading
@@ -223,7 +223,7 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 		* Peruse the TAPOR site.
 	* Exercise 5 starts (see description above)
 
-###Week 8: More Sampling & Illustrating
+### Week 8: More Sampling & Illustrating
 * 22 February
 	* Reading
 		* Scott Weingart, Demystifying Networks, 2011.
@@ -235,7 +235,7 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 	* To be announced (either GIS-related or Topic Modeling-related depending on project needs).
 	* Blog post for Exercise 5 due
 
-###Week 9: Representing & Deforming
+### Week 9: Representing & Deforming
 * 29 February
 	* Reading
 		* Marilyn Deegan and Simon Tanner, “Conversion of Primary Sources,” in A Companion to Digital Humanities, 2004.
@@ -244,30 +244,30 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 * 2 March
 	* Presentation of final projects in class.
 
-###Week 10: Creating & Sharing
+### Week 10: Creating & Sharing
 * 7 March
 	*Exhibit Launch.
 * 9 March
 	*Final Paper Due.
 
-##Course Policies
+## Course Policies
 
-####Office Hours and Communications
+#### Office Hours and Communications
 Face to face meetings are extremely important to me, and I am always happy to schedule an appointment to discuss course work and progress. I may offer drop-by hours as well, depending on the needs of the course.
 
 E-mail is the easiest way of communicating with me <blalbrit@stanford.edu>. I will do my best to respond within 24 hours. All course communications will be sent to your Stanford e-mail address.
 
-####Assignments
+#### Assignments
 Given the nature of this class, I reserve the right to change due dates or assignments in response to course needs. I will provide lots of notice of any changes, and those changes will be designed only to occur if they benefit student work. Satisfactory completion of all assignments is a requirement for this course.
 
 Assignments will be penalized if submitted late – by one step per day (from A to A-, for example). If you anticipate a conflict with a due date, contact me as soon as possible.
 
-####Participation and Attendance
+#### Participation and Attendance
 We will be working closely together in this class, and you are expected to be in attendance every day without exception. Should you have to be absent from a class session, please notify me well in advance by e-mail. All assignments must be turned in on time, even if you are absent.
 
-####Honor Code and Fundamental Standard
+#### Honor Code and Fundamental Standard
 All students must observe the Honor Code and Fundamental Standard. For full details, please see the page provided by the Stanford Office of Community Standards here: [https://communitystandards.stanford.edu/student-conduct-process/honor-code-and-fundamental-standard](https://communitystandards.stanford.edu/student-conduct-process/honor-code-and-fundamental-standard).
 
-####Students with Documented Disabilities
+#### Students with Documented Disabilities
 Students who may need an academic accommodation based on the impact of a disability must initiate the request with the Office of Accessible Education (OAE).  Professional staff will evaluate the request with required documentation, recommend reasonable accommodations, and prepare an Accommodation Letter for faculty dated in the current quarter in which the request is being made. Students should contact the OAE as soon as possible since timely notice is needed to coordinate accommodations.  The OAE is located at 563 Salvatierra Walk (phone: 723-1066, URL: [http://studentaffairs.stanford.edu/oae](http://studentaffairs.stanford.edu/oae)).
 
