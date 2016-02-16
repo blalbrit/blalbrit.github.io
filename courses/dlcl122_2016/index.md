@@ -215,20 +215,20 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 * 15 February: Holiday – **NO CLASS**
 * 17 February
 	* Reading
-		* John Burrows, “Textual Analysis,” in A Companion to Digital Humanities, 2004.
-		* “Text Analysis” in Tooling Up for Digital Humanities.
-		* Matthew L. Jockers, “Macroanalysis,” in Macroanalysis: Digital Methods and Literary History, 2013.
-		* Getting Started with Voyant Tools
-		* Using Voyant Tools for Basic Text Analysis
-		* Peruse the TAPOR site.
+		* John Burrows, “[Textual Analysis](http://www.digitalhumanities.org/companion/view?docId=blackwell/9781405103213/9781405103213.xml&chunk.id=ss1-4-4),” in A Companion to Digital Humanities, 2004.
+		* “[Text Analysis](http://toolingup.stanford.edu/?page_id=981)” in Tooling Up for Digital Humanities.
+		* Matthew L. Jockers, “[Macroanalysis](http://site.ebrary.com/lib/stanford/reader.action?docID=10661477&ppg=35),” in Macroanalysis: Digital Methods and Literary History, 2013.
+		* [Getting Started with Voyant Tools](http://docs.voyant-tools.org/start/)
+		* [Using Voyant Tools for Basic Text Analysis](https://publish.illinois.edu/commonsknowledge/2014/10/10/using-voyant-tools-for-basic-text-analysis/)
+		* Peruse the [TAPOR](http://www.tapor.ca/) site.
 	* Exercise 5 starts (see description above)
 
 ### Week 8: More Sampling & Illustrating
 * 22 February
 	* Reading
-		* Scott Weingart, Demystifying Networks, 2011.
-		* Martin Grandjean, Introduction to Network Visualization with GEPHI, 2013.
-		* “Data Visualization” in Tooling Up for Digital Humanities.
+		* Scott Weingart, [Demystifying Networks](http://www.scottbot.net/HIAL/?p=6279), 2011.
+		* Martin Grandjean, [Introduction to Network Visualization with GEPHI](http://www.martingrandjean.ch/introduction-to-network-visualization-gephi/), 2013.
+		* “[Data Visualization](http://toolingup.stanford.edu/?page_id=1247)” in Tooling Up for Digital Humanities.
 	* Exercise 5 due
 * 24 February
 	* Reading
