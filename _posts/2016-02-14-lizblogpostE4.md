@@ -26,8 +26,8 @@ author: lizfischer
 	`<rdg wit="#parkerMS">filius cham[.]</rdg>`
 `</app>`
 
-`<app>`
-	`<rdg wit="#stanfordMS">iafeth dictus</rdg>`
-	`<rdg wit="#monumenta.ch">Iaphet dictus</rdg>`
-	`<rdg wit="#parkerMS">iapheth dict[us]</rdg>`
-`</app>`
+`<app>
+	<rdg wit="#stanfordMS">iafeth dictus</rdg>
+	<rdg wit="#monumenta.ch">Iaphet dictus</rdg>
+	<rdg wit="#parkerMS">iapheth dict[us]</rdg>
+</app>`
