@@ -9,23 +9,25 @@ author: lizfischer
 #Exercise 4: Comparing
 
 Structure
-> <div1 type="book" n="2">
->	<div2 type="chapter" n="1">
->		<p n="1">
->		</p>
->		<p n="2">
->		</p>
->	</div>
->	<div2 type="chapter" n="2">
->	</div>
-> </div>
+```&lt;div1 type="book" n="2"&gt;
+	&lt;div2 type="chapter" n="1"&gt;
+		&lt;p n="1"&gt;
+		&lt;/p&gt;
+		&lt;p n="2"&gt;
+		&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div2 type="chapter" n="2"&gt;
+	&lt;/div&gt;
+&lt;/div&gt;```
 
 Bad
-	<app>
-		<rdg wit="#stanfordMS"> filius cham[.]</rdg>
-		<rdg wit="#monumenta.ch">, filius Cham,</rdg>
-		<rdg wit="#parkerMS">filius cham[.]</rdg>
-	</app>
+
+```xml
+<app>
+	<rdg wit="#stanfordMS"> filius cham[.]</rdg>
+	<rdg wit="#monumenta.ch">, filius Cham,</rdg>
+	<rdg wit="#parkerMS">filius cham[.]</rdg>
+</app>```
 
 Good
 	<app>
