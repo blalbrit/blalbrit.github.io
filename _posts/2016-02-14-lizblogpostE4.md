@@ -27,7 +27,8 @@ Bad
 	<rdg wit="#stanfordMS"> filius cham[.]</rdg>
 	<rdg wit="#monumenta.ch">, filius Cham,</rdg>
 	<rdg wit="#parkerMS">filius cham[.]</rdg>
-</app>```
+</app>
+```
 
 Good
 	<app>
