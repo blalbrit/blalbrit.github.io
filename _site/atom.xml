@@ -4,13 +4,29 @@
  <title>Benjamin L Albritton</title>
  <link href="http://blalbrit.github.io/atom.xml" rel="self"/>
  <link href="http://blalbrit.github.io"/>
- <updated>2016-02-08T14:24:50-08:00</updated>
+ <updated>2016-02-21T14:43:19-08:00</updated>
  <id>http://blalbrit.github.io</id>
  <author>
    <name>Benjamin Albritton</name>
    <email>blalbritton@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>DLCL122-2016 - Liz&#39;s Discussion Questions, Week 6</title>
+   <link href="http://blalbrit.github.io/2016/02/09/lizweek6questions"/>
+   <updated>2016-02-09T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2016/02/09/lizweek6questions</id>
+   <content type="html">&lt;h1 id=&quot;discussion-questions-week-6&quot;&gt;Discussion Questions, Week 6&lt;/h1&gt;
+
+&lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What do we mean by “data”?&lt;/li&gt;
+  &lt;li&gt;“The first Linked Data principle advocates using URI references to identify, not just Web documents and digital content, but also real world objects and abstract concepts… This principle can be seen as extending the scope of the Web from online resources to encompass any object or concept in the world.” This doesn’t seem even remotely possible as I understand it– what is going on here?&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>DLCL122-2016 - Christina&#39;s Discussion Questions, Week 5</title>

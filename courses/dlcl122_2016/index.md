@@ -238,9 +238,9 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 ### Week 9: Representing & Deforming
 * 29 February
 	* Reading
-		* Marilyn Deegan and Simon Tanner, “Conversion of Primary Sources,” in A Companion to Digital Humanities, 2004.
-		* Abby Smith, “What is Preservation and Why Does it Matter?” in A Companion to Digital Humanities, 2004.
-		* Roy Rosenzweig, “Scarcity or Abundance? Preserving the Past in a Digital Era,” in American Historical Review 108, 2003.
+		* Marilyn Deegan and Simon Tanner, “[Conversion of Primary Sources](http://digitalhumanities.org:3030/companion/view?docId=blackwell/9781405103213/9781405103213.xml&chunk.id=ss1-5-2&toc.depth=1&toc.id=ss1-5-2&brand=9781405103213_brand),” in A Companion to Digital Humanities, 2004.
+		* Abby Smith, “[What is Preservation and Why Does it Matter?](http://digitalhumanities.org:3030/companion/view?docId=blackwell/9781405103213/9781405103213.xml&chunk.id=ss1-5-7&toc.depth=1&toc.id=ss1-5-7&brand=9781405103213_brand)” in A Companion to Digital Humanities, 2004.
+		* Roy Rosenzweig, “[Scarcity or Abundance? Preserving the Past in a Digital Era](http://chnm.gmu.edu/essays-on-history-new-media/essays/?essayid=6),” in American Historical Review 108, 2003.
 * 2 March
 	* Presentation of final projects in class.
 
