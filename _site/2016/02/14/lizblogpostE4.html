@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DLCL122-2016 - Liz's Blog Post, Exercise 4</title>
+    
+    <meta name="author" content="Benjamin Albritton">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Benjamin L Albritton</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/pages">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/teaching">Teaching</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>DLCL122-2016 - Liz's Blog Post, Exercise 4</h1>
+</div>
+
+<div class="row">
+  <div class="span10">
+    <h1 id="exercise-4-comparing">Exercise 4: Comparing</h1>
+
+<p>In this exercise, we were charged with the task of preparing two versions of a text for the Versioning Machine. The text I marked up was from a manuscript fragment of Rabanus Maurus’ “De rerum naturis”, which I previous transcribed in T-PEN. The second version of the text I used was an online edition which I used to assit my transcription. The turned out to be a mistake. Because I used the edition text to help expand the Latin abbreviations, and because the edition text was not at all abbreviated, the “differences” in the text were for the most part simply places where something had been abbreviated in the manuscript text. This is much less interesting than comparing two manuscript witnesses would be. So, I found the same fragment of text in a manuscript at the Parker library (CCCC MS 11) and transcribed <em>it</em> in T-PEN, and finally adding a third witness to the TEI document for Versioning Machine.</p>
+
+<h3 id="document-structure">Document Structure</h3>
+
+<p>The fragment is from book 2, chapters 1 and 2. I used these as the top two levels of organization for the TEI encoding. Getting a breakdown smaller than that was not so clear, as there are no “paragraphs” in the Stanford manuscript. There are, however, periodic red-filled capital letters. The Stanford manuscript is the one I care about most, so I chose the red letters as a way to further decompose the text despite it seeming arbitrary from the point of view of the other two witnesses.</p>
+
+<p>```xml</p>
+<div1 type="book" n="2">
+	<div2 type="chapter" n="1">
+		<p n="1">
+		</p>
+		<p n="2">
+		</p>
+	
+	<div2 type="chapter" n="2">
+	
+
+```
+
+### Defining Difference
+
+As I first did the Stanford MS and the edition text before adding the second manuscript, the only differences in the texts were abbreviation, capitialization, and punctuation differences. In order to have differences to look at, I counted all three of these things as proper differences. When I added the second manuscript witness, it produced instances like this:
+
+```xml
+<app>
+	<rdg wit="#stanfordMS"> filius cham[.]</rdg>
+	<rdg wit="#monumenta.ch">, filius Cham,</rdg>
+	<rdg wit="#parkerMS">filius cham[.]</rdg>
+</app>
+```
+To me, this seemed pretty uninteresting. The abbreviation differences in the manuscripts was the truly interesting piece. Differences in capitialization and punctuation occured fairly frequently, and were detracting from the abbreviation differences. For example:
+```xml
+<app>
+	<rdg wit="#stanfordMS">iafeth dictus</rdg>
+	<rdg wit="#monumenta.ch">Iaphet dictus</rdg>
+	<rdg wit="#parkerMS">iapheth dict[us]</rdg>
+</app>
+```
+
+Due to time constraints, I have not yest revised the document to reflect my new feelings on what constitutes a textual difference in this text. That's the other thing about TEI encoding-- it takes *forever* to do and, to the computer scientist in me, looks like something which cries out for automation.
+</div2></div2></div1>
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2016/02/09/lizweek6questions" title="DLCL122-2016 - Liz's Discussion Questions, Week 6">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/2016/02/16/ChristinaWeek7DiscussionQuestions" title="DLCL122-2016 - Christina's Discussion Questions, Week 7">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>14 February 2016</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#DLCL122-2016-ref">DLCL122-2016 <span>20</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Benjamin Albritton 2016 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+
+
+
+  </body>
+</html>
+
