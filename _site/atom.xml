@@ -4,7 +4,7 @@
  <title>Benjamin L Albritton</title>
  <link href="http://blalbrit.github.io/atom.xml" rel="self"/>
  <link href="http://blalbrit.github.io"/>
- <updated>2016-02-21T14:54:39-08:00</updated>
+ <updated>2016-02-21T15:36:05-08:00</updated>
  <id>http://blalbrit.github.io</id>
  <author>
    <name>Benjamin Albritton</name>
@@ -18,9 +18,17 @@
    <updated>2016-02-16T00:00:00-08:00</updated>
    <id>http://blalbrit.github.io/2016/02/16/lizweek7questions</id>
    <content type="html">&lt;h1 id=&quot;discussion-questions-week-7&quot;&gt;Discussion Questions, Week 7&lt;/h1&gt;
-&lt;p&gt;##Wednesday
-* What’s the interplay between spatial analysis and textual analysis? (the metadata analysis examples given in Tooling Up seem more like spatial analysis to me)
-* How quick to adopt has medeival studeis been in comparison to other areas of the humanities when it comes to “macroanalysis”?&lt;/p&gt;
+
+&lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;What’s the interplay between spatial analysis and textual analysis? (the metadata analysis examples given in Tooling Up seem more like spatial analysis to me)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;How quick to adopt has medeival studeis been in comparison to other areas of the humanities when it comes to “macroanalysis”?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
