@@ -229,11 +229,15 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 		* Scott Weingart, [Demystifying Networks](http://www.scottbot.net/HIAL/?p=6279), 2011.
 		* Martin Grandjean, [Introduction to Network Visualization with GEPHI](http://www.martingrandjean.ch/introduction-to-network-visualization-gephi/), 2013.
 		* “[Data Visualization](http://toolingup.stanford.edu/?page_id=1247)” in Tooling Up for Digital Humanities.
-	* Exercise 5 due
 * 24 February
-	* Reading
-	* To be announced (either GIS-related or Topic Modeling-related depending on project needs).
-	* Blog post for Exercise 5 due
+	* No reading
+	* In-class paleography day:
+		* using project materials, identify, annotate, and extract data for re-use
+	* Bringing it all together:
+		* storyboarding the exhibit
+		* consolidating data
+		* starting exhibit draft
+	* Exercise 5 due
 
 ### Week 9: Representing & Deforming
 * 29 February
@@ -241,14 +245,30 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 		* Marilyn Deegan and Simon Tanner, “[Conversion of Primary Sources](http://digitalhumanities.org:3030/companion/view?docId=blackwell/9781405103213/9781405103213.xml&chunk.id=ss1-5-2&toc.depth=1&toc.id=ss1-5-2&brand=9781405103213_brand),” in A Companion to Digital Humanities, 2004.
 		* Abby Smith, “[What is Preservation and Why Does it Matter?](http://digitalhumanities.org:3030/companion/view?docId=blackwell/9781405103213/9781405103213.xml&chunk.id=ss1-5-7&toc.depth=1&toc.id=ss1-5-7&brand=9781405103213_brand)” in A Companion to Digital Humanities, 2004.
 		* Roy Rosenzweig, “[Scarcity or Abundance? Preserving the Past in a Digital Era](http://chnm.gmu.edu/essays-on-history-new-media/essays/?essayid=6),” in American Historical Review 108, 2003.
+	* In-class activities:
+		* general data re-use for final projects
+			* transcriptions
+			* annotations
+	* Blog post for Exercise 5 due
 * 2 March
-	* Presentation of final projects in class.
+	* Reading
+		* re-read the Martin Grandjean article from Week 8, paying attention to presentation of data on maps in Gephi
+	* In-class activities:
+		* generating project-specific data representations
+		* focus: what story are you telling with your visualizations?
 
 ### Week 10: Creating & Sharing
 * 7 March
-	*Exhibit Launch.
+	* Finalizing and publishing the exhibit
+	* Preservation:
+		* creating a collection in SDR
+		* depositing content
 * 9 March
-	*Final Paper Due.
+	* Final Presentations Due in Class
+	
+### Finals Week
+* 16 March
+	* Final papers due
 
 ## Course Policies
 
