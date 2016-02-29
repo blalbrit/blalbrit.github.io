@@ -7,10 +7,14 @@ author: lizfischer
 ---
 
 #Exercise 5: Comparing
-I found two lists of stop words via Google ([[1]](https://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) [[2]](https://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin))
-
+## Getting the text
 [online text](https://www.mun.ca/rabanus/text.html) 
 
+[Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/)
+
+[Full scraping script here](https://gist.github.com/lizfischer/cbf4c71eea8be043368a)
+
+## Cleaning the text
 numerical references between number signs (#) are to manuscript folios
 ```python
 # Remove text between '#'s, and numbers
@@ -22,10 +26,9 @@ def stripCharacters(text, outfile):
     f.close()
 ```
 
-[Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/)
+## Analysing the text
+I found two lists of stop words via Google ([[1]](https://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) [[2]](https://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin))
 
 ![word cloud](http://i.imgur.com/zypqWY3.png)
+
 ![distinctive words](http://i.imgur.com/ZuFem5T.png)
-
-[Full scraping script here](https://gist.github.com/lizfischer/cbf4c71eea8be043368a)
-
