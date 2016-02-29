@@ -55,7 +55,7 @@ def stripCharacters(text, outfile):
     f.close()
 ```
 
-The second task I consider part of cleaning the data was done in Voyant itself. Voyant allows users to apply a [stop word](https://en.wikipedia.org/wiki/Stop_words) fiter to their corpus, effectively removing the most common words of a language from analysis and visualization. The tool comes pre-equipped with stop word lists for many modern languages, but none for Latin. Luckily it allows customization of the lists. I found two lists of stop words via Google ([[1]](https://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) [[2]](https://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin)) and imported them into Voyant.
+The second task I consider part of cleaning the data was done in Voyant itself. Voyant allows users to apply a [stop word](https://en.wikipedia.org/wiki/Stop_words) fiter to their corpus, effectively removing the most common words of a language from analysis and visualization. The tool comes pre-equipped with stop word lists for many modern languages, but none for Latin. Luckily it allows customization of the lists. I found [two](https://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) [lists](https://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) of stop words via Google and imported them into Voyant.
 
 ### Analysing the text
 
