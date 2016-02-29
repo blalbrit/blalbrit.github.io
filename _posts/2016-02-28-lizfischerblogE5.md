@@ -7,11 +7,25 @@ author: lizfischer
 ---
 
 #Exercise 5: Comparing
+I found two lists of stop words via Google ([[1]](https://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin) [[2]](https://wiki.digitalclassicist.org/Stopwords_for_Greek_and_Latin))
 
-Test 
-<!--	Exported from http://voyant-tools.org/.
-	Please note that this is an early version and the API may change.
-	You are strongly encouraged to subscribe to a list to receive notifications
-	of updates to Voyant (updated code, planned outages, etc.) – please send
-	a message to sgsinclair@voyeurtools.org. -->
-<iframe width="576" height="442" src="http://voyant-tools.org/tool/Cirrus/?corpus=1456134952218.8278&query=&stopList=1456724379762wi"></iframe>
+[online text](https://www.mun.ca/rabanus/text.html) 
+
+numerical references between number signs (#) are to manuscript folios
+```python
+# Remove text between '#'s, and numbers
+def stripCharacters(text, outfile):
+    f = open(outfile, "wb")
+    outtext = re.sub('\#\w*#', '', text)
+    outtext = re.sub('\d', '', outtext)
+    f.write(outtext)
+    f.close()
+```
+
+[Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/)
+
+![word cloud](http://i.imgur.com/zypqWY3.png)
+![distinctive words](http://i.imgur.com/ZuFem5T.png)
+
+[Full scraping script here](https://gist.github.com/lizfischer/cbf4c71eea8be043368a)
+
