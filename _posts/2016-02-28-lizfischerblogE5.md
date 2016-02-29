@@ -62,7 +62,7 @@ The second task I consider part of cleaning the data was done in Voyant itself. 
 No quantitative textual analysis would be complete without a word cloud; luckily, it's one of the default features of Voyant.
 ![word cloud](http://i.imgur.com/zypqWY3.png)
 
-Now, as you may be able to see, my stop word list was not perfect. Latin is a hard language to compile stop words for, since a single word has so many different forms. The word cloud is not very interesting, that aside. What **is** interesting is one of the less flashy tools modules:
+Now, as you may be able to see, my stop word list was not perfect. Latin is a hard language to compile stop words for, since a single word has so many different forms. The word cloud is not very interesting, that aside. What **is** interesting is one of the less flashy tool modules, the corpus summary.
 
 ![distinctive words](http://i.imgur.com/ZuFem5T.png)
 
