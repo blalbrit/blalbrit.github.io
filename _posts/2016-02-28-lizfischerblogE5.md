@@ -62,3 +62,5 @@ The second task I consider part of cleaning the data was done in Voyant itself. 
 ![word cloud](http://i.imgur.com/zypqWY3.png)
 
 ![distinctive words](http://i.imgur.com/ZuFem5T.png)
+
+## Thoughts on Voyant
