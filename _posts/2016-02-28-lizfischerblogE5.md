@@ -8,6 +8,7 @@ author: lizfischer
 
 #Exercise 5: Comparing
 For Exercise 5, we looked at a corpus of text in the [Voyant Tools](http://voyant-tools.org/). I chose to do the entirety of the text [this fragment](https://searchworks.stanford.edu/view/9932113) is from, "De rerum naturis". For me, this was a three step process. You can see the results in full [here](http://voyant-tools.org/?corpus=1456134952218.8278&stopList=1456724379762wi).
+## Process
 ### Getting the text
 In a previous exercise, I found an [online edtion](https://www.mun.ca/rabanus/text.html) of "De rerum naturis". There are 22 books and 2 prefaces; that isn't all that much text to copy/paste/save by hand, but I'm a computer scientist so I must [automate](http://www.xkcd.com/974/) [whenever](http://www.xkcd.com/1319/) [possible](http://www.xkcd.com/1205/). So I wrote a Python script to pull down all the text for me!
 
