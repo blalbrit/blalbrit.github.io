@@ -1,16 +1,24 @@
----
-layout: post
-title: Book of Hours Puzzle
-date: '2016-05-23T08:00:00.000-08:00'
-author: Such a familiar name...
-tags: 
----
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <script>
+    <title>IIIF Puzzles - Book of Hours</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../images/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="../css/jumbotron.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="../css/welcome.css"> -->
+	
+	<script>
 
         const PUZZLE_DIFFICULTY = 4;
         const PUZZLE_HOVER_TINT = '#009900';
@@ -226,8 +234,11 @@ tags:
 </head>
 
 <body onload="init();">
-    <div>Introductory information here:</div>
-	<canvas id="canvas"></canvas>
+    <div class="container">
+		<h2>Manuscripts Image Puzzles - 05/23</h2>
+		<p>Today's puzzle is drawn from Stanford University Library MSS Codex M0379 CB. This fifteenth-century Book of Hours, produced in Ghent, provides a typical example of a late medieval book for private devotion. You can explore more images from this manuscript <a href="https://purl.stanford.edu/gp178js1323">here</a></p>
+	<div class="jumbotron"><canvas id="canvas"></canvas></div>
+	<p>This post was inspired by Michael Appleby's <a href="http://puzzle.mikeapps.me/">IIIF-powered puzzles</a> and uses code from Brad Manderscheid's <a href="http://code.tutsplus.com/tutorials/create-an-html5-canvas-tile-swapping-puzzle--active-10747">HTML5 tutorial</a>.</p></div>
 </body>
 
 </html>
