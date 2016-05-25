@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>IIIF Puzzles - Book of Hours</title>
+    <title>IIIF Puzzles - Bede Day</title>
 	
 	<script>
 
-        const PUZZLE_DIFFICULTY = 6;
+        const PUZZLE_DIFFICULTY = 5;
         const PUZZLE_HOVER_TINT = '#009900';
 
         var _stage;
@@ -25,7 +25,7 @@
         function init(){
             _img = new Image();
             _img.addEventListener('load',onImage,false);
-            _img.src = "http://www.e-codices.unifr.ch/loris/acv/acv-P-Sarraz-H-0050/acv-P-Sarraz-H-0050_240v.jp2/1413,607,4484,6306/,750/0/default.jpg";
+            _img.src = "http://www.digitale-sammlungen.de/fcgi-bin/iipsrv.fcgi?IIIF=/local/rep/bsb00046507/Bsb00046507_00006.tif/299,777,1428,1313/,650/0/default.jpg";
         }
         function onImage(e){
             _pieceWidth = Math.floor(_img.width / PUZZLE_DIFFICULTY)
@@ -220,17 +220,10 @@
 
 <body onload="init();">
 	<canvas id="canvas"></canvas>
-	<h2>Manuscripts Image Puzzles - 05/25</h2>
+	<h2>Manuscripts Image Puzzles - 05/25 - Bede Day</h2>
 	<h3>About today's image</h3>
-	<p>Today's puzzle comes to us via the <a href="www.e-codices.unifr.ch">e-codices</a> project. Chavannes-pr&#232;s-Renens, Archives cantonales vaudoises, P Ch&#226;teau de La Sarraz H 50 (the Book of Hours of Jean de Gingins) was produced in Paris in 1421. We know this level of detail about the book from the colophon that appears on f. 193r:</p> <p><img src="http://www.e-codices.unifr.ch/loris/acv/acv-P-Sarraz-H-0050/acv-P-Sarraz-H-0050_193r.jp2/887,3538,2662,2172/,300/0/default.jpg" alt="Colophon"></p> 
-	<p>The e-codices team, well-known for their excellent manuscript descriptions, provides the following summary for this manuscript:</p>
-	<blockquote>This Book of Hours following the liturgical custom of Paris contains a large number of private prayers in Latin and French, most of them unpublished. As indicated in the colophon on page 193r, the book was produced in 1421 in Paris in the workshop of the bookseller Jacquet Lescuier. It was commissioned, or perhaps only bought, by Jean II de Gingins, born around 1385 and died either at the end of 1461 or the beginning of 1462; he had his coat of arms painted on p. 193v. The miniatures were executed by several illuminators, among them the "Guise Master," the "Bedford Master" and a student associated with the "Boucicaut Master." The last representative of the Gingin-La Sarraz family left the castle to her brother-in-law, Henri de Mandrot, who in turn gave this manuscript and the family archive to the state archive of the canton of Vaud in 1920.</blockquote>
-	<p>Some details to note in this example, which appears on f. 240v of the manuscript and depicts the Annunciation to the Shepherds, include: 
-		<ul>
-			<li>The scroll held by the angel at the top of the image contains the words "pueru natus est" surrounded by what looks like musical notes - fitting for the Annunciation scene.</li>
-			<li>The catchwords in the bottom right of the page, though heavily abbreviated, read "gloria patri" - the first words on the page that follows.</li>
-		</ul>
-	<p>You can explore more images from, and information about, this manuscript <a href="http://www.e-codices.unifr.ch/en/acv/P-Sarraz-H-0050">here</a></p>
+	<p>This special Bede Day puzzle comes to us via the <a href="www.e-codices.unifr.ch">BSB-Munich</a>, BSB Clm 14398, f. 1v, labeled by the BSB as "Beda Venerabilis:  In Proverbia Salomonis libri III (Commentarius in Parabolas Salomonis).Doppeltes Autorenbild: Beda und Salomon auf ihren Thronen".</p>
+	<p>You can explore more images from, and information about, this manuscript <a href="http://www.digitale-sammlungen.de/mirador/rep/bsb00046507/index.html">here</a></p>
 	<p>This post was inspired by Michael Appleby's <a href="http://puzzle.mikeapps.me/">IIIF-powered puzzles</a> and uses code from Brad Manderscheid's <a href="http://code.tutsplus.com/tutorials/create-an-html5-canvas-tile-swapping-puzzle--active-10747">HTML5 tutorial</a>.</p></div>
 </body>
 
