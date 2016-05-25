@@ -9,3 +9,4 @@ header: Puzzles
 ## Slider Puzzles (powered by IIIF)
 * [20160523](/2016-05-23-slide_puzzle.html)
 * [20160524](/2016-05-24-slide_puzzle.html)
+* [20160525](/2016-05-25-slide_puzzle.html)
