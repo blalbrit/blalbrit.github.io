@@ -13,3 +13,4 @@ header: Puzzles
 * [20160525-BedeDay](/2016-05-25-Bede-slide_puzzle.html)
 * [20160526](/2016-05-26-slide_puzzle.html)
 * [20160527](/2016-05-27-slide_puzzle.html)
+* [20160528-9](/2016-05-28-29-slide_puzzle.html)
