@@ -14,3 +14,5 @@ header: Puzzles
 * [20160526](/2016-05-26-slide_puzzle.html)
 * [20160527](/2016-05-27-slide_puzzle.html)
 * [20160528-9](/2016-05-28-29-slide_puzzle.html)
+* [20160607-1](/2016-06-06-slide_puzzle.html)
+* [20160607-2](/2016-06-07-slide_puzzle.html)
