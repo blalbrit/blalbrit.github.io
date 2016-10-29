@@ -17,3 +17,5 @@ header: Puzzles
 * [20160607-1](/2016-06-06-slide_puzzle.html)
 * [20160607-2](/2016-06-07-slide_puzzle.html)
 * [20161015](2016-10-15-slide_puzzle.html)
+* [20161019](2016-10-19-slide_puzzle.html)
+* [20161029](2016-10-29-slide_puzzle.html)
