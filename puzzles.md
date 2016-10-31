@@ -19,3 +19,4 @@ header: Puzzles
 * [20161015](2016-10-15-slide_puzzle.html)
 * [20161019](2016-10-19-slide_puzzle.html)
 * [20161029](2016-10-29-slide_puzzle.html)
+* [20161031](2016-10-31-slide_puzzle.html)
