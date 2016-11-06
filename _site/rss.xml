@@ -5,13 +5,13 @@
         <description>Benjamin L Albritton - Benjamin Albritton</description>
         <link>http://blalbrit.github.io</link>
         <atom:link href="http://blalbrit.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Sun, 30 Oct 2016 22:59:12 -0700</lastBuildDate>
-        <pubDate>Sun, 30 Oct 2016 22:59:12 -0700</pubDate>
+        <lastBuildDate>Sat, 05 Nov 2016 18:48:06 -0700</lastBuildDate>
+        <pubDate>Sat, 05 Nov 2016 18:48:06 -0700</pubDate>
         <ttl>60</ttl>
 
 
         <item>
-                <title>DLCL122-2016 - Liz&#39;s Discussion Questions, Week 7</title>
+                <title>DLCL122-2016 - Liz's Discussion Questions, Week 7</title>
                 <description>&lt;h1 id=&quot;discussion-questions-week-7&quot;&gt;Discussion Questions, Week 7&lt;/h1&gt;
 
 &lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
@@ -31,7 +31,7 @@
         </item>
 
         <item>
-                <title>DLCL122-2016 - Christina&#39;s Discussion Questions, Week 7</title>
+                <title>DLCL122-2016 - Christina's Discussion Questions, Week 7</title>
                 <description>&lt;h1 id=&quot;week-7-discussion-questions--christina-sampling--illustrating&quot;&gt;Week 7 discussion questions–Christina (Sampling &amp;amp; Illustrating)&lt;/h1&gt;
 
 &lt;p&gt;1.) If Voyant is an “environment,” how might one carry what is used from it into papers?  (i.e.: in order to take advantage of Voyant’s capabilites, do you really have to always be in the program itself—or what does it look like exported?)&lt;/p&gt;
@@ -44,8 +44,8 @@
         </item>
 
         <item>
-                <title>DLCL122-2016 - Liz&#39;s Blog Post, Exercise 4</title>
-                <description>&lt;h1 id=&quot;exercise-4-comparing&quot;&gt;Exercise 4: Comparing&lt;/h1&gt;
+                <title>DLCL122-2016 - Liz's Blog Post, Exercise 4</title>
+                <description>&lt;p&gt;#Exercise 4: Comparing&lt;/p&gt;
 
 &lt;p&gt;In this exercise, we were charged with the task of preparing two versions of a text for the Versioning Machine. The text I marked up was from a manuscript fragment of Rabanus Maurus’ “De rerum naturis”, which I previous transcribed in T-PEN. The second version of the text I used was an online edition which I used to assit my transcription. The turned out to be a mistake. Because I used the edition text to help expand the Latin abbreviations, and because the edition text was not at all abbreviated, the “differences” in the text were for the most part simply places where something had been abbreviated in the manuscript text. This is much less interesting than comparing two manuscript witnesses would be. So, I found the same fragment of text in a manuscript at the Parker library (CCCC MS 11) and transcribed &lt;em&gt;it&lt;/em&gt; in T-PEN, and finally adding a third witness to the TEI document for Versioning Machine.&lt;/p&gt;
 
@@ -53,41 +53,40 @@
 
 &lt;p&gt;The fragment is from book 2, chapters 1 and 2. I used these as the top two levels of organization for the TEI encoding. Getting a breakdown smaller than that was not so clear, as there are no “paragraphs” in the Stanford manuscript. There are, however, periodic red-filled capital letters. The Stanford manuscript is the one I care about most, so I chose the red letters as a way to further decompose the text despite it seeming arbitrary from the point of view of the other two witnesses.&lt;/p&gt;
 
-&lt;p&gt;```xml&lt;/p&gt;
-&lt;div1 type=&quot;book&quot; n=&quot;2&quot;&gt;
-	&lt;div2 type=&quot;chapter&quot; n=&quot;1&quot;&gt;
-		&lt;p n=&quot;1&quot;&gt;
-		&lt;/p&gt;
-		&lt;p n=&quot;2&quot;&gt;
-		&lt;/p&gt;
-	
-	&lt;div2 type=&quot;chapter&quot; n=&quot;2&quot;&gt;
-	
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;book&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;n=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;div2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;chapter&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;n=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;n=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;n=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;div2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;chapter&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;n=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-```
+&lt;h3 id=&quot;defining-difference&quot;&gt;Defining Difference&lt;/h3&gt;
 
-### Defining Difference
+&lt;p&gt;As I first did the Stanford MS and the edition text before adding the second manuscript, the only differences in the texts were abbreviation, capitialization, and punctuation differences. In order to have differences to look at, I counted all three of these things as proper differences. When I added the second manuscript witness, it produced instances like this:&lt;/p&gt;
 
-As I first did the Stanford MS and the edition text before adding the second manuscript, the only differences in the texts were abbreviation, capitialization, and punctuation differences. In order to have differences to look at, I counted all three of these things as proper differences. When I added the second manuscript witness, it produced instances like this:
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;app&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;rdg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;wit=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#stanfordMS&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; filius cham[.]&lt;span class=&quot;nt&quot;&gt;&amp;lt;/rdg&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;rdg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;wit=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#monumenta.ch&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;, filius Cham,&lt;span class=&quot;nt&quot;&gt;&amp;lt;/rdg&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;rdg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;wit=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#parkerMS&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;filius cham[.]&lt;span class=&quot;nt&quot;&gt;&amp;lt;/rdg&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/app&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;To me, this seemed pretty uninteresting. The abbreviation differences in the manuscripts was the truly interesting piece. Differences in capitialization and punctuation occured fairly frequently, and were detracting from the abbreviation differences. For example:&lt;/p&gt;
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;app&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;rdg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;wit=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#stanfordMS&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;iafeth dictus&lt;span class=&quot;nt&quot;&gt;&amp;lt;/rdg&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;rdg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;wit=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#monumenta.ch&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Iaphet dictus&lt;span class=&quot;nt&quot;&gt;&amp;lt;/rdg&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;rdg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;wit=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#parkerMS&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;iapheth dict[us]&lt;span class=&quot;nt&quot;&gt;&amp;lt;/rdg&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/app&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-```xml
-&lt;app&gt;
-	&lt;rdg wit=&quot;#stanfordMS&quot;&gt; filius cham[.]&lt;/rdg&gt;
-	&lt;rdg wit=&quot;#monumenta.ch&quot;&gt;, filius Cham,&lt;/rdg&gt;
-	&lt;rdg wit=&quot;#parkerMS&quot;&gt;filius cham[.]&lt;/rdg&gt;
-&lt;/app&gt;
-```
-To me, this seemed pretty uninteresting. The abbreviation differences in the manuscripts was the truly interesting piece. Differences in capitialization and punctuation occured fairly frequently, and were detracting from the abbreviation differences. For example:
-```xml
-&lt;app&gt;
-	&lt;rdg wit=&quot;#stanfordMS&quot;&gt;iafeth dictus&lt;/rdg&gt;
-	&lt;rdg wit=&quot;#monumenta.ch&quot;&gt;Iaphet dictus&lt;/rdg&gt;
-	&lt;rdg wit=&quot;#parkerMS&quot;&gt;iapheth dict[us]&lt;/rdg&gt;
-&lt;/app&gt;
-```
-
-Due to time constraints, I have not yest revised the document to reflect my new feelings on what constitutes a textual difference in this text. That&#39;s the other thing about TEI encoding-- it takes *forever* to do and, to the computer scientist in me, looks like something which cries out for automation.
-&lt;/div2&gt;&lt;/div2&gt;&lt;/div1&gt;
+&lt;p&gt;Due to time constraints, I have not yest revised the document to reflect my new feelings on what constitutes a textual difference in this text. That’s the other thing about TEI encoding– it takes &lt;em&gt;forever&lt;/em&gt; to do and, to the computer scientist in me, looks like something which cries out for automation.&lt;/p&gt;
 </description>
                 <link>http://blalbrit.github.io/2016/02/14/lizblogpostE4</link>
                 <guid>http://blalbrit.github.io/2016/02/14/lizblogpostE4</guid>
@@ -95,7 +94,7 @@ Due to time constraints, I have not yest revised the document to reflect my new 
         </item>
 
         <item>
-                <title>DLCL122-2016 - Liz&#39;s Discussion Questions, Week 6</title>
+                <title>DLCL122-2016 - Liz's Discussion Questions, Week 6</title>
                 <description>&lt;h1 id=&quot;discussion-questions-week-6&quot;&gt;Discussion Questions, Week 6&lt;/h1&gt;
 
 &lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
@@ -111,7 +110,7 @@ Due to time constraints, I have not yest revised the document to reflect my new 
         </item>
 
         <item>
-                <title>DLCL122-2016 - Christina&#39;s Discussion Questions, Week 6</title>
+                <title>DLCL122-2016 - Christina's Discussion Questions, Week 6</title>
                 <description>&lt;h1 id=&quot;week-6----discussion-questions&quot;&gt;Week 6 – Discussion questions&lt;/h1&gt;
 
 &lt;p&gt;(1) How might we define “data”? Or, perhaps more productively, what does data not encompass?&lt;/p&gt;
@@ -124,7 +123,7 @@ Due to time constraints, I have not yest revised the document to reflect my new 
         </item>
 
         <item>
-                <title>DLCL122-2016 - Christina&#39;s Discussion Questions, Week 5</title>
+                <title>DLCL122-2016 - Christina's Discussion Questions, Week 5</title>
                 <description>&lt;h1 id=&quot;week-5-discussion-questions&quot;&gt;Week 5 discussion questions&lt;/h1&gt;
 
 &lt;p&gt;1.) Does every major institution make their image avaliable via the IIIF image API? Your (Ben Albritton’s) post mentions that more and more institutions are supporting the IIIF image API. Just out of curiosity, which ones aren’t yet? What platforms other than Mirador are utilizing this IIIF image API, allowing for comparisons across manuscripts?&lt;/p&gt;
@@ -137,12 +136,14 @@ Due to time constraints, I have not yest revised the document to reflect my new 
         </item>
 
         <item>
-                <title>DLCL122-2016 - Liz&#39;s Discussion Questions, Week 5</title>
+                <title>DLCL122-2016 - Liz's Discussion Questions, Week 5</title>
                 <description>&lt;h1 id=&quot;discussion-questions-week-5&quot;&gt;Discussion Questions, Week 5&lt;/h1&gt;
-&lt;p&gt;## Monday
-* What does it take for an institution to adpot IIIF? Are there economic considerations that might be slowing more adopting?
-* Are there different versions of the TEI DTD? Do they vary significantly?
- * In the examples in the Introduction to TEI, I noticed they use a link to a dtd file that doesn’t exist anymore in the doctype declaration. Advantages and disadvantages of hotlinking…&lt;/p&gt;
+&lt;h2 id=&quot;monday&quot;&gt;Monday&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;What does it take for an institution to adpot IIIF? Are there economic considerations that might be slowing more adopting?&lt;/li&gt;
+  &lt;li&gt;Are there different versions of the TEI DTD? Do they vary significantly?&lt;/li&gt;
+  &lt;li&gt;In the examples in the Introduction to TEI, I noticed they use a link to a dtd file that doesn’t exist anymore in the doctype declaration. Advantages and disadvantages of hotlinking…&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
 &lt;ul&gt;
@@ -157,7 +158,7 @@ Due to time constraints, I have not yest revised the document to reflect my new 
         </item>
 
         <item>
-                <title>DLCL122-2016 - Laney&#39;s Blog Post Annotations and Transcriptions</title>
+                <title>DLCL122-2016 - Laney's Blog Post Annotations and Transcriptions</title>
                 <description>&lt;h2 id=&quot;blog-post-annotations-and-transcriptions&quot;&gt;Blog Post Annotations and Transcriptions&lt;/h2&gt;
 
 &lt;p&gt;For annotating and transcribing, I selected science and medicine manuscripts because the content peaked my interest.  Once I identified them for inclusion in the Mirador instance for class, I panicked, worried that selecting manuscripts for this task based upon the content might have been a bad idea. Turns out the reason for my worries was because I didn’t think I would be able to make useful annotations or be able to transcribe the text because of my inexperience.&lt;/p&gt;
@@ -174,7 +175,7 @@ Due to time constraints, I have not yest revised the document to reflect my new 
         </item>
 
         <item>
-                <title>DLCL122-2016 - Christina&#39;s Blog Post, Exercise 2</title>
+                <title>DLCL122-2016 - Christina's Blog Post, Exercise 2</title>
                 <description>&lt;p&gt;Christina’s Blog post on, jointly, exercise 2 and exercise 3 (updated to reflect this)&lt;/p&gt;
 
 &lt;p&gt;In embarking upon exercise 2—which involved utilizing Mirador to digitally annotate folia held in Stanford’s online repository—I was initially skeptical of the program’s benefits.  Indeed, it impressed me that you could store annotations for others to use, reference, or edit in future, but other than that I was unsure about the merits of Mirador.&lt;/p&gt;
@@ -201,7 +202,7 @@ Due to time constraints, I have not yest revised the document to reflect my new 
         </item>
 
         <item>
-                <title>DLCL122-2016 - Christina&#39;s Discussion Questions, Week 4</title>
+                <title>DLCL122-2016 - Christina's Discussion Questions, Week 4</title>
                 <description>&lt;p&gt;Week 4 Discussion Questions (continued from Week 3’s, which mention our other readings)–Transcription
 &lt;em&gt;Note: this deals with Middle English transcriptions, not Latin. Are there slightly different things we have to consider when transcribing Latin/languages that are *not&lt;/em&gt; in English? (This also leads to the question if T-PEN is meant mostly for OE/ME and Latin; It seems to be this way considering the “Latin dictionary” tool at the bottom of the transcription window and the fact that there are shortcuts for thorn, etc.).&lt;/p&gt;
 
@@ -215,14 +216,16 @@ Due to time constraints, I have not yest revised the document to reflect my new 
         </item>
 
         <item>
-                <title>DLCL122-2016 - Liz&#39;s Discussion Questions, Week 4</title>
-                <description>&lt;h1 id=&quot;discussion-questions-week-4&quot;&gt;Discussion Questions, Week 4&lt;/h1&gt;
-&lt;p&gt;##Monday
-* How does (or should) transcription handle non-textual elements of a page (filled intertextual space or illustrations, for example)? Should it address these at all?
-* How do we transcribe abbreviations for which we do not know the expansion?&lt;/p&gt;
+                <title>DLCL122-2016 - Liz's Discussion Questions, Week 4</title>
+                <description>&lt;p&gt;#Discussion Questions, Week 4
+##Monday&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;How does (or should) transcription handle non-textual elements of a page (filled intertextual space or illustrations, for example)? Should it address these at all?&lt;/li&gt;
+  &lt;li&gt;How do we transcribe abbreviations for which we do not know the expansion?&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
-&lt;p&gt;No questions for today.&lt;/p&gt;
+&lt;p&gt;##Wednesday
+No questions for today.&lt;/p&gt;
 </description>
                 <link>http://blalbrit.github.io/2016/01/24/lizdiscussion-w4</link>
                 <guid>http://blalbrit.github.io/2016/01/24/lizdiscussion-w4</guid>
@@ -230,8 +233,8 @@ Due to time constraints, I have not yest revised the document to reflect my new 
         </item>
 
         <item>
-                <title>DLCL122-2016 - Liz&#39;s Blog Post, Exercise 2</title>
-                <description>&lt;h1 id=&quot;exercise-2-annotating&quot;&gt;Exercise 2: Annotating&lt;/h1&gt;
+                <title>DLCL122-2016 - Liz's Blog Post, Exercise 2</title>
+                <description>&lt;p&gt;#Exercise 2: Annotating&lt;/p&gt;
 
 &lt;p&gt;Recently my interests have turned toward marginalia in manuscripts and early print books. Writing and drawing in the margins keeps books alive, show active participation in the text by humans. I am interested in who writes what, and where. Is most marginal writing part of the text, written by the scribe? Do readers tend to write more in the outer or lower margins? When readers are writing, is it more often than not related to the text they are reading?&lt;/p&gt;
 
@@ -249,7 +252,7 @@ Due to time constraints, I have not yest revised the document to reflect my new 
         </item>
 
         <item>
-                <title>DLCL122-2016 - Christina&#39;s Discussion Questions, Week 3</title>
+                <title>DLCL122-2016 - Christina's Discussion Questions, Week 3</title>
                 <description>&lt;h1 id=&quot;week-3-discussion-questions&quot;&gt;Week 3 discussion questions&lt;/h1&gt;
 
 &lt;p&gt;1) Clemens and Graham’s chapter on correction, glossing, and annotation talks about the scribal tools and techniques involved in the “nitty-gritty” elements of manuscript production. As someone new to digital renditions of manuscripts (having transcribed them solely by hand in the past) how do digital humanists usually account for erasures and re-writing over those marked-out areas?  If we believe a medieval scribe to have made the error of “eyeskip” (which C&amp;amp;G define as omitting the same word, phrase, or sequence of letters that appear twice in close succession) how can we make note of this in our digital annotation?&lt;br /&gt;
@@ -264,12 +267,12 @@ Due to time constraints, I have not yest revised the document to reflect my new 
         </item>
 
         <item>
-                <title>DLCL122-2016 - Liz&#39;s Discussion Questions, Week 3</title>
-                <description>&lt;h1 id=&quot;discussion-questions-week-3&quot;&gt;Discussion Questions, Week 3&lt;/h1&gt;
-&lt;p&gt;##Monday
+                <title>DLCL122-2016 - Liz's Discussion Questions, Week 3</title>
+                <description>&lt;p&gt;#Discussion Questions, Week 3
+##Monday
 No class.&lt;/p&gt;
 
-&lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
+&lt;p&gt;##Wednesday&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;In the reading on Digital Mappaemundi the authors mentioned features of plans for features that addressed each of the scholarly primitives we have discussed previously. I’ve noticed a trend, between the Mirador Github issues, this reading, and technology generally  toward expecting one platform/application to address all our needs– is this desirable?&lt;/li&gt;
   &lt;li&gt;Is it defeatist to say there are problems that aren’t worth trying to solve, at least until there is a complete overhaul of the current approach? When is it okay to give up on a project?&lt;/li&gt;
@@ -282,7 +285,7 @@ No class.&lt;/p&gt;
         </item>
 
         <item>
-                <title>DLCL122-2016 - Christina&#39;s Discussion Questions, Week 2, part 2</title>
+                <title>DLCL122-2016 - Christina's Discussion Questions, Week 2, part 2</title>
                 <description>&lt;h1 id=&quot;week-2-discussion-questions-christina&quot;&gt;Week 2 discussion questions (Christina)&lt;/h1&gt;
 
 &lt;ul&gt;
@@ -303,7 +306,7 @@ No class.&lt;/p&gt;
         </item>
 
         <item>
-                <title>DLCL122-2016 - Christina&#39;s Discussion Questions, Week 2</title>
+                <title>DLCL122-2016 - Christina's Discussion Questions, Week 2</title>
                 <description>&lt;h1 id=&quot;week2-discussion-questions&quot;&gt;Week2 discussion questions&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;The first question deals with how we decide upon our digital priorities: Unsworth says that while we can create all the software we want, but without it being “developed and tested in the context of real scholarly use” it can be useless.  Furthermore, he warns against “customization, because purpose-built or project-centered software is unlikely to provide broad support for functional primitives.”  This claim makes sense, yet how is it best put to action in the ‘real-world’?  For example, does every scholar working on Blake manuscripts (which Unsworth makes mention of in his talk on Inote) need to have a process by which they ‘try out’ a specific digital archive, so we can have as large a sample set of scholars as we can, trying out certain software?  This got me to thinking about the nature of the digital humanities.  It seems we often make software, or rework an old online repository, to fulfill a specific need—or to advance a certain university’s (or professor’s) specific project.  But what happens to other material that won’t be touched, or that doesn’t garner the digital attention that other material gets?  I understand that we must start somewhere—and that somewhere is better than nowhere—but how do we determine our priorities in digitizing and creating new software?&lt;/li&gt;
@@ -316,26 +319,26 @@ No class.&lt;/p&gt;
         </item>
 
         <item>
-                <title>DLCL122-2016 - Liz&#39;s Blog Post, Exercise 1</title>
-                <description>&lt;h1 id=&quot;exercise-1-discovering&quot;&gt;Exercise 1: Discovering&lt;/h1&gt;
-&lt;p&gt;For this exercise, I examined both the &lt;a href=&quot;http://www.bl.uk/manuscripts/Default.aspx&quot;&gt;British Library’s digitized manuscripts viewer&lt;/a&gt; and the &lt;a href=&quot;http://wamcp.bibalex.org/&quot;&gt;Wellcome Arabic Manuscripts Online&lt;/a&gt;. As a part-time computer scientist, the user interface of each repository is what grabbed my attention– let’s begin with a brief overview of the features.&lt;/p&gt;
+                <title>DLCL122-2016 - Liz's Blog Post, Exercise 1</title>
+                <description>&lt;p&gt;#Exercise 1: Discovering
+For this exercise, I examined both the &lt;a href=&quot;http://www.bl.uk/manuscripts/Default.aspx&quot;&gt;British Library’s digitized manuscripts viewer&lt;/a&gt; and the &lt;a href=&quot;http://wamcp.bibalex.org/&quot;&gt;Wellcome Arabic Manuscripts Online&lt;/a&gt;. As a part-time computer scientist, the user interface of each repository is what grabbed my attention– let’s begin with a brief overview of the features.&lt;/p&gt;
 
-&lt;h3 id=&quot;british-library&quot;&gt;British Library&lt;/h3&gt;
-&lt;p&gt;Manuscripts can be searched for by keyword, date range, shelfmark, title, author or scribe, provenance, and/or bibliography. Searching returns a thumbnail, shelfmark, date, and brief description for every manuscript found, and the results sortable by shelfmark, author, title, or date (interestingly, not sortable by all the potential search parameters). Alternatively, manuscripts can be browsed by shelfmark, author, scribe, or title. When browsing, the user is presented with a list of every manuscript, sorted by the selected field.&lt;/p&gt;
+&lt;p&gt;###British Library
+Manuscripts can be searched for by keyword, date range, shelfmark, title, author or scribe, provenance, and/or bibliography. Searching returns a thumbnail, shelfmark, date, and brief description for every manuscript found, and the results sortable by shelfmark, author, title, or date (interestingly, not sortable by all the potential search parameters). Alternatively, manuscripts can be browsed by shelfmark, author, scribe, or title. When browsing, the user is presented with a list of every manuscript, sorted by the selected field.&lt;/p&gt;
 
 &lt;p&gt;Once choosing a particular manuscript, search and browse both put you to that manuscript’s description page. This page offers the expected metadata, when available: shelfmark, content description, dates, a thumbnail image, language, location, author, title, provenance, a bibliography. For many manuscripts, much of this information is missing– either unknown or simply not supplied (in the case of a content or physical description).&lt;/p&gt;
 
 &lt;p&gt;Clicking on the thumbnail leads to the image viewer. This is one area that leaves much to be desired. The controls to navigate through the manuscript are placed at the top right, while a different set of controls to manipulate the current image (limited to full screen and zoom) are located lower on the left. There is some sort of page header without a clear function, and only one object can be viewed at a time (leaving it to the intrepid user to open multiple browser windows themselves).&lt;/p&gt;
 
-&lt;h3 id=&quot;wellcome-arabic-manuscripts-online&quot;&gt;Wellcome Arabic Manuscripts Online&lt;/h3&gt;
-&lt;p&gt;The Wellcome website is, from the start, much less welcoming than the British Library site. The design looks quite clunky and dated. It also presents a search tool on the homepage, but the functionality is hit or miss. Manuscripts in the browse view can be filtered by approximate date, librarian date, scribal date, decorations, and language; they can be browsed by shelfmark, author, title, colophon, tahmid, scribe, and mistra height. The distinction between a search-like way of finding a text and browsing a bit fuzzy.&lt;/p&gt;
+&lt;p&gt;###Wellcome Arabic Manuscripts Online
+The Wellcome website is, from the start, much less welcoming than the British Library site. The design looks quite clunky and dated. It also presents a search tool on the homepage, but the functionality is hit or miss. Manuscripts in the browse view can be filtered by approximate date, librarian date, scribal date, decorations, and language; they can be browsed by shelfmark, author, title, colophon, tahmid, scribe, and mistra height. The distinction between a search-like way of finding a text and browsing a bit fuzzy.&lt;/p&gt;
 
 &lt;p&gt;On selecting a particular manuscript, both the metadata for that object and the image viewer are presented, side-by-side. Metadata is tabbed into a summary, content description, physical description, and history. The viewer displays thumbnail navigation on the side, and a scrolling-view of the larger images in the main portion of the window. It also offers the option to download the current image in a variety of formats.&lt;/p&gt;
 
 &lt;p&gt;Crucially, the Wellcome experience stands out in its ability to display two different objects side-by-side in a single window. After viewing one manuscript, all other manuscripts in the search or browse results will display a button which says “Compare with &lt;first manuscript=&quot;&quot;&gt;&quot;. This shows two instances of the viewer, with the manuscript metadata pushed below.&lt;/first&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;reflection&quot;&gt;Reflection&lt;/h3&gt;
-&lt;p&gt;When desiging a tool, a  major concer of the developers must be their audience. Who is using the tool should dictate which features are implemented and how simple, or complecated, the user is allowed to make their experience.&lt;/p&gt;
+&lt;p&gt;###Reflection
+When desiging a tool, a  major concer of the developers must be their audience. Who is using the tool should dictate which features are implemented and how simple, or complecated, the user is allowed to make their experience.&lt;/p&gt;
 
 &lt;p&gt;I would think the target audience of the British Library’s digital collection would be a less scholarly, more “general public” audience (the casual user) than most repositories. They are, afterall, a big institution with a big, recognizable name. The user experience, however, seems to contradict that. The interface is much cleaner than that of the Wellcome collection, for sure, but the steps of getting to the actual viewing of an object might intimidate a casual user. Searching and browsing are straight forward enough. Once on a manuscript description page, though, trouble starts. The more famous manuscripts, especially those highlighted on the home page are more likely to be viewed by a casual user. Those are also precicely the manuscripts for which the description is monstrously intimidating. Impenetrable walls of text describing every detail of the object are not inviting to a casual user. If they do make it past that to the viewer, it feels odd and dated, with less than desirable controls.&lt;/p&gt;
 
@@ -351,7 +354,7 @@ No class.&lt;/p&gt;
         </item>
 
         <item>
-                <title>DLCL122-2016 - Christina&#39;s Blog Post 1</title>
+                <title>DLCL122-2016 - Christina's Blog Post 1</title>
                 <description>&lt;h2 id=&quot;blog-post-1-taken-from-practical-exercise-1&quot;&gt;Blog Post 1 (taken from Practical Exercise 1)&lt;/h2&gt;
 
 &lt;h3 id=&quot;christina-smith&quot;&gt;Christina Smith&lt;/h3&gt;
@@ -374,14 +377,28 @@ No class.&lt;/p&gt;
         </item>
 
         <item>
-                <title>DLCL122-2016 - Liz&#39;s Discussion Questions, Week 2</title>
-                <description>&lt;h1 id=&quot;discussion-questions-week-2&quot;&gt;Discussion Questions, Week 2&lt;/h1&gt;
-&lt;p&gt;«««&amp;lt; HEAD&lt;/p&gt;
+                <title>DLCL122-2016 - Liz's Discussion Questions, Week 2</title>
+                <description>&lt;p&gt;#Discussion Questions, Week 2
+«««&amp;lt; HEAD&lt;/p&gt;
 
 &lt;h2 id=&quot;monday&quot;&gt;Monday&lt;/h2&gt;
 &lt;p&gt;=======
-##Monday
-»»»&amp;gt; liz-fischer&lt;/p&gt;
+##Monday&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;blockquote&gt;
+        &lt;blockquote&gt;
+          &lt;blockquote&gt;
+            &lt;blockquote&gt;
+              &lt;p&gt;liz-fischer&lt;/p&gt;
+            &lt;/blockquote&gt;
+          &lt;/blockquote&gt;
+        &lt;/blockquote&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -397,7 +414,7 @@ No class.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
+&lt;p&gt;##Wednesday&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;While reading Hilmo, I found myself thinking more about the act of reading about images than about what was actually being said. Of course not every point can be made by simply showing the image in question; how might we, if we were to produce a new version of this reading in a digital format, improve on the experience?&lt;/li&gt;
   &lt;li&gt;Mirador idea: ability to link annotations to one another.&lt;/li&gt;
@@ -407,8 +424,22 @@ Taking a page straight from Unsworth’s examples of primitives, I present the f
 
 &lt;p&gt;| Text with Image      |  Image with Text  | 
 |:————-:|:————-:|
-|The visual adds to, complements, and sometimes changes the verbal text; it rarely literally reproduces it. Images placed before a text create certain kinds of expectaion and anticipation, while those placed at the end can be particularly important in determining what the reader is to take away from the reading experience.”|The verbal adds to, complements, and sometimes changes the image; it rarely literally reproduces it. Text placed before an image creates certain kinds of expectaion and anticipation, while that placed at the end can be particularly important in determining what the viewer is to take away from the viewing experience.”|
-»»»&amp;gt; liz-fischer&lt;/p&gt;
+|The visual adds to, complements, and sometimes changes the verbal text; it rarely literally reproduces it. Images placed before a text create certain kinds of expectaion and anticipation, while those placed at the end can be particularly important in determining what the reader is to take away from the reading experience.”|The verbal adds to, complements, and sometimes changes the image; it rarely literally reproduces it. Text placed before an image creates certain kinds of expectaion and anticipation, while that placed at the end can be particularly important in determining what the viewer is to take away from the viewing experience.”|&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;blockquote&gt;
+        &lt;blockquote&gt;
+          &lt;blockquote&gt;
+            &lt;blockquote&gt;
+              &lt;p&gt;liz-fischer&lt;/p&gt;
+            &lt;/blockquote&gt;
+          &lt;/blockquote&gt;
+        &lt;/blockquote&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
 </description>
                 <link>http://blalbrit.github.io/2016/01/10/lizweek2questions</link>
                 <guid>http://blalbrit.github.io/2016/01/10/lizweek2questions</guid>
@@ -417,7 +448,7 @@ Taking a page straight from Unsworth’s examples of primitives, I present the f
 
         <item>
                 <title>DLCL122-2016 - Discussion Questions Week 1</title>
-                <description>&lt;h2 id=&quot;discussion-questions-for-the-readings-for-week-1&quot;&gt;Discussion questions for the readings for Week 1&lt;/h2&gt;
+                <description>&lt;p&gt;##Discussion questions for the readings for Week 1&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Raymond Clemens and Timothy Graham, “Manuscript Description,” in &lt;em&gt;Introduction to Manuscript Studies&lt;/em&gt;, pp. 129-134.&lt;/li&gt;
@@ -426,13 +457,16 @@ Taking a page straight from Unsworth’s examples of primitives, I present the f
   &lt;li&gt;Elaine Treharne, Suzanne Paul, “&lt;a href=&quot;https://www.youtube.com/watch?v=5ApccnEawfs&quot;&gt;Shelf  marks and catalogs&lt;/a&gt;,” 2015. (video)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;liz-fischer&quot;&gt;Liz Fischer:&lt;/h3&gt;
+&lt;p&gt;###Liz Fischer:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;The Clemens and Graham reading gives a very extensive list of things that should be included in a catalog description. Supposing one has limited resources for a cataloging effort, what falls (or should fall) by the wayside? At what level of lack-of-detail does a description become useless?&lt;/li&gt;
   &lt;li&gt;What happens to descriptions when information can’t be found? How does this affect digital cataloging, specifically?&lt;/li&gt;
   &lt;li&gt;Related to both of the above: with online cataloging, to what extent can you rely on knowing your audience?&lt;/li&gt;
   &lt;li&gt;In the section of Digitization that discussed TEI, the following was written:
-&amp;gt; “Many initiatives such as Google Books are attempting to automate the process in order to enhance millions of digitized sources. This leads to its own set of problems, as subtle distinctions can be lost. As Worthey says, “It’s dangerous for a humanities scholar to entrust too much to a programmer or mathematician.”&lt;/li&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;“Many initiatives such as Google Books are attempting to automate the process in order to enhance millions of digitized sources. This leads to its own set of problems, as subtle distinctions can be lost. As Worthey says, “It’s dangerous for a humanities scholar to entrust too much to a programmer or mathematician.”&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
   &lt;li&gt;How do we balance maintaining subtlety with making the most of digital tools? How might this “loss of subtlety” make us rethink what is important to know?&lt;/li&gt;
 &lt;/ul&gt;
 

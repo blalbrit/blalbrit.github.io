@@ -46,8 +46,60 @@
   
     
       
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
       	
-      	<li><a href="/archive">Archive</a></li>
+      	<li><a href="/archive">Blog</a></li>
       	
       
     
@@ -70,9 +122,9 @@
   
     
       
-      	
-      	<li><a href="/pages">Pages</a></li>
-      	
+    
+  
+    
       
     
   
@@ -104,6 +156,10 @@
       
     
   
+    
+      
+    
+  
 
 
 
@@ -122,7 +178,7 @@
 
 <div class="row">
   <div class="span10">
-    <h1 id="exercise-4-comparing">Exercise 4: Comparing</h1>
+    <p>#Exercise 4: Comparing</p>
 
 <p>In this exercise, we were charged with the task of preparing two versions of a text for the Versioning Machine. The text I marked up was from a manuscript fragment of Rabanus Maurus’ “De rerum naturis”, which I previous transcribed in T-PEN. The second version of the text I used was an online edition which I used to assit my transcription. The turned out to be a mistake. Because I used the edition text to help expand the Latin abbreviations, and because the edition text was not at all abbreviated, the “differences” in the text were for the most part simply places where something had been abbreviated in the manuscript text. This is much less interesting than comparing two manuscript witnesses would be. So, I found the same fragment of text in a manuscript at the Parker library (CCCC MS 11) and transcribed <em>it</em> in T-PEN, and finally adding a third witness to the TEI document for Versioning Machine.</p>
 
@@ -130,41 +186,40 @@
 
 <p>The fragment is from book 2, chapters 1 and 2. I used these as the top two levels of organization for the TEI encoding. Getting a breakdown smaller than that was not so clear, as there are no “paragraphs” in the Stanford manuscript. There are, however, periodic red-filled capital letters. The Stanford manuscript is the one I care about most, so I chose the red letters as a way to further decompose the text despite it seeming arbitrary from the point of view of the other two witnesses.</p>
 
-<p>```xml</p>
-<div1 type="book" n="2">
-	<div2 type="chapter" n="1">
-		<p n="1">
-		</p>
-		<p n="2">
-		</p>
-	
-	<div2 type="chapter" n="2">
-	
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div1</span> <span class="na">type=</span><span class="s">"book"</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div2</span> <span class="na">type=</span><span class="s">"chapter"</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">n=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;/p&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div2</span> <span class="na">type=</span><span class="s">"chapter"</span> <span class="na">n=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
 
-```
+<h3 id="defining-difference">Defining Difference</h3>
 
-### Defining Difference
+<p>As I first did the Stanford MS and the edition text before adding the second manuscript, the only differences in the texts were abbreviation, capitialization, and punctuation differences. In order to have differences to look at, I counted all three of these things as proper differences. When I added the second manuscript witness, it produced instances like this:</p>
 
-As I first did the Stanford MS and the edition text before adding the second manuscript, the only differences in the texts were abbreviation, capitialization, and punctuation differences. In order to have differences to look at, I counted all three of these things as proper differences. When I added the second manuscript witness, it produced instances like this:
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;app&gt;</span>
+	<span class="nt">&lt;rdg</span> <span class="na">wit=</span><span class="s">"#stanfordMS"</span><span class="nt">&gt;</span> filius cham[.]<span class="nt">&lt;/rdg&gt;</span>
+	<span class="nt">&lt;rdg</span> <span class="na">wit=</span><span class="s">"#monumenta.ch"</span><span class="nt">&gt;</span>, filius Cham,<span class="nt">&lt;/rdg&gt;</span>
+	<span class="nt">&lt;rdg</span> <span class="na">wit=</span><span class="s">"#parkerMS"</span><span class="nt">&gt;</span>filius cham[.]<span class="nt">&lt;/rdg&gt;</span>
+<span class="nt">&lt;/app&gt;</span>
+</code></pre>
+</div>
+<p>To me, this seemed pretty uninteresting. The abbreviation differences in the manuscripts was the truly interesting piece. Differences in capitialization and punctuation occured fairly frequently, and were detracting from the abbreviation differences. For example:</p>
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;app&gt;</span>
+	<span class="nt">&lt;rdg</span> <span class="na">wit=</span><span class="s">"#stanfordMS"</span><span class="nt">&gt;</span>iafeth dictus<span class="nt">&lt;/rdg&gt;</span>
+	<span class="nt">&lt;rdg</span> <span class="na">wit=</span><span class="s">"#monumenta.ch"</span><span class="nt">&gt;</span>Iaphet dictus<span class="nt">&lt;/rdg&gt;</span>
+	<span class="nt">&lt;rdg</span> <span class="na">wit=</span><span class="s">"#parkerMS"</span><span class="nt">&gt;</span>iapheth dict[us]<span class="nt">&lt;/rdg&gt;</span>
+<span class="nt">&lt;/app&gt;</span>
+</code></pre>
+</div>
 
-```xml
-<app>
-	<rdg wit="#stanfordMS"> filius cham[.]</rdg>
-	<rdg wit="#monumenta.ch">, filius Cham,</rdg>
-	<rdg wit="#parkerMS">filius cham[.]</rdg>
-</app>
-```
-To me, this seemed pretty uninteresting. The abbreviation differences in the manuscripts was the truly interesting piece. Differences in capitialization and punctuation occured fairly frequently, and were detracting from the abbreviation differences. For example:
-```xml
-<app>
-	<rdg wit="#stanfordMS">iafeth dictus</rdg>
-	<rdg wit="#monumenta.ch">Iaphet dictus</rdg>
-	<rdg wit="#parkerMS">iapheth dict[us]</rdg>
-</app>
-```
-
-Due to time constraints, I have not yest revised the document to reflect my new feelings on what constitutes a textual difference in this text. That's the other thing about TEI encoding-- it takes *forever* to do and, to the computer scientist in me, looks like something which cries out for automation.
-</div2></div2></div1>
+<p>Due to time constraints, I have not yest revised the document to reflect my new feelings on what constitutes a textual difference in this text. That’s the other thing about TEI encoding– it takes <em>forever</em> to do and, to the computer scientist in me, looks like something which cries out for automation.</p>
 
     <hr>
     <div class="pagination">
