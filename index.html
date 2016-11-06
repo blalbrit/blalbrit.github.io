@@ -3,16 +3,54 @@ layout: page
 title: Home
 ---
 {% include JB/setup %}
+<head>
+	<link rel="stylesheet" href="../assets/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="../assets/css/blueimp-gallery-indicator.css">
+</head>
+<body>
 <h2>About Me</h3>
 
 <p>Just a basic Intro</p>
     
-<h2>Recent Posts</h3>
+
+<h2>Recent Manuscript Images of Interest</h2>
+<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <!-- <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a> -->
+    <!-- <a class="play-pause"></a>
+    <ol class="indicator"></ol> -->
+</div>
+<div id="links">
+    <a href="https://stacks.stanford.edu/image/iiif/gp178js1323%2Fgp178js1323_00_0032/668,211,2555,4129/full/0/default.jpg" title="Stanford University Libraries, MSS CODEX M0379 CB, fol. 11v">
+        <img src="https://stacks.stanford.edu/image/iiif/gp178js1323%2Fgp178js1323_00_0032/668,211,2555,4129/,150/0/default.jpg" alt="">
+    </a>
+    <a href="https://dlcs.io/iiif-img/2/1/af75447e-b385-4130-9919-47a7a54d2cbc/561,779,823,801/full/0/default.jpg" title="Wellcome Library, MS287, fol. 1r">
+        <img src="https://dlcs.io/iiif-img/2/1/af75447e-b385-4130-9919-47a7a54d2cbc/561,779,823,801/,150/0/default.jpg" alt="">
+    </a>
+	
+</div>
+<p>(powered by <a href="http://iiif.io">IIIF</a>)</p>
+<!-- <h2>Recent Posts</h3>
 
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
-</ul>
-
+</ul> -->
+<script src="../assets/js/blueimp-gallery.min.js"></script>
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+</body>
 
