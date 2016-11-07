@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
 	<link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+	<script src="https://use.fontawesome.com/5fa714cfe3.js"></script>
     <title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
@@ -49,7 +50,7 @@
       </div>
 
       <footer>
-        <ul>
+        <!-- <ul>
 			{% if site.twitter_username %}
 			  <li>
 			    <a href="https://twitter.com/{{ site.twitter_username }}">
@@ -78,7 +79,21 @@
 			    </a>
 			  </li>
 			{% endif %}
-        </ul>
+        </ul> -->
+		<p>
+			<a href="https://twitter.com/{{ site.twitter_username }}">
+			  <i class="fa fa-twitter"></i>
+			</a> | 
+		    <a href="https://github.com/{{ site.github_username }}">
+		      <i class="fa fa-github"></i>
+		    </a> | 
+		    <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
+		      <i class="fa fa-linkedin"></i>
+		    </a> | 
+		    <a href="https://plus.google.com/{{ site.google_plus_username }}">
+		      <i class="fa fa-google-plus"></i>
+		    </a>
+		</p>
 		<p>&copy; {{ site.author.name }} 2016 
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
