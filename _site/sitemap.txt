@@ -16,6 +16,7 @@ http://blalbrit.github.io/courses/dlcl122_2016/archive
 http://blalbrit.github.io/archive
 http://blalbrit.github.io/atom.xml
 http://blalbrit.github.io/categories
+http://blalbrit.github.io/contact
 http://blalbrit.github.io/
 http://blalbrit.github.io/courses/dlcl122_2016/
 http://blalbrit.github.io/index_old
