@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>IIIF Puzzles - Book of Hours</title>
+    <title>IIIF Puzzles - 11/10</title>
 	
 	<script>
 
-        const PUZZLE_DIFFICULTY = 5;
+        const PUZZLE_DIFFICULTY = 7;
         const PUZZLE_HOVER_TINT = '#009900';
 
         var _stage;
@@ -26,7 +26,7 @@
         function init(){
             _img = new Image();
             _img.addEventListener('load',onImage,false);
-            _img.src = "http://gallica.bnf.fr/iiif/ark:/12148/btv1b8449684q/f586/208,77,1972,2770/,750/0/native.jpg";
+            _img.src = "http://services.libis.be//iipsrv/iipsrv.fcgi?iiif=/operational_storage/storage1/2015/08/13/file_66/V1-FL4286582.jp2/2000,800,2800,3200/pct:20/0/default.jpg";
         }
         function onImage(e){
             _pieceWidth = Math.floor(_img.width / PUZZLE_DIFFICULTY)
@@ -221,10 +221,10 @@
 
 <body onload="init();">
 	<canvas id="canvas"></canvas>
-	<h2>Manuscripts Image Puzzles - 05/24</h2>
+	<h2>Manuscripts Image Puzzles - 11/10</h2>
 	<h3>About today's image</h3>
-	<p>A Book of Hours, because of its role in private devotion, can often be connected to an individual: a person who owned and used the book, a person for whom the object was made and who appears among the pages. Today's puzzle comes from the Bibliothèque nationale de France, Latin 18014 - otherwise known as the "Petites heures de Jean de Berry" for its place in the collection of one of the premiere patrons of the arts in fourteenth- and fifteenth-century France. Jean de Berry, the son, brother, and uncle of several French kings, appears depicted throughout the book. In this example, which appears on f. 288v, he appears to be leaving on some sort of voyage - the text for the prayer for travelers follows immediately. You can explore more of this stunning manuscript <a href="http://gallica.bnf.fr/ark:/12148/btv1b8449684q/f1">here</a>.</p>
-	<p>This post was inspired by Michael Appleby's <a href="http://puzzle.mikeapps.me/">IIIF-powered puzzles</a> and uses code from Brad Manderscheid's <a href="http://code.tutsplus.com/tutorials/create-an-html5-canvas-tile-swapping-puzzle--active-10747">HTML5 tutorial</a>. All images used for these puzzles are delivered via <a href="http://iiif.io">IIIF</a>.</p></div>
+	<p>Today's puzzle is drawn from Brussels, Bibliothèque royale de Belgique, MS 215-16, 1v (the first opening of the manuscript) where it serves to introduce the Kyrie from Pierre de la Rue's <i>Missa de Septem doloribus beatissime marie</i> (note that the entwined figures represent the letter "K"). The manuscript is described in more detail at the Alamire Foundation's <a href="http://www.idemdatabase.org/items/show/76/">database</a>. The entire manuscript has been made availabe via IIIF (presented in Mirador) by the team at KU Leuven <a href="http://depot.lias.be/delivery/DeliveryManagerServlet?dps_pid=IE4282955&dps_custom_att_1=staff&change_lng=en">here</a>.'</p>
+	<p>This post was inspired by Michael Appleby's <a href="http://puzzle.mikeapps.me/">IIIF-powered puzzles</a> and uses code from Brad Manderscheid's <a href="http://code.tutsplus.com/tutorials/create-an-html5-canvas-tile-swapping-puzzle--active-10747">HTML5 tutorial</a>. All images used for these puzzles are delivered via <a href="http://iiif.io">IIIF</a></p></div>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
