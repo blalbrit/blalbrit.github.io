@@ -1,0 +1,132 @@
+---
+layout: page
+title: Make-A-Word
+header: Pages
+---
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body {
+	background-color: #fff7e6;
+}
+
+#div1 {
+    width: 80px;
+    height: 80px;
+    padding: 0px;
+    border-bottom: 1px solid #aaaaaa;
+}
+#fruits section {float:left;}
+.clear {clear:both;}
+</style>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+<h1>The Creatively Named "Medieval Make-A-Word"</h1>
+<p>Drag these beautiful letters from Walters Art Museum MS. 200 above the line to make your own message.</p>
+<p>Explore the manuscript in more detail at the <a href="http://www.thedigitalwalters.org/Data/WaltersManuscripts/html/W200/">Digital Walters</a> site.</p>
+<p></p>
+<article id="fruits">
+
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+
+    <div class="clear"> </div>
+
+</article>
+<p></p>
+<img id="drag1" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000018_1200/2734,2151,3306,3087/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag3" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000020_1200/2982,2546,2897,2643/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag2" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000019_1200/85,2908,2884,2592/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag4" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000021_1200/85,2957,2823,2543/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag5" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000022_1200/3072,2540,2721,2866/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag7" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000024_1200/3128,2606,2679,2703/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag6" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000023_1200/85,2309,2880,2637/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag8" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000025_1200/121,2939,2793,2648/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag9" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000026_1200/3152,2752,2739,2776/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag11" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000028_1200/3115,2800,2691,2642/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80"></br>
+<img id="drag10" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000027_1200/24,2724,3099,3087/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag12" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000029_1200/182,2658,2853,2731/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag13" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000030_1200/3050,2771,2844,2698/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag15" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000032_1200/3140,2946,2691,2619/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag14" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000031_1200/61,2315,2970,2861/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag16" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000033_1200/97,2674,2747,2601/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag17" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000034_1200/3018,2738,2823,2665/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag19" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000036_1200/3152,2762,2616,2665/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag18" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000035_1200/12,2674,2905,2795/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag20" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000037_1200/133,2752,2728,2631/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80"></br>
+<img id="drag21" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000038_1200/3030,2738,2920,2677/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag22" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000040_1200/3224,2798,2689,2592/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag23" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000039_1200/206,2731,2816,2707/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag24" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000041_1200/327,2785,2603,2640/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag25" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000042_1200/2837,2800,3091,2703/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag27" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000044_1200/3059,2853,2816,2549/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag26" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000043_1200/158,2597,2597,2646/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag28" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000045_1200/121,2600,2552,2564/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag29" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000046_1200/3071,2500,2719,2852/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag31" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000048_1200/3184,2698,2710,2601/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80"></br>
+<img id="drag30" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000047_1200/121,2743,2585,2670/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag32" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000049_1200/243,2771,2613,2637/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag33" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000050_1200/3289,2852,2779,2877/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag35" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000052_1200/3188,2981,2750,2555/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag34" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000051_1200/134,2780,2889,2755/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag36" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000053_1200/255,2856,2637,2661/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag37" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000054_1200/3152,2872,2933,2774/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag39" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000056_1200/3378,2868,2686,2698/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag38" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000055_1200/243,2470,2944,2640/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag40" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000057_1200/400,2509,2667,2582/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80"></br>
+<img id="drag41" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000058_1200/3079,2752,3079,2873/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag43" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000060_1200/3188,2847,2787,2689/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag42" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000059_1200/400,2449,2970,2812/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag44" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000061_1200/436,2788,2631,2582/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag45" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000062_1200/3289,2828,2670,2998/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+<img id="drag46" src="https://stacks.stanford.edu/image/iiif/zs011ss0906%2FW200_000063_1200/475,2725,2713,2689/,100/0/default.jpg" draggable="true" ondragstart="drag(event)" width="80">
+
+</body>
+</html>
