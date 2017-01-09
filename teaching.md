@@ -14,6 +14,7 @@ header: Teaching
 
 ### About this course
 *In this course, we will examine and evaluate digital medieval resources and software that has been created for interacting with those resources. Students will have the opportunity to design and create an innovative project based on medieval primary sources held at Stanford, applying current digital methods in the analysis of those resources.
+
 ## Digging Deeper 2: The Form and Function of Manuscripts
 [Online course](https://lagunita.stanford.edu/courses/English/diggingdeeper2/Spring2015/about "Digging Deeper 2")
 
