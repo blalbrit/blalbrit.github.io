@@ -16,7 +16,7 @@ description: "Digital MS Repositories"
 * [Heidelberg - Bibliotheca Palatina digital](http://digi.ub.uni-heidelberg.de/de/bpd/index.html)
 * [Digital Vatican Library](http://digi.vatlib.it/mss/)
 * [BVMM (French city libraries)](http://bvmm.irht.cnrs.fr/recherche/rechercheParVille.php)
-* [Manuscripta Medievalia](http://www.manuscripta-mediaevalia.de/#|4)
+* [Manuscripta Medievalia](http://www.manuscripta-mediaevalia.de)
 * [Manuscriptorium](http://www.manuscriptorium.com/)
 
 For more, see Siân Echard's site [Medieval Manuscripts on the Web](http://faculty.arts.ubc.ca/sechard/512digms.htm)
