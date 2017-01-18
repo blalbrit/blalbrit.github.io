@@ -22,7 +22,13 @@ Griffons Medieval Manuscripts — http://www.griffons.com/
 * Poor categorization
 
 Sanderus Antiquariat — https://www.sanderusmaps.com
-* Individual leaves and cuttings
+* Individual leaves and cuttings (!)
+* A lot of commercial apparatus ... cart, new additions, prices
+* Has large scale scans
+* Medieval Manuscript is just one "catalog"; entire inventory on three pages
+ * MINIATURE
+ * Z ANTIPHONARY LEAF
+ * TEXT LEAVE
 
 ####Digital Manuscripts
 
