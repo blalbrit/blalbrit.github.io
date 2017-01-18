@@ -8,7 +8,7 @@ author: lmcrae
 
 ## Exercise 1
 
-Retail manuscript sites
+####Retail manuscript sites
 
 Charles Edwin Puckett — https://www.cepuckett.com
 * leaves only, richly described.
@@ -24,7 +24,7 @@ Griffons Medieval Manuscripts — http://www.griffons.com/
 Sanderus Antiquariat — https://www.sanderusmaps.com
 * Individual leaves and cuttings
 
-Digital Manuscripts
+####Digital Manuscripts
 
 Monastic Manuscript Project — http://www.earlymedievalmonasticism.org/
 * Grant funded project at Syracuse University
