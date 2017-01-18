@@ -5,10 +5,84 @@
         <description>Benjamin L Albritton - Benjamin Albritton</description>
         <link>http://blalbrit.github.io</link>
         <atom:link href="http://blalbrit.github.io/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Tue, 17 Jan 2017 20:18:14 -0800</lastBuildDate>
-        <pubDate>Tue, 17 Jan 2017 20:18:14 -0800</pubDate>
+        <lastBuildDate>Wed, 18 Jan 2017 13:50:53 -0800</lastBuildDate>
+        <pubDate>Wed, 18 Jan 2017 13:50:53 -0800</pubDate>
         <ttl>60</ttl>
 
+
+        <item>
+                <title>2017-01-18 - Discussion Questions</title>
+                <description>&lt;p&gt;###Discussion Questions / Thoughts
+Some thoughts on the readings:
+Can any online resource really be said to be “future-proof?” How can we tell what standards will survive, and which won’t?&lt;/p&gt;
+
+&lt;p&gt;I was absolutely blown away by Deborah Parker’s project on Dante’s Inferno that Unsworth’s article mentioned, considering this was 2000. As an avid video game player, I’m always excited by projects that use visualization technology, and I was also impressed that it was backwards and forwards-compatible with other standards. I was curious if there’s been any inroads on applying VR technology to humanities studies (for example, visualizing Dante’s inferno similar to the Parker project, or even depicting how ancient cities may have looked)?&lt;/p&gt;
+
+&lt;p&gt;Finally, some unrelated material:&lt;br /&gt;
+On the collapse of standards, the &lt;a href=&quot;https://en.wikipedia.org/wiki/Year_2038_problem&quot;&gt;2038 Problem&lt;/a&gt; refers to the inability of 32-bit systems to store a time after January 17th, 2038 on their system clocks. This could potentially cause a nuclear catastrophe. Similar to my first question–how do we make things future-proof?&lt;/p&gt;
+
+&lt;p&gt;On a less catastrophic note, check out &lt;a href=&quot;http://the-toast.net/2016/04/14/two-monks-invent-art/&quot;&gt;two monks&lt;/a&gt;, from The Toast.&lt;/p&gt;
+</description>
+                <link>http://blalbrit.github.io/2017/01/18/Bedford-Questions</link>
+                <guid>http://blalbrit.github.io/2017/01/18/Bedford-Questions</guid>
+                <pubDate>Wed, 18 Jan 2017 00:00:00 -0800</pubDate>
+        </item>
+
+        <item>
+                <title>2017-01-17 - Questions 1 (May)</title>
+                <description>&lt;p&gt;##Questions from Week 2 Readings&lt;/p&gt;
+
+&lt;p&gt;The main frustration we talked about in class last week, and a theme that came up throughout the O’Donnell reading, was standardization. The narrative of his article was that, in general, online tools and editions (mostly editions) have become increasingly standardized, and these standard expectations have been a good thing. Digital editions are easier to work with, because they had to be more standardized to be usable to more viewers with the rise of the internet.&lt;/p&gt;
+
+&lt;p&gt;But manuscript repositories are still so scattered, with apparently little consistency between them as to what information is provided about texts and objects. &lt;strong&gt;Are repositories stuck in a pre-internet age of vastly varying standards and tightly controlled usage for a specific audience?&lt;/strong&gt; And wouldn’t simplicity and adherence to strict standards allow online resources to be even more democratic (since simple sites are easier to use with poor internet access)?&lt;/p&gt;
+
+&lt;p&gt;That leads me to my second question: in the interim between O’Donnell and Unsworth, and us today, have there been developments in crowdsourcing repositories or editions? Both seemed to value the potential of online networks of contributors, and O’Donnell praised Wikipedia’s functionality and reach. But both also seemed to see the hurdles between themselves and successfully crowdsourced tools/editions as very daunting.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Are we any closer to a repository, edition, or tool with crowd-source-ability?&lt;/strong&gt; It seems to me that this might help accomplish the immense task of providing standard information on the zillions of digitized MSS out there.&lt;/p&gt;
+</description>
+                <link>http://blalbrit.github.io/2017/01/17/mayquestions1</link>
+                <guid>http://blalbrit.github.io/2017/01/17/mayquestions1</guid>
+                <pubDate>Tue, 17 Jan 2017 00:00:00 -0800</pubDate>
+        </item>
+
+        <item>
+                <title>2017-01-17 - Exercise 1 (May)</title>
+                <description>&lt;p&gt;##Exercise 1&lt;/p&gt;
+
+&lt;p&gt;For Exercise 1, I chose to critique [Digital Bodleian] (http://digital.bodleian.ox.ac.uk/) because I studied abroad in Oxford last spring and I’m feeling nostalgic, and [Gallica] (http://gallica.bnf.fr/), because I’d like to find manuscripts of Venantius Fortunatus’ poetry for a research project, and I would expect to find them in France. I’m going to just browse on the Bodleian, and then do a more targeted search on Gallica.&lt;/p&gt;
+
+&lt;p&gt;###Digital Bodleian&lt;/p&gt;
+
+&lt;p&gt;Digital Bodleian has a beautiful interface, and it’s immediately clear how to search for items. Before searching, though, I want to browse - below the search bar, they have several collections that seem easy to look through. When I hover over the icon of each collection, a description pops up. I’ll look at Masterpieces of the Non-Western Book.&lt;/p&gt;
+
+&lt;p&gt;Clicking on the link took me to a different webpage, still apparently connected to the Bodleian, but in a completely different format. Looking through, if I land on a certain object in the “manuscripts” subsection, I find plenty of information about the object: shelfmark (MS. Ind. Inst. Sansk. 72), place and date of origin, incipit, size, et cetera. For each piece of information, the user can search by that information; so for instance, I can search for all other MSS with “Devanagari” in the “Script” section of the metadata.&lt;/p&gt;
+
+&lt;p&gt;Other collections, like “Christ Church, Oxford,” link to a page within the Digital Bodleian repository and have similarly thorough information in the sidebar, without the same click-to-search option. I prefer to stay in the Digital Bodleian site over having that ease of searchability.&lt;/p&gt;
+
+&lt;p&gt;###Gallica&lt;/p&gt;
+
+&lt;p&gt;Gallica, the repository of the National Library of France, also has an elegant homepage. It’s too bad that the English version &lt;em&gt;n’est pas encore disponible&lt;/em&gt;. But because I know that my target author is called “Venance Fortunat” in French, I’ll search that.&lt;/p&gt;
+
+&lt;p&gt;When I search for “Venance Fortunat,” he comes up as a “suggested author.” Two documents are associated with him, one a published and edited collection of his poetry, the other a manuscript from about the 13th century (from what I can tell). Clicking on the link to the manuscript takes me to the website of the Bibliothèque Municipal de Dijon, which does not have much more information than Gallica had - just the shelf mark and a thumbnail (which links to a high resolution scan).&lt;/p&gt;
+
+&lt;p&gt;If I want to expand my search, I’ll try ignoring the “suggested author” and searching “Fortunat.” The immediate results are quite a few scholarly works from the last two centuries. Narrowing to manuscripts, I have a bit more luck; I’ll order them by date from early to late.&lt;/p&gt;
+
+&lt;p&gt;Once I click on a shelf mark, the metadata disappears and I have just an image — on Digital Bodleian, I liked that the metadata stayed on a sidebar onscreen. Here, I have to go back out to my search results and click “detailed information.” I’m able to find some helpful information about dating and contents, but the size of the object, the number of pages, and really any information about the object’s materiality, is lacking.&lt;/p&gt;
+
+&lt;p&gt;For other manuscripts, I had more luck with finding information about their physical characteristics.&lt;/p&gt;
+
+&lt;p&gt;###General observations&lt;/p&gt;
+
+&lt;p&gt;Digital Bodleian strikes me as the more standardized repository when it comes to providing basic necessary information about objects. After searching around in Gallica, I found that upon returning to the Bodleian I was almost relieved. I had been clicking back and forth way more than seemed necessary to find any data about objects in Gallica.&lt;/p&gt;
+
+&lt;p&gt;I found that the more types of objects or texts the repository had, the more difficult the site was to use - especially when searching for a specific kind of object. For browsing, on the other hand, I found myself down in rabbit holes of the history of French music players and drawings of “Burmese Life and Devotion.”&lt;/p&gt;
+
+&lt;p&gt;The flashy initial interface, and the vast array of materials in each repository, are impressive to someone stumbling around the internet for fun or perhaps seeking to answer broad historical questions. But for the targeted researcher (unless &lt;em&gt;this&lt;/em&gt; researcher is particularly incompetent), the range of dates and categories was somewhat daunting, in both cases.&lt;/p&gt;
+</description>
+                <link>http://blalbrit.github.io/2017/01/17/maypost1</link>
+                <guid>http://blalbrit.github.io/2017/01/17/maypost1</guid>
+                <pubDate>Tue, 17 Jan 2017 00:00:00 -0800</pubDate>
+        </item>
 
         <item>
                 <title>2017-01-17 - Blog Post Template</title>
@@ -18,6 +92,35 @@
 </description>
                 <link>http://blalbrit.github.io/2017/01/17/templatepost</link>
                 <guid>http://blalbrit.github.io/2017/01/17/templatepost</guid>
+                <pubDate>Tue, 17 Jan 2017 00:00:00 -0800</pubDate>
+        </item>
+
+        <item>
+                <title>DLCL122-2017 - Dylan's Blog Post, Exercise 1</title>
+                <description>&lt;h1 id=&quot;dylans-blog-post-1&quot;&gt;Dylan’s Blog Post #1&lt;/h1&gt;
+&lt;p&gt;##Exercise 1&lt;/p&gt;
+
+&lt;p&gt;For this exercise, I chose to look at the &lt;a href=&quot;http://cudl.lib.cam.ac.uk/&quot;&gt;Cambridge University Digital Library&lt;/a&gt;&lt;br /&gt;
+as well as the The British Library’s &lt;a href=&quot;http://www.bl.uk/manuscripts/&quot;&gt;repository of manuscripts&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;###Finding the Manuscripts&lt;br /&gt;
+Firstly, and perhaps most importantly: How easy is it to find each library’s collection of medieval manuscripts? I located both sites via &lt;a href=&quot;http://guides.nyu.edu/c.php?g=276597&amp;amp;p=1844931&quot;&gt;this guide&lt;/a&gt;, but what if I were approaching the websites from the libraries’ landing pages?&lt;br /&gt;
+####Cambridge
+The user interface for this page was very friendly, presenting the user with some simple and avanced search tools as well as categorized collections. However, this project was only started in 2010, and the library has about two millennia’s worth of content to digitize; thus, the collection is somewhat lacking.&lt;br /&gt;
+The categorization system is at points too narrow, and at others too broad. One collection offers “Music,” another “Christian Works,” while yet another is solely dedicated to “notebooks kept by the soldier-poet Siegfried Sassoon.” In my opinion, they need to re-think this system. For instance, there’s no one category for medieval manuscripts. &lt;br /&gt;
+Ultimately, I was able to find many in the “Christian Works” section, as well as the Royal Library, and thankfully the search tool allows you to search across categories.
+Assuming one finds a manuscript one’s looking for, the image viewer is actually quite good. I was particularly impressed by the metadata accompanying the text. For the Roman de la Rose, this includes collation, binding, script, foliation, incipit and explicit, and a bibliography, among other data. It seems as though they put particular care into including metadata with the text, although this has the trade-off that adding new manuscripts to the repository might be a slow process.&lt;/p&gt;
+
+&lt;p&gt;####British Library
+The digital repository is much easier to find in this case. You can access the collection of manuscripts easily from the main page. The search is straightforward, allowing the user to input a keyword as well as define a date range (very useful if you’re only interested in a specific era) and returns results with a shelf mark and thumbnail. Unlike Cambridge, the image viewer allows you to view either one page, “open-book” style, or folio. Still, it lacks the comparison functionality of Mirador to accomodate more than one text.&lt;br /&gt;
+This library also lacks the in-depth metadata that Cambridge provides. However, it also has many more texts as a whole. Perhaps these are also related; it’s difficult to add a great deal of texts and also include comprehensive data on each one. This makes it more difficult to find texts, though, since you have fewer tags with which to locate a text, and you’re searching in a bigger database.&lt;/p&gt;
+
+&lt;p&gt;##Reflections&lt;br /&gt;
+Overall, I think the two repositories take two different and valid approaches; Cambridge seems to have relatively few books, placed in easily-perusable categories, with a great deal of data on most of them. The British library has more books, but with less data and therefore more difficulty in finding specific ones. It seems to me that the Cambridge database’s use of “collections” almost make the manuscripts into museum pieces rather than texts with which you’re invited to interact, whereas the British Library is more of a useful tool that provides a great deal of content easily.&lt;/p&gt;
+
+</description>
+                <link>http://blalbrit.github.io/2017/01/17/Dylan-Blog-1</link>
+                <guid>http://blalbrit.github.io/2017/01/17/Dylan-Blog-1</guid>
                 <pubDate>Tue, 17 Jan 2017 00:00:00 -0800</pubDate>
         </item>
 
@@ -314,147 +417,6 @@ No class.&lt;/p&gt;
                 <link>http://blalbrit.github.io/2016/01/13/week2discussionquestions</link>
                 <guid>http://blalbrit.github.io/2016/01/13/week2discussionquestions</guid>
                 <pubDate>Wed, 13 Jan 2016 00:00:00 -0800</pubDate>
-        </item>
-
-        <item>
-                <title>DLCL122-2016 - Christina's Discussion Questions, Week 2</title>
-                <description>&lt;h1 id=&quot;week2-discussion-questions&quot;&gt;Week2 discussion questions&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;The first question deals with how we decide upon our digital priorities: Unsworth says that while we can create all the software we want, but without it being “developed and tested in the context of real scholarly use” it can be useless.  Furthermore, he warns against “customization, because purpose-built or project-centered software is unlikely to provide broad support for functional primitives.”  This claim makes sense, yet how is it best put to action in the ‘real-world’?  For example, does every scholar working on Blake manuscripts (which Unsworth makes mention of in his talk on Inote) need to have a process by which they ‘try out’ a specific digital archive, so we can have as large a sample set of scholars as we can, trying out certain software?  This got me to thinking about the nature of the digital humanities.  It seems we often make software, or rework an old online repository, to fulfill a specific need—or to advance a certain university’s (or professor’s) specific project.  But what happens to other material that won’t be touched, or that doesn’t garner the digital attention that other material gets?  I understand that we must start somewhere—and that somewhere is better than nowhere—but how do we determine our priorities in digitizing and creating new software?&lt;/li&gt;
-  &lt;li&gt;To quote O’Donnell, “Technology ages faster than information.”  O’Donnell gives a fairly balanced perspective on the positives and negatives of digital scholarship in the medieval realm.  One of his most interesting examples, the Electronic Domesday Book—initiated by the BBC—turned out to be a catastrophic failure.  It was not only too expensive for its target audience and was also designed for certain computers only, both elements that condemned it to its own obsolescence.  This is a rather large question to tackle, but how can we work to make sure we don’t produce ‘failures’ of this sort, schemes where vast quantities of time, energy, and money seem to be wasted in the end?  O’Donnell’s overall impression of Wikipedia seems quite positive, illumining his opinion that collaboration is the key to solving many of these problems.  Do repositories and databases, then, need to have a way in which users can collaborate and edit—like Wikipedia?  What do we sacrifice with regards to accuracy and legitimacy when doing so?  Is it worth it?&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-                <link>http://blalbrit.github.io/2016/01/11/week2christinaquestions</link>
-                <guid>http://blalbrit.github.io/2016/01/11/week2christinaquestions</guid>
-                <pubDate>Mon, 11 Jan 2016 00:00:00 -0800</pubDate>
-        </item>
-
-        <item>
-                <title>DLCL122-2016 - Liz's Blog Post, Exercise 1</title>
-                <description>&lt;p&gt;#Exercise 1: Discovering
-For this exercise, I examined both the &lt;a href=&quot;http://www.bl.uk/manuscripts/Default.aspx&quot;&gt;British Library’s digitized manuscripts viewer&lt;/a&gt; and the &lt;a href=&quot;http://wamcp.bibalex.org/&quot;&gt;Wellcome Arabic Manuscripts Online&lt;/a&gt;. As a part-time computer scientist, the user interface of each repository is what grabbed my attention– let’s begin with a brief overview of the features.&lt;/p&gt;
-
-&lt;p&gt;###British Library
-Manuscripts can be searched for by keyword, date range, shelfmark, title, author or scribe, provenance, and/or bibliography. Searching returns a thumbnail, shelfmark, date, and brief description for every manuscript found, and the results sortable by shelfmark, author, title, or date (interestingly, not sortable by all the potential search parameters). Alternatively, manuscripts can be browsed by shelfmark, author, scribe, or title. When browsing, the user is presented with a list of every manuscript, sorted by the selected field.&lt;/p&gt;
-
-&lt;p&gt;Once choosing a particular manuscript, search and browse both put you to that manuscript’s description page. This page offers the expected metadata, when available: shelfmark, content description, dates, a thumbnail image, language, location, author, title, provenance, a bibliography. For many manuscripts, much of this information is missing– either unknown or simply not supplied (in the case of a content or physical description).&lt;/p&gt;
-
-&lt;p&gt;Clicking on the thumbnail leads to the image viewer. This is one area that leaves much to be desired. The controls to navigate through the manuscript are placed at the top right, while a different set of controls to manipulate the current image (limited to full screen and zoom) are located lower on the left. There is some sort of page header without a clear function, and only one object can be viewed at a time (leaving it to the intrepid user to open multiple browser windows themselves).&lt;/p&gt;
-
-&lt;p&gt;###Wellcome Arabic Manuscripts Online
-The Wellcome website is, from the start, much less welcoming than the British Library site. The design looks quite clunky and dated. It also presents a search tool on the homepage, but the functionality is hit or miss. Manuscripts in the browse view can be filtered by approximate date, librarian date, scribal date, decorations, and language; they can be browsed by shelfmark, author, title, colophon, tahmid, scribe, and mistra height. The distinction between a search-like way of finding a text and browsing a bit fuzzy.&lt;/p&gt;
-
-&lt;p&gt;On selecting a particular manuscript, both the metadata for that object and the image viewer are presented, side-by-side. Metadata is tabbed into a summary, content description, physical description, and history. The viewer displays thumbnail navigation on the side, and a scrolling-view of the larger images in the main portion of the window. It also offers the option to download the current image in a variety of formats.&lt;/p&gt;
-
-&lt;p&gt;Crucially, the Wellcome experience stands out in its ability to display two different objects side-by-side in a single window. After viewing one manuscript, all other manuscripts in the search or browse results will display a button which says “Compare with &lt;first manuscript=&quot;&quot;&gt;&quot;. This shows two instances of the viewer, with the manuscript metadata pushed below.&lt;/first&gt;&lt;/p&gt;
-
-&lt;p&gt;###Reflection
-When desiging a tool, a  major concer of the developers must be their audience. Who is using the tool should dictate which features are implemented and how simple, or complecated, the user is allowed to make their experience.&lt;/p&gt;
-
-&lt;p&gt;I would think the target audience of the British Library’s digital collection would be a less scholarly, more “general public” audience (the casual user) than most repositories. They are, afterall, a big institution with a big, recognizable name. The user experience, however, seems to contradict that. The interface is much cleaner than that of the Wellcome collection, for sure, but the steps of getting to the actual viewing of an object might intimidate a casual user. Searching and browsing are straight forward enough. Once on a manuscript description page, though, trouble starts. The more famous manuscripts, especially those highlighted on the home page are more likely to be viewed by a casual user. Those are also precicely the manuscripts for which the description is monstrously intimidating. Impenetrable walls of text describing every detail of the object are not inviting to a casual user. If they do make it past that to the viewer, it feels odd and dated, with less than desirable controls.&lt;/p&gt;
-
-&lt;p&gt;The Wellcome collection, on the other hand, I would not expect to be friendly to those not versed in the subject. It is a very particular set of manuscripts, all Arabic texts dealing with health and medicine, not exactly the sort of thing a casual user would seek out. The target audience is very specifically scholars interested in Arabic manuscripts about medicine, so it is fair of the design to assume a knowledgable audience.&lt;/p&gt;
-
-&lt;p&gt;Or is it? When a tool is made publiclly available on the internet, there is no telling who will be using it. The target audience in mind during development may turn out not to be the audience reached, at all. In the case of the British Library, they may very well have intended for the experience to be pleasant for the general public as well as scholars. Whether or not they succeeded is very subjective, but it does not seem unreasonable to claim they are losing part of that audience with intimidating presentation of information. With Wellcome, they may have only had a small audience in mind, but their manuscript information and image representation is quite friendly and usable for a broader audience.&lt;/p&gt;
-
-&lt;p&gt;This is entirely a question of interface design, but it has an impact on how readily people can discover and use texts (or anything) from online repositories. It is my (admittedly untested) opinion that there is always happy medium between functionality and friendliness. The perfect example, from these two repositories, is the difference in handling of metadata. Both supply the same information, but Wellcome hides much of it upfront, sparing a casual visitor from information they don’t care to see, while still allowing easy access to that information for those who &lt;em&gt;do&lt;/em&gt; want to see it. A tool can be full-featured &lt;strong&gt;and&lt;/strong&gt; simple to use, if you keep in mind that you have no gaurantees of your audience.&lt;/p&gt;
-</description>
-                <link>http://blalbrit.github.io/2016/01/11/lizblog1</link>
-                <guid>http://blalbrit.github.io/2016/01/11/lizblog1</guid>
-                <pubDate>Mon, 11 Jan 2016 00:00:00 -0800</pubDate>
-        </item>
-
-        <item>
-                <title>DLCL122-2016 - Christina's Blog Post 1</title>
-                <description>&lt;h2 id=&quot;blog-post-1-taken-from-practical-exercise-1&quot;&gt;Blog Post 1 (taken from Practical Exercise 1)&lt;/h2&gt;
-
-&lt;h3 id=&quot;christina-smith&quot;&gt;Christina Smith&lt;/h3&gt;
-
-&lt;p&gt;Content, metadata, additional information, one’s ability to interact with the resources&lt;/p&gt;
-
-&lt;p&gt;This week’s blog post focuses upon two online digital repositories: the British Library’s &lt;a href=&quot;https://www.bl.uk/manuscripts/&quot;&gt;Digitised Manuscripts Home&lt;/a&gt; and the Bodleian Library’s &lt;a href=&quot;http://www.bodley.ox.ac.uk/dept/scwmss/wmss/online/medieval/index.html#manuscript&quot;&gt;Electronic Catalogue of Medieval &amp;amp; Renaissance Manuscripts&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I initially chose these two because, for the (as of yet) non-digital medievalist in me, they seemed quite opposite in appearance and functionality.  It was after looking into the Bodleian’s Electronic Catalogue of Medieval &amp;amp; Renaissance Manuscripts more that I figured out that it serves as a catalogue—and a somewhat rudimentary one at that, rather than a full-fledged, interactive site (evident if one but compare this electronic catalogue with the Bodleian’s main site).&lt;/p&gt;
-
-&lt;p&gt;From the beginning, it is evident that the British Library’s Digitised Manuscripts Home caters to a different audience than that of the Bodleian’s Electronic Catalogue of Medieval &amp;amp; Renaissance Manuscripts.  The content given on the Bodleian’s catalogue is sparse, its “conventions” laid out in a teal box at the beginning.  Obviously, the site gears towards a user who knows precisely what she is looking for—preferably the manuscript’s shelfmark (since that is the easiest way to search this site).  Clicking on any one of the “Manuscript Collections” is useful inasmuch as it takes you to a simple list of manuscripts with their respective metadata and a few digitized images, if one is lucky.   For example, MS. Barocci 1—the first manuscript listed under the MSS. Barocci collection of Greek manuscripts—has only images from the catalogue (in print form) and quarto.  There are few, if any, images from the folios themselves (for example, MS. Barocci 3), not permitting the user any ability to visually compare across manuscripts.  The metadata is sparse, presented in one strip, and lacking the latest bibliography.  Most bibliographic material dates to the early 1990’s, showing that this site was likely last updated at that time.  Obviously, there’s much scholarly work that’s been done since then!  When one clicks upon the folios, they are poorly scanned and one can’t zoom in or use toolbars as is possible on the British Library site, showing that the site is designed for quick usage, perhaps only useful for acquiring date, language, and shelfmark.&lt;/p&gt;
-
-&lt;p&gt;In comparison, the British Library’s Digitised Manuscripts Home appeals to a wider, even non-academic audience.  Clearly, this is in line with the British Library’s mission statement as a whole (similar to the British Museum)—that idea that its physical library in London is a museum for the world, a place where visitors can merely ‘stop in’ to view some of Britain’s greatest wonders.  The “Highlights” tab is visually appealing (located on the right hand side of the opening page), admittedly drawing one’s attention to the ‘big hits’ held by the Library—sometimes dangerously eclipsing lesser-known, but equally as important, manuscripts and items.  The “Search” feature on the opening page is most useful for its “Keyword” feature.  The “Date” slider is partially useful.  It certainly looks good—inviting for the casual user—but the functionality payoff is not as great as one would hope.  For one, there’s no information prior to 0CE, and it is also prone to stalling (at least one Macs) because of the large swathe of material it draws from.  In fact, for the casual viewer (even academic, perhaps), it would be more useful to search by region of the world, or to have an interactive date bar in which certain manuscripts were located along a continuum, allowing for immediate visual interaction with the material.  (Perhaps this is the art historically-trained part of me talking now!).  As befitting a major national repository, the British Library’s metadata for a given manuscript is extensive indeed—its content almost a bit too overwhelming.  One can’t isolate one piece of information from another, meaning that she is forced to look at the entire swathe of metadata in one fell swoop.  This includes date, title, content, binding (if possible to view), language, physical description, ownership, and bibliography.  The bibliography of the British Library’s online site—even for lesser-known acquisitions—is impressive indeed.  Perhaps this is a function of the Library’s active connections with current scholars in the field (such as Michelle P. Brown, who both worked and published for/at the British Library), but it also illumines the Library’s emphasis on the spreading of information out into the greater world of advanced, and more casual, learning.  When clicking upon a digital folio, so as to enlarge it, there is an irritating drop-down pane which appears with detail on the content of the manuscript.  It’s an abbreviated version of the extensive metadata on the previous page.  This serves more as a distraction than anything else, particularly when all one wants to do is to go to the navigation panel slightly below this drop-down pane.  (You also can’t click on the red “British Library” banner to go back to the home page—another irritating feature!).  In all, while the British Library’s website is more “glitzy” and aesthetically pleasing, it fails in some crucial components—from these small features to the fact that you can’t easily compare manuscript images with other manuscript images, save from opening new windows.&lt;/p&gt;
-
-&lt;p&gt;The Digital Bodleian Library, obviously a much newer online repository than its Electronic Catalogue of Medieval &amp;amp; Renaissance Manuscripts from the 1990’s, opens with images of the binding of a given manuscript.  One chooses between the manuscripts they want from among other ones, located in boxes side-by-side.  This layout is inviting, emphasizing the visual nature of the holdings—something which I mentioned above as being important when we try to recreate objects that necessarily derive meaning from their tactility and functionality as book.  The metadata is wisely included on the side, not taking away from the visual aspect of the page and its scribal hand.  A negative, though, would be that the folios are preserved as single-sheets, rather than as bifolia.  This doesn’t allow the viewer to have the experience of page turning recreated before them.  Nor does it permit the viewer to truly see interactions across the page, across the gutter—something crucial to any study of medieval manuscripts.  I need to think more about this element as I look through more digital repositories—something I haven’t spent much time doing before this class, as I’ve worked more on non-codex archaeological objects.  The Digital Bodleian Library, however, overall seems to be a good compromise between the sparse, almost counter-useful layout of the Electronic Catalogue of Medieval &amp;amp; Renaissance Manuscripts and the overwhelming, somewhat unhelpful structure of the BL’s Digitised Manuscripts Home.  The metadata of the Digital Bodleian Library does not obstruct one from viewing the codex itself, and the navigation is visually appealing and, on the whole, relatively ‘easy’ to use.&lt;/p&gt;
-</description>
-                <link>http://blalbrit.github.io/2016/01/11/BlogPost1</link>
-                <guid>http://blalbrit.github.io/2016/01/11/BlogPost1</guid>
-                <pubDate>Mon, 11 Jan 2016 00:00:00 -0800</pubDate>
-        </item>
-
-        <item>
-                <title>DLCL122-2016 - Liz's Discussion Questions, Week 2</title>
-                <description>&lt;p&gt;#Discussion Questions, Week 2
-«««&amp;lt; HEAD&lt;/p&gt;
-
-&lt;h2 id=&quot;monday&quot;&gt;Monday&lt;/h2&gt;
-&lt;p&gt;=======
-##Monday&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;blockquote&gt;
-        &lt;blockquote&gt;
-          &lt;blockquote&gt;
-            &lt;blockquote&gt;
-              &lt;p&gt;liz-fischer&lt;/p&gt;
-            &lt;/blockquote&gt;
-          &lt;/blockquote&gt;
-        &lt;/blockquote&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Unsworth gives 7 “scholarly primatives”:  Discovering, Annotating, Comparing, Referring, Sampling, Illustrating, and Representing. Discovering, annotating, comparing, referring, and sampling are intuitive enough, but what is the difference between illustrating and representing in this context?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;“information that is for all intents and purposes lost… [content] produced using computers or operating systems that ultimately lost out to more popular competitors” This line in the O’Donnell reading got me thinking– are we on our way to a more stable technological situation, or is standardization a false sense of security?&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;What exactly is meant by “unnegotiated interactions”? He says, “Developers produce content assuming users will be able to process it; users access content assuming it will be suitable for use with their processors.” Is this just another way of talking about standarization?
-«««&amp;lt; HEAD
-=======&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;##Wednesday&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;While reading Hilmo, I found myself thinking more about the act of reading about images than about what was actually being said. Of course not every point can be made by simply showing the image in question; how might we, if we were to produce a new version of this reading in a digital format, improve on the experience?&lt;/li&gt;
-  &lt;li&gt;Mirador idea: ability to link annotations to one another.&lt;/li&gt;
-  &lt;li&gt;This is not, strictly speaking, a question; it is just something I noticed and would like to discuss.
-Taking a page straight from Unsworth’s examples of primitives, I present the following passage from Hilmo, and a deformation of it.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;| Text with Image      |  Image with Text  | 
-|:————-:|:————-:|
-|The visual adds to, complements, and sometimes changes the verbal text; it rarely literally reproduces it. Images placed before a text create certain kinds of expectaion and anticipation, while those placed at the end can be particularly important in determining what the reader is to take away from the reading experience.”|The verbal adds to, complements, and sometimes changes the image; it rarely literally reproduces it. Text placed before an image creates certain kinds of expectaion and anticipation, while that placed at the end can be particularly important in determining what the viewer is to take away from the viewing experience.”|&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;blockquote&gt;
-        &lt;blockquote&gt;
-          &lt;blockquote&gt;
-            &lt;blockquote&gt;
-              &lt;p&gt;liz-fischer&lt;/p&gt;
-            &lt;/blockquote&gt;
-          &lt;/blockquote&gt;
-        &lt;/blockquote&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-</description>
-                <link>http://blalbrit.github.io/2016/01/10/lizweek2questions</link>
-                <guid>http://blalbrit.github.io/2016/01/10/lizweek2questions</guid>
-                <pubDate>Sun, 10 Jan 2016 00:00:00 -0800</pubDate>
         </item>
 
 
