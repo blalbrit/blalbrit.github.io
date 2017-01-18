@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2017-01-18 - Discussion Questions
+title: 2017-01-18 - Questions 1 (Dylan)
 date: '2017-01-18'
 tags: DLCL122-2017
 author: dbedford
