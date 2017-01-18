@@ -4,7 +4,7 @@
  <title>Benjamin L Albritton</title>
  <link href="http://blalbrit.github.io/atom.xml" rel="self"/>
  <link href="http://blalbrit.github.io"/>
- <updated>2017-01-18T13:50:53-08:00</updated>
+ <updated>2017-01-18T14:54:52-08:00</updated>
  <id>http://blalbrit.github.io</id>
  <author>
    <name>Benjamin Albritton</name>
@@ -94,6 +94,92 @@ On the collapse of standards, the &lt;a href=&quot;https://en.wikipedia.org/wiki
    <content type="html">&lt;h1 id=&quot;example-post&quot;&gt;Example Post&lt;/h1&gt;
 
 &lt;p&gt;Text here.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-01-17 - Questions 1 (Lynn)</title>
+   <link href="http://blalbrit.github.io/2017/01/17/LynnPost2"/>
+   <updated>2017-01-17T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2017/01/17/LynnPost2</id>
+   <content type="html">&lt;p&gt;John Unsworth “Scholarly Primitives: what methods do humanities researchers have in common, and how might our tools reflect this?”
+http://www.people.virginia.edu/~jmu2m/Kings.5-00/primitives.html
+ (Ben, re discovering: was your citation link purposfully not to the article itself?)&lt;/p&gt;
+
+&lt;p&gt;Discovering — reliance on description, categorization .. full text left to the power of google-like search of web contentas expressed in HTML.  No reliable access to image content expressing text unless (often crudely) OCRs and/or turned into a full-test PDF at some cost. Poor lexical search power across “what’s out there”.  Yet we see this successfully achieved in niches, e.g., song lyrics, perhaps because it is current /owned/cared-for content, ready to be promoted and appreciated by a wide fan base, strong commercial backing.&lt;/p&gt;
+
+&lt;p&gt;Annotating can be both a tool for illuminating and understanding but can also be a great too for expanding the discoverability of resources. The power of crowd sourcing …&lt;/p&gt;
+
+&lt;p&gt;With example of “annotation and comparison: biologists do it too”, would be interesting to ponder lists of equivalences across disciplines, e.g., Selecting vs Sampling) and Comparing&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;manuscripts and maps : region of interest&lt;/li&gt;
+  &lt;li&gt;music : passages, movements — instrumental lines? comparing performances?&lt;/li&gt;
+  &lt;li&gt;audio/video : scenes, tracks, snippets&lt;/li&gt;
+  &lt;li&gt;scientific data : isolating groups by common factos, comparing against varied other criteria (e.g., same ethnicity, different decades)?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Representing:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;canonical primitives, like geo-rectification and overlays, word clouds, timelines, bar/line/pie charts&lt;/li&gt;
+  &lt;li&gt;vs uniquely revealing/artistic, like Dante visualization?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Apropos second reading “Disciplinary Impact and Technological Obsolescence in Digital Medieval Studies1”, primitives suggest enduring/evolving technolgy for representation, while specialized visualizations might suffer.  How will the Dante 360-degree canto/line/word spiral be viewed in tomorrow’s browser or game console?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-01-17 - Exercise 1 (Lynn)</title>
+   <link href="http://blalbrit.github.io/2017/01/17/LynnPost1"/>
+   <updated>2017-01-17T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2017/01/17/LynnPost1</id>
+   <content type="html">&lt;h2 id=&quot;exercise-1&quot;&gt;Exercise 1&lt;/h2&gt;
+
+&lt;h4 id=&quot;retail-manuscript-sites&quot;&gt;Retail manuscript sites&lt;/h4&gt;
+
+&lt;p&gt;Charles Edwin Puckett — https://www.cepuckett.com&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;leaves only, richly described.&lt;/li&gt;
+  &lt;li&gt;Medium sized images only, poor treatment of multiple images (overlapping buyers illustration only)&lt;/li&gt;
+  &lt;li&gt;Philip J. Pirages — https://www.pirages.com&lt;/li&gt;
+  &lt;li&gt;mixture of manuscript leaves, few books.&lt;/li&gt;
+  &lt;li&gt;rich set of descriptive categories for browsing, but they were inoperative&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Griffons Medieval Manuscripts — http://www.griffons.com/&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;“Affordable Renaissance Art…”&lt;/li&gt;
+  &lt;li&gt;Poor categorization&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sanderus Antiquariat — https://www.sanderusmaps.com&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Individual leaves and cuttings (!)&lt;/li&gt;
+  &lt;li&gt;A lot of commercial apparatus … cart, new additions, prices&lt;/li&gt;
+  &lt;li&gt;Has large scale scans&lt;/li&gt;
+  &lt;li&gt;Medieval Manuscript is just one “catalog”; entire inventory on three pages&lt;/li&gt;
+  &lt;li&gt;MINIATURE&lt;/li&gt;
+  &lt;li&gt;Z ANTIPHONARY LEAF&lt;/li&gt;
+  &lt;li&gt;TEXT LEAVE&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;digital-manuscripts&quot;&gt;Digital Manuscripts&lt;/h4&gt;
+
+&lt;p&gt;Monastic Manuscript Project — http://www.earlymedievalmonasticism.org/&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Grant funded project at Syracuse University&lt;/li&gt;
+  &lt;li&gt;Gathers information about projects and site related to the digization and study of manuscripts&lt;/li&gt;
+  &lt;li&gt;Hundreds of links show how scattered often just a very few resources are&lt;/li&gt;
+  &lt;li&gt;Nothing there to work on discovery across the aggregated resources or to categorize/describe contents&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Clairvaux Virtual LIbrary — https://www.bibliotheque-virtuelle-clairvaux.com/&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;“All indexed manuscript” but no mention of how many&lt;/li&gt;
+  &lt;li&gt;Advanced search, no simple keywords, no auto-complete&lt;/li&gt;
+  &lt;li&gt;Facets appear only for search results&lt;/li&gt;
+  &lt;li&gt;Viewer for full pan/zoom: Mediatheque, Grand Troyes (coalition of libraries/archives)&lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
@@ -379,45 +465,6 @@ No questions for today.&lt;/p&gt;
 
 &lt;p&gt;2) Digital Mappaemundi (Maps of the World) disusses the use of digital ‘layers,’ whereby “different research questions involving a single image may be addressed separately through annotation (also allowing one to choose precisely how &lt;em&gt;many&lt;/em&gt; layers they would like to view at one time). This seems to present a solution to our frustration with the BL’s excess of metadata in lengthy, sometimes-bordering-upon-impenetrable, paragraphs. How common are digital layers in literary manuscripts?  As its name suggests, the Mappaemundi project focuses on maps mostly.
 —-Think more about: Geospatial bias and how it can relate to literary/biblical/philosophical texts too? (cf. C&amp;amp;G’s term “archaeology of the book” and idea of the book as a space)&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Liz's Discussion Questions, Week 3</title>
-   <link href="http://blalbrit.github.io/2016/01/20/liz-discussion-w3"/>
-   <updated>2016-01-20T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/01/20/liz-discussion-w3</id>
-   <content type="html">&lt;p&gt;#Discussion Questions, Week 3
-##Monday
-No class.&lt;/p&gt;
-
-&lt;p&gt;##Wednesday&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;In the reading on Digital Mappaemundi the authors mentioned features of plans for features that addressed each of the scholarly primitives we have discussed previously. I’ve noticed a trend, between the Mirador Github issues, this reading, and technology generally  toward expecting one platform/application to address all our needs– is this desirable?&lt;/li&gt;
-  &lt;li&gt;Is it defeatist to say there are problems that aren’t worth trying to solve, at least until there is a complete overhaul of the current approach? When is it okay to give up on a project?&lt;/li&gt;
-  &lt;li&gt;What can physical annotation do that the tools we’ve seen so far does not replicate sufficiently? Are these tools still working to replace physical annotation, or strictly building on it?&lt;/li&gt;
-&lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Christina's Discussion Questions, Week 2, part 2</title>
-   <link href="http://blalbrit.github.io/2016/01/13/week2discussionquestions"/>
-   <updated>2016-01-13T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/01/13/week2discussionquestions</id>
-   <content type="html">&lt;h1 id=&quot;week-2-discussion-questions-christina&quot;&gt;Week 2 discussion questions (Christina)&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;In the words of Hilmo, “Medieval reading often included looking, in a non-linear, holistic way, at all the components of the page.”  The overall theme of Hilmo’s essay is on the centrality of the visual—images—in the medieval mind.  Hilmo speaks of how images can, and should, be read as text (cf. the monastic practice of ruminatio, per Bede’s 8th-c. account of Caedmon), as something which requires unpacking and a peeling-back of layers.  How might this relate to our discussion of the tasks involved in annotation and transcription?
-    &lt;ul&gt;
-      &lt;li&gt;Moreover: To the medieval mind an image was an animative, performative presence to be decoded and ruminated upon (particularly with the rise of mendicant orders).  This usually involved having a ‘toolkit’ of symbolism and connections at the ready. How might we, as modern viewers, recreate this ‘toolkit’ of connections through our digital presenting of manuscripts?&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Do we need to take into account the basic genre of a manuscript (sacred, secular, somewhere-in-between) when creating a digital tool for studying it?  In other words, Hilmo’s essay deals with manuscripts containing visual images–something usually restricted to the domain of art historians.  How might the technologies we produce for medieval objects (the codex, in particular) tread the line between being produced for scholars of text versus scholars of image? (The text v. image comparison is one made frequently in medieval studies–whereby text becomes image, and image becomes text).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;An aside: Has there been a digital survey of iconophobic evidence in western manuscripts (British, Carolingian…and Byzantine, if we head into eastern MSs)?  Ie: smudgings out of eyes, etc.  I began to think along these terms because a) it’s the topic of my thesis and b) Hilmo’s essay begins with, essentially, a brief survey of western (and some eastern–Byzantium, Islamic) concern over the ‘power’ invested in images.&lt;/li&gt;
-&lt;/ul&gt;
 </content>
  </entry>
  
