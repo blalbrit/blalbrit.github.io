@@ -1,3 +1,10 @@
+---
+layout: post
+title: 2017-01-17 - Questions 1 (May)
+date: '2017-01-17'
+tags: DLCL122-2017
+author: maywpeterson
+
 ##Questions from Week 2 Readings
 
 The main frustration we talked about in class last week, and a theme that came up throughout the O'Donnell reading, was standardization. The narrative of his article was that, in general, online tools and editions (mostly editions) have become increasingly standardized, and these standard expectations have been a good thing. Digital editions are easier to work with, because they had to be more standardized to be usable to more viewers with the rise of the internet.
