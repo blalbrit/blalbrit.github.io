@@ -12,9 +12,9 @@ School of Education, Rm 313
 Course Site: http://blalbrit.github.io/courses/dlcl122_2017  
 Additional Files: https://stanford.box.com/s/5kkgalqmlfrdmdblbxyscnorrexfjxbm
 
-#### [Course Blog](../dlcl122_2017/archive.html)
+#### [Course Blog](../dlcl122_2017/archive.html)  
 
-#### [Mirador Instance](https://goo.gl/5wlr24)
+#### [Mirador Instance](https://goo.gl/5wlr24)  
 
 # The Digital Middle Ages  
 
