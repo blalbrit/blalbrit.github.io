@@ -1,3 +1,11 @@
+---
+layout: post
+title: 2017-01-23 - Questions 2 (May)
+date: '2017-01-23'
+tags: DLCL122-2017
+author: maywpeterson
+---
+
 First of all, I loved learning about ‘syntactical glosses’ in Clemens and Graham - basically that scribes would mark up Latin texts with word order help for people who were learning Latin. I still do that! (In other words, Scribes: They’re Just Like Us!) It seems like Dylan and I both relate to this.
 
 As far as I understood what Roberto Busa was writing about (which was admittedly not very far), it seemed like his model of the progress of the hermeneutic/interpretative current of textual informatics goes in reverse of what I would expect, in that the end goal is something like interoperability. For some reason, when I think of simple, standard tools, I imagine that they would start that way — e.g. in the beginning there was Mirador, and then lots of repositories used Mirador for their own purposes, etc. But actually, according to Busa, the _end_ goal is that simple standard tool: “It would be a sort of universal language, in binary alphabet, ‘antiBabel’, still in virtual reality … In input, therefore, everybody could use their own native disciplined language and have the desired translations in output.”
