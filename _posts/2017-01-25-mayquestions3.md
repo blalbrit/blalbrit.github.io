@@ -7,7 +7,8 @@ author: maywpeterson
 ---
 
 
-## Questions from Wednesday's readings (Data Modeling)
+## Questions from Wednesday's readings (Data Modeling)  
+
 
 It seemed to me that the two articles were in direct contradiction about the point that any data set is shaped by human choice and subjectivity. The Flanders and Jannidis article stated that “we can draw a difference between the data itself and its information structure,” in the sense that the former is made up of objective facts and the latter is human-made.
 
