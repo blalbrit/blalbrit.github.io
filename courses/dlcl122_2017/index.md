@@ -185,16 +185,15 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 	* Start Exercise 3 (see description above)
 * 1 February
 	* Reading
-		* Elena Pierazzo, “[Textual Scholarship and Text Encoding](http://www.blackwellreference.com/subscriber/uid=1079/tocnode?id=g9781118680643_chunk_g978111868064323),” in *A New Companion to Digital Humanities*, 2016.
-		* Optional Resource: (Raymond Clemens and Timothy Graham, “Selected Scripts,” in *Introduction to Manuscript Studies*, pp. 135-178.)
-
-### Week 5: Comparing
-* 6 February
-	* Reading
 		* Kevin S. Hawkins, "[Introduction to XML for Text](http://www.ultraslavonic.info/intro-to-xml/)"
 		* "[A very gentle introduction to the TEI markup language](http://www.tei-c.org/Support/Learn/mueller-index.htm)"
 		* Vanessa Wilkie, “[Medieval Manuscripts in the Digital Age](http://huntingtonblogs.org/2015/08/medieval-manuscripts-in-the-digital-age/)”, 2015.
 		* Albritton, Benjamin, “[Fellow Travelers: The Canterbury Tales and IIIF](http://web.stanford.edu/group/dmstech/cgi-bin/wordpress/fellow-travelers-the-canterbury-tales-and-iiif/),” 2015.
+
+### Week 5: Comparing
+* 6 February - Meet at Special Collections Reading Room - Green Library
+	* Reading
+		* no assigned reading
 	* Exercise 3 due
 * 8 February
 	* Reading
@@ -208,15 +207,9 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 	* Reading
 		* “[Liturgical Libellus… ; known as the Prayerbook of Elizabeth of York: manuscript codex](https://purl.stanford.edu/cb532cr9486)”
 		* Smith, Shang, Kim, Detzner, Barnet, Ashton, Arias, Aiello, Abbott, “[MSS Codex 0877: The Prayerbook of Elizabeth of York](https://purl.stanford.edu/pb903ny9688),” 2014.
-* 15 February
-	* Reading
 		* Dominic Oldman, Martin Doerr and Stefan Gradmann, “[Zen and the Art of Linked Data: New Strategies for a Semantic Web of Humanist Knowledge](http://www.blackwellreference.com/subscriber/uid=1079/tocnode?id=g9781118680643_chunk_g978111868064320),” in *A New Companion to Digital Humanities*, 2016.
 		* More resources: http://linkeddata.org/guides-and-tutorials
-	* Exercise 4 due
-
-### Week 7: Sampling & Illustrating
-* 20 February: Holiday – **NO CLASS**
-* 22 February
+* 15 February
 	* Reading
 		* John Burrows, “[Textual Analysis](http://www.digitalhumanities.org/companion/view?docId=blackwell/9781405103213/9781405103213.xml&chunk.id=ss1-4-4),” in *A Companion to Digital Humanities*, 2004.
 		* Stéfan Sinclair and Geoffrey Rockwell, “[Text Analysis and Visualization: Making Meaning Count](http://www.blackwellreference.com/subscriber/uid=1079/tocnode?id=g9781118680643_chunk_g978111868064321),” in *A New Companion to Digital Humanities*, 2016.
@@ -224,8 +217,15 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 		* [Getting Started with Voyant Tools](http://docs.voyant-tools.org/start/)
 		* [Using Voyant Tools for Basic Text Analysis](https://publish.illinois.edu/commonsknowledge/2014/10/10/using-voyant-tools-for-basic-text-analysis/)
 		* Peruse the [TAPOR](http://www.tapor.ca/) site.
+	* Exercise 4 due
 	* Start Exercise 5 (see description above)
 
+### Week 7: Sampling & Illustrating
+* 20 February: Holiday – **NO CLASS**
+* 22 February
+	* Reading
+		TBD - GIS-related or Topic Modeling-related
+	
 ### Week 8: More Sampling & Illustrating
 * 27 February
 	* Reading
