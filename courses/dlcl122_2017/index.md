@@ -194,6 +194,7 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 * 6 February - Meet at Special Collections Reading Room - Green Library
 	* Reading
 		* no assigned reading
+		* [Guide sheet for digitization lab visit](https://docs.google.com/a/stanford.edu/document/d/1bb8QahxyBvorzGwOsRnHP_mfRvbz5lpEB2JmS1aG8HU/edit?usp=sharing)
 	* Exercise 3 due
 * 8 February
 	* Reading
