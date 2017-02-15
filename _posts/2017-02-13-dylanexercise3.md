@@ -14,7 +14,7 @@ I found T-PEN very easy to use in this application, for most of the text. The te
 My transcription of images 2 and 5 follows.
 
 Image 2:
->"Tarum aut[em] et [vir]ginem et capricornum  
+>"Taurum aut[em] et [vir]ginem et capricornum  
 frigidos esse et siccos. Geminos libram et  
 aquarium calidos et humidos. Cancrum, Sco[r]  
 pionem, pisces frigidos et humidos. Quedam  
@@ -30,9 +30,7 @@ descendit: exquo p[ro] i[n]?e?ius emisp[r]ium ad principiu[m]
 fini[s] ?euertitur . Nominatur aut[em] Lactus p[ro]p[ter] nobi  
 -lem sui splendore[m]: Cuius rei causam si s[?]re de  
 -sideras ma[?]xobium legas. Nouem alii c[?]ctuli   
-sunt i[n]uisibiles: nihil e[n]im aliud sunt q[uae] linee  
-Arietem, Leonem, et sagiptarum calidos esse  
-et S I C C O S"  
+sunt i[n]uisibiles: nihil e[n]im aliud sunt q[uae] linee
 
 Image 5:  
 >"quas de statu et retrogradatione planetarum  
