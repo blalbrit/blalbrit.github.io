@@ -14,7 +14,10 @@ I found T-PEN very easy to use in this application, for most of the text. The te
 My transcription of images 2 and 5 follows.
 
 Image 2:
->"Taurum aut[em] et [vir]ginem et capricornum  
+>"
+Arietem, Leonem, et sagiptarum calidos esse 
+et S I C C O S
+Taurum aut[em] et [vir]ginem et capricornum  
 frigidos esse et siccos. Geminos libram et  
 aquarium calidos et humidos. Cancrum, Sco[r]  
 pionem, pisces frigidos et humidos. Quedam  
