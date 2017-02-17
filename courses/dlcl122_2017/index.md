@@ -8,7 +8,7 @@ description: "Course page"
 DLCL 122  
 Winter 2017  
 MW: 03:00p-04:20p  
-School of Education, Rm 313  
+Room: 260-241  
 Course Site: http://blalbrit.github.io/courses/dlcl122_2017  
 Additional Files: https://stanford.box.com/s/5kkgalqmlfrdmdblbxyscnorrexfjxbm
 
@@ -223,9 +223,9 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 
 ### Week 7: Sampling & Illustrating
 * 20 February: Holiday – **NO CLASS**
-* 22 February
+* 22 February: Special Guest - Stace Maples on GIS/GEO-related topics
 	* Reading
-		TBD - GIS-related or Topic Modeling-related
+		TBD - GIS-related
 	
 ### Week 8: More Sampling & Illustrating
 * 27 February
