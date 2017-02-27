@@ -235,7 +235,9 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 		* “[Data Visualization](http://toolingup.stanford.edu/?page_id=1247)” in *Tooling Up for Digital Humanities*.
 * 1 March
 	* Reading
-		* To be announced (either GIS-related or Topic Modeling-related depending on project needs).
+		* Ted Underwood, [Topic modeling made just simple enough](https://tedunderwood.com/2012/04/07/topic-modeling-made-just-simple-enough/)
+		* Megan Brett, [Topic Modeling: A Basic Introduction](http://journalofdigitalhumanities.org/2-1/topic-modeling-a-basic-introduction-by-megan-r-brett/)
+		* [MALLET: MAchine Learning for LanguagE Toolkit](http://mallet.cs.umass.edu/topics.php)
 	* Exercise 5 due
 
 ### Week 9: Representing & Deforming
@@ -244,6 +246,7 @@ NB: You are welcome to submit a draft of your paper to me for review at any time
 		* Abby Smith, “[What is Preservation and Why Does it Matter?](http://digitalhumanities.org:3030/companion/view?docId=blackwell/9781405103213/9781405103213.xml&chunk.id=ss1-5-7&toc.depth=1&toc.id=ss1-5-7&brand=9781405103213_brand)” in *A Companion to Digital Humanities*, 2004.
 		* William Kilbride, “[Saving the Bits: Digital Humanities Forever?](http://www.blackwellreference.com/subscriber/uid=1079/tocnode?id=g9781118680643_chunk_g978111868064330)” in *A New Companion to Digital Humanities*, 2016.
 		* Roy Rosenzweig, “[Scarcity or Abundance? Preserving the Past in a Digital Era](http://chnm.gmu.edu/essays-on-history-new-media/essays/?essayid=6),” in *American Historical Review* 108, 2003.
+	* Visit from Nicholas Taylor, Stanford University Libraries: Web Archiving
 * 8 March
 	* Reading
 		* Johanna Drucker, “[Graphical Approaches to the Digital Humanities](http://www.blackwellreference.com/subscriber/uid=1079/tocnode?id=g9781118680643_chunk_g978111868064319),” in *A New Companion to Digital Humanities*, 2016.
