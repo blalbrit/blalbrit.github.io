@@ -6,7 +6,7 @@ tags: DLCL122-2017
 author: dbedford
 ---
 
-##Exercise 4: XML, The Versioning Tool, and 2 Dragmatica (Dragmaticons?)  
+## Exercise 4: XML, The Versioning Tool, and 2 Dragmatica (Dragmaticons?)  
 
 In this exercise, I compared a short passage across 2 versions of the Dragmaticon, and used Oxygen to mark up the differences in XML.  
 For as long as my website at Stanford is around, the comparison in the Versioning Machine is available [here.](https://stanford.edu/~dbedford/v-machine/samples/dragmaticon_versions.xml).  
