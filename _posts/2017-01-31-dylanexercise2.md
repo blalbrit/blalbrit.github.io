@@ -6,17 +6,15 @@ tags: DLCL122-2017
 author: dbedford
 ---
 
-##Exercise 2: Thoughts on the Dragmaticon
+## Exercise 2: Thoughts on the Dragmaticon
 
 This book intrigued me for several reasons, principally the eye-catching chimera on the first page. The illustrations are quite curious, but make sense for a textbook on science (not unlike modern textbooks.) I also wondered what science was being proposed along with these illustrations; it seemed like mostly astrology, with some astronomy and geography perhaps thrown in--these pages, then, concerned the movement of celestial bodies. The description notes that the Dragmaticon "attempts to reconcile discrepancies between church doctrine and scientific observation," another intriguing snippet. It seems to me that church doctrine in the 1150s did view earth as a sphere (rather than flat), which we can see on page 4, 5, and 7. However, Copernicus' heliocentric model didn't come along until the 16th century, and it seems like the cosmology of the Dragmaticon is geocentric (cf. the page 6 illustration of the sun's orbit around Earth). As I searched on of the pages, there was mention of a certain "galaxias idem Lacteus circulus." They knew about the Milky Way galaxy? I suppose this isn't completely incompatible with a geocentric view.
 
 I was very curious about William of Conches' thoughts on the astrological signs. Although astrology is total bunk, it still appeals to a certain urge to believe that one has a deep and personal relationship with the stars and planets. On the top of page 2, it reads: 
->"Arietem, Leonem, et Sagiptarium calidos esse ET SICCOS."  
+> "Arietem, Leonem, et Sagiptarium calidos esse ET SICCOS."  
 
 I looked into it, and these three signs are associated with fire; they are hot and dry. Not sure why this statement has such a prominent place on the page. I suppose it had to start somewhere, as the text below the diagram continues this pattern: Taurus and Virgo and Capricorn are cold and dry (earth), Gemini, Libra, and Aquarius are hot and wet (air), and Cancer, Scorpio, and Pisces are cold and wet (water). I continued reading: Some signs are masculine, some feminine--still in keeping with modern astrology--wait, what's this?
->
-"qu[a]e om[n]ia, quasi falsi et nugatoria, praeterire
-dignum duximus."
+> "qu[a]e om[n]ia, quasi falsi et nugatoria, praeterire dignum duximus."
 
 "Nugatoria" is the etymological root of a modern word (which I'm totally going to start using), "nugatory," which means "trifling." Apparently, all this stuff about signs being associated with elements is false and trifling? The question, then: what about astrology isn't?  
 
