@@ -6,7 +6,7 @@ tags: DLCL122-2017
 author: dbedford
 ---
 
-##Week 3 Discussion Thoughts & Questions  
+## Week 3 Discussion Thoughts & Questions  
 
 * First of all, I just wanted to say, I thought this quote from the Busa reading was fantastic:
 >“Speaking must thus be taken seriously; it is sacred, as is every human person. We are far from having exhausted the precept inscribed on Apollo's temple at Delphi, "Know thyself." It seems, therefore, that the problem must be attacked: in its totality – with comprehensive, i.e., global, research; collectively – by exploiting informatics with its enormous intrinsic possibilities, and not by rushing, just to save a few hours, into doing the same things which had been done before, more or less in the same way as they were done before.”  
