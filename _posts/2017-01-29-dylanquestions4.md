@@ -6,7 +6,7 @@ tags: DLCL122-2017
 author: dbedford
 ---
 
-###Questions from readings for Monday  
+### Questions from readings for Monday  
 The Renear reading included many familiar concepts from computer science; for instance, "macros," (a term drawn from assembly language programming,) which are abbreviations that refer to a long string of commands. In Java, you do basically the same thing with "methods," which allow you to designate some lines of code into a reusable command; I've also heard them referred to as subroutines, functions, and procedures.  
 
 The need for these abbreviations is clear; you'd rather tell someone to pass you something (full method) than tell them which of their muscles to individually extend and contract (individual commands). These methods also have the advantage that, when you change the original instructions, it applies to all instances of that method/macro/subroutine, so you don't have to change everything. Super simple stuff, but super important.  
