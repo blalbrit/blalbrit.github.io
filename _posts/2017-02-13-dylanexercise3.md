@@ -6,8 +6,8 @@ tags: DLCL122-2017
 author: dbedford
 ---
 
-##Exercise 3: T-PEN and Dragmaticon 
-#####(Alternate title: T-PEN is mightier than T-SWORD)
+## Exercise 3: T-PEN and Dragmaticon 
+##### (Alternate title: T-PEN is mightier than T-SWORD)
 
 I found T-PEN very easy to use in this application, for most of the text. The text that was not in a straight line posed an obvious problem, so I did not transcribe it. There were many abbreviations I didn't know (most of them), and still many I'm unsure about, but the built-in abbreviation glossary helped immensely. There were many instances where text would be ambiguous (minims and the like) so I would go with what seemed more likely. It seems like there's some degree of intuition involved in transcribing. That said, one must avoid the impulse to assume what the text must say; the importance is often in the differences and abnormalities.
 
