@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+	<script src="https://use.fontawesome.com/5fa714cfe3.js"></script>
+    <title>Re-uniting Palimpsest Pages in IIIF</title>
+    
+    <meta name="author" content="Benjamin Albritton">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <!-- <link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"> -->
+	<link href="/assets/themes/twitter/css/1.4.0/bootstrap.css" rel="stylesheet">
+	<link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Benjamin L Albritton</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/contact">Contact</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/puzzles">Puzzles</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/teaching">Teaching</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Re-uniting Palimpsest Pages in IIIF</h1>
+</div>
+
+<div class="row">
+  <div class="span10">
+    
+<p>#Re-uniting Palimpsest Pages in IIIF</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>In our work with the <a href="http://digi.vatlib.it/">Biblioteca Apostolica Vaticana</a>, we have been experimenting with a particular use-case in the “digital manuscript reconstruction” space. Specifically, when a manuscript was scraped clean and then repurposed to receive new text, the original leaves were often folded and inserted into new quire structures. For a scholar working with the undertext of a palimpsest, it is extremely useful to be able to manipulate the disjunct leaves in order to virtually reconstruct the original writing surface. <a href="http://iiif.io">IIIF</a> theoretically makes this possible, though in practice it is clear that additional tooling will be necessary to completely satisfy scholarly use-cases.</p>
+
+<p>We’re very fortunate to be able to collaborate with Dr. András Németh and his colleagues at the Vatican, as their use-cases will help inform development work within the IIIF sphere that will be generalizable to other areas of study. Dr. Németh has provided four examples, drawn from the Vatican collection, of digital pages that need to be manipulated in various ways in order to support study of the undertext of several palimpsests.</p>
+
+<p>In the four examples presented here, the issues of reconstruction and representation can be modeled in IIIF and, to greater or lesser success, viewed through existing software. I’ll start with two fairly simple examples, where two full images need to be fitted back together and rotated.</p>
+
+<h3 id="example-1-vatgr103---ff-142v-and-147r">Example 1: Vat.gr.103 - ff. 142v and 147r</h3>
+
+<p>In this instance, we need to create a single <a href="http://iiif.io/api/presentation/2.1/#canvas">canvas</a> that includes the two surfaces (ff. 142v and 147r), and then rotate them by 90 degrees clockwise in order to see the two column undertext in its original configuration.</p>
+
+<p>We can address each image separately thanks to IIIF as follows:</p>
+
+<p><img src="http://digi.vatlib.it/pub/digit/MSS_Vat.gr.103/iiif/Vat.gr.103_0298_fa_0142v.%5B02.wl.0000%5D.jp2/full/pct:10/0/native.jpg" alt="alt text" title="142v: http://digi.vatlib.it/pub/digit/MSS_Vat.gr.103/iiif/Vat.gr.103_0298_fa_0142v.%5B02.wl.0000%5D.jp2/full/pct:10/0/native.jpg" />
+142v: “http://digi.vatlib.it/pub/digit/MSS_Vat.gr.103/iiif/Vat.gr.103_0298_fa_0142v.%5B02.wl.0000%5D.jp2/full/pct:10/0/native.jpg”</p>
+
+<p>and</p>
+
+<p><img src="http://digi.vatlib.it/pub/digit/MSS_Vat.gr.103/iiif/Vat.gr.103_0308_fa_0147r.%5B02.wl.0000%5D.jp2/full/pct:10/0/native.jpg" alt="alt text" title="147r: http://digi.vatlib.it/pub/digit/MSS_Vat.gr.103/iiif/Vat.gr.103_0308_fa_0147r.%5B02.wl.0000%5D.jp2/full/pct:10/0/native.jpg" />
+147r: “http://digi.vatlib.it/pub/digit/MSS_Vat.gr.103/iiif/Vat.gr.103_0308_fa_0147r.%5B02.wl.0000%5D.jp2/full/pct:10/0/native.jpg”</p>
+
+<p>For demonstration purposes, I have limited the images to 10 percent of their overall size (“pct:10” in the URLs). However, we will be dealing with the full size image or, to be honest, the largest size that the Vatican will deliver. To determine the largest image size delivered from a IIIF server, we can use the image API pattern that delivers information about the image: “http://digi.vatlib.it/pub/digit/MSS_Vat.gr.103/iiif/Vat.gr.103_0298_fa_0142v.%5B02.wl.0000%5D.jp2/info.json”.</p>
+
+<p>The results of this request, give us:</p>
+
+<p><code class="highlighter-rouge"><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="nt">"tiles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="nt">"width"</span><span class="p">:</span><span class="w"> </span><span class="mi">512</span><span class="p">,</span><span class="w">
+</span><span class="nt">"height"</span><span class="p">:</span><span class="w"> </span><span class="mi">512</span><span class="p">,</span><span class="w">
+</span><span class="nt">"scaleFactors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="mi">1</span><span class="p">,</span><span class="w">
+</span><span class="mi">2</span><span class="p">,</span><span class="w">
+</span><span class="mi">4</span><span class="p">,</span><span class="w">
+</span><span class="mi">8</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">],</span><span class="w">
+</span><span class="nt">"protocol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://iiif.io/api/image"</span><span class="p">,</span><span class="w">
+</span><span class="nt">"sizes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="nt">"width"</span><span class="p">:</span><span class="w"> </span><span class="mi">307</span><span class="p">,</span><span class="w">
+</span><span class="nt">"height"</span><span class="p">:</span><span class="w"> </span><span class="mi">438</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="nt">"width"</span><span class="p">:</span><span class="w"> </span><span class="mi">614</span><span class="p">,</span><span class="w">
+</span><span class="nt">"height"</span><span class="p">:</span><span class="w"> </span><span class="mi">877</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="nt">"width"</span><span class="p">:</span><span class="w"> </span><span class="mi">1228</span><span class="p">,</span><span class="w">
+</span><span class="nt">"height"</span><span class="p">:</span><span class="w"> </span><span class="mi">1755</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">],</span><span class="w">
+</span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="s2">"http://iiif.io/api/image/2/level1.json"</span><span class="p">,</span><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="nt">"formats"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="s2">"jpg"</span><span class="w">
+</span><span class="p">],</span><span class="w">
+</span><span class="nt">"qualities"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="s2">"native"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"color"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"gray"</span><span class="w">
+</span><span class="p">],</span><span class="w">
+</span><span class="nt">"supports"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="s2">"regionByPct"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"sizeByForcedWh"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"sizeByWh"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"sizeAboveFull"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"rotationBy90s"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"mirroring"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"gray"</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">],</span><span class="w">
+</span><span class="nt">"width"</span><span class="p">:</span><span class="w"> </span><span class="mi">2456</span><span class="p">,</span><span class="w">
+</span><span class="nt">"@context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://iiif.io/api/image/2/context.json"</span><span class="p">,</span><span class="w">
+</span><span class="nt">"height"</span><span class="p">:</span><span class="w"> </span><span class="mi">3510</span><span class="w">
+</span><span class="p">}</span></code></p>
+
+<p>From this, we see that the overall size delivered for this image is 2456w x 3510h. A quick check of the other image we are working with shows dimensions of 2456w x 3508h.</p>
+
+<p>We know, then, that our composite canvas, which includes both images, will be 2456 x 2 = 4912w and 3510h (the larger of the two image heights). Per Dr. Németh’s instructions, this is what the composite canvas should look like:</p>
+
+<p><img src="http://localhost:4000/assets/palimpsest_example1.png" alt="alt text" /></p>
+
+<p>Our task, then is to create a IIIF canvas that can accommodate both images. We’ll create a stand-alone <a href="http://iiif.io/api/presentation/2.1/#manifest">manifest</a> for this example. See <a href="http://dms-data.stanford.edu/data/manifests/test/test1/manifest.json">here</a> to examine the full manifest in detail. Ignoring the preamble, let’s look directly at the new canvas:</p>
+
+<p><code class="highlighter-rouge"><span class="p">{</span><span class="w">
+     </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://dms-data.stanford.edu/data/manifests/BAV/palimp-test1/canvas/canvas-01"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sc:Canvas"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example 1"</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"width"</span><span class="p">:</span><span class="w"> </span><span class="mi">4912</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"height"</span><span class="p">:</span><span class="w"> </span><span class="mi">3510</span><span class="p">,</span><span class="w">
+     </span><span class="nt">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+       </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://digi.vatlib.it/iiif/MSS_Vat.gr.103/res/anno0298"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"oa:Annotation"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"motivation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sc:painting"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"resource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+           </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://digi.vatlib.it/iiif/MSS_Vat.gr.103/res/img0298"</span><span class="p">,</span><span class="w">
+           </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dctypes:Image"</span><span class="p">,</span><span class="w">
+           </span><span class="nt">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image/jpeg"</span><span class="p">,</span><span class="w">
+           </span><span class="nt">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+             </span><span class="nt">"@context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://iiif.io/api/image/2/context.json"</span><span class="p">,</span><span class="w">
+             </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://digi.vatlib.it/iiifimage/MSS_Vat.gr.103/Vat.gr.103_0298_fa_0142v.%5B02.wl.0000%5D.jp2"</span><span class="p">,</span><span class="w">
+             </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://iiif.io/api/image/2/level2.json"</span><span class="w">
+           </span><span class="p">},</span><span class="w">
+           </span><span class="nt">"width"</span><span class="p">:</span><span class="w"> </span><span class="mi">2456</span><span class="p">,</span><span class="w">
+           </span><span class="nt">"height"</span><span class="p">:</span><span class="w"> </span><span class="mi">3510</span><span class="w">
+         </span><span class="p">},</span><span class="w">
+         </span><span class="nt">"on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://dms-data.stanford.edu/data/manifests/BAV/palimp-test1/canvas/canvas-01#xywh=0,0,2456,3510"</span><span class="w">
+       </span><span class="p">},</span><span class="w">
+       </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://digi.vatlib.it/iiif/MSS_Vat.gr.103/res/anno0308"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"oa:Annotation"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"motivation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sc:painting"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"resource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://digi.vatlib.it/iiif/MSS_Vat.gr.103/res/img0308"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dctypes:Image"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image/jpeg"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"service"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+         </span><span class="nt">"@context"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://iiif.io/api/image/2/context.json"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://digi.vatlib.it/iiifimage/MSS_Vat.gr.103/Vat.gr.103_0308_fa_0147r.%5B02.wl.0000%5D.jp2"</span><span class="p">,</span><span class="w">
+         </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://iiif.io/api/image/2/level2.json"</span><span class="w">
+       </span><span class="p">},</span><span class="w">
+       </span><span class="nt">"width"</span><span class="p">:</span><span class="w"> </span><span class="mi">2456</span><span class="p">,</span><span class="w">
+       </span><span class="nt">"height"</span><span class="p">:</span><span class="w"> </span><span class="mi">3508</span><span class="w">
+     </span><span class="p">},</span><span class="w">
+     </span><span class="nt">"on"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://dms-data.stanford.edu/data/manifests/BAV/palimp-test1/canvas/canvas-01#xywh=2456,0,2456,3508"</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></p>
+
+<h3 id="example-2-vatgr19---ff-ivv-and-1r">Example 2: Vat.gr.19 - ff. IVv and 1r</h3>
+
+<h3 id="example-3-vatgr984---ff-162r-and-157v">Example 3: Vat.gr.984 - ff. 162r and 157v</h3>
+
+<h3 id="example-4-vatgr984---ff-169av-and-169r">Example 4: Vat.gr.984 - ff. 169av and 169r</h3>
+
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2017/02/26/dylanquestions9" title="2017-02-26 - Questions 9 (Dylan)">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next disabled"><a>Next &rarr;</a>
+      
+      </ul>
+    </div>
+    <hr>
+    
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>07 July 2017</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#IIIF-ref">IIIF <span>2</span></a></li>
+     
+    	<li><a href="/tags.html#manuscripts-ref">manuscripts <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#palimpsests-ref">palimpsests <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#presentationAPI-ref">presentationAPI <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#Mirador-ref">Mirador <span>2</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <!-- <ul>
+			
+			  <li>
+			    <a href="https://twitter.com/bla222">
+			      <i class="fa fa-twitter"></i> Twitter
+			    </a>
+			  </li>
+			
+			
+			  <li>
+			    <a href="https://github.com/blalbrit">
+			      <i class="fa fa-github"></i> GitHub
+			    </a>
+			  </li>
+			
+			
+			  <li>
+			    <a href="https://linkedin.com/in/benjamin-albritton-b2661612">
+			      <i class="fa fa-linkedin"></i> LinkedIn
+			    </a>
+			  </li>
+			
+			
+			  <li>
+			    <a href="https://plus.google.com/108163571844622220434">
+			      <i class="fa fa-google-plus"></i> Google+
+			    </a>
+			  </li>
+			
+        </ul> -->
+		<p>
+			<a href="https://twitter.com/bla222">
+			  <i class="fa fa-twitter"></i>
+			</a> | 
+		    <a href="https://github.com/blalbrit">
+		      <i class="fa fa-github"></i>
+		    </a> | 
+		    <a href="https://linkedin.com/in/benjamin-albritton-b2661612">
+		      <i class="fa fa-linkedin"></i>
+		    </a> | 
+		    <a href="https://plus.google.com/108163571844622220434">
+		      <i class="fa fa-google-plus"></i>
+		    </a>
+		</p>
+		<p>&copy; Benjamin Albritton 2016 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-86525748-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  </body>
+</html>
+

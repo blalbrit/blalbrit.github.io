@@ -19,7 +19,20 @@ http://blalbrit.github.io/tags
 http://blalbrit.github.io/teaching
 http://blalbrit.github.io/test
 
-http://blalbrit.github.io/2017/01/18/Bedford-Questions
+http://blalbrit.github.io/2017/07/07/palimpsest_pages
+http://blalbrit.github.io/2017/02/26/dylanquestions9
+http://blalbrit.github.io/2017/02/15/dylanquestions8
+http://blalbrit.github.io/2017/02/13/dylanquestions7
+http://blalbrit.github.io/2017/02/13/dylanexercise3
+http://blalbrit.github.io/2017/02/08/dylanquestions6
+http://blalbrit.github.io/2017/02/04/dylanquestions5
+http://blalbrit.github.io/2017/02/04/dylanquestions3
+http://blalbrit.github.io/2017/01/31/dylanexercise2
+http://blalbrit.github.io/2017/01/29/dylanquestions4
+http://blalbrit.github.io/2017/01/25/mayquestions3
+http://blalbrit.github.io/2017/01/23/mayquestions2
+http://blalbrit.github.io/2017/01/23/dylanquestions2
+http://blalbrit.github.io/2017/01/18/dylanquestions1
 http://blalbrit.github.io/2017/01/17/mayquestions1
 http://blalbrit.github.io/2017/01/17/maypost1
 http://blalbrit.github.io/2017/01/17/templatepost
@@ -46,6 +59,8 @@ http://blalbrit.github.io/2016/01/11/lizblog1
 http://blalbrit.github.io/2016/01/11/BlogPost1
 http://blalbrit.github.io/2016/01/10/lizweek2questions
 http://blalbrit.github.io/2016/01/06/dlcl122_discussion1
+http://blalbrit.github.io/lessons/2016/01/02/jekyll-introduction-draft
+http://blalbrit.github.io/lessons/2016/01/02/test1
 http://blalbrit.github.io/2015/07/14/fellow-travelers-the-canterbury-tales-and-iiif
 http://blalbrit.github.io/2013/01/24/returning-to-fountain
 http://blalbrit.github.io/2013/01/13/machaut-data-part-1

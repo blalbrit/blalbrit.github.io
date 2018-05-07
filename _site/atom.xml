@@ -4,7 +4,7 @@
  <title>Benjamin L Albritton</title>
  <link href="http://blalbrit.github.io/atom.xml" rel="self"/>
  <link href="http://blalbrit.github.io"/>
- <updated>2017-01-18T14:54:52-08:00</updated>
+ <updated>2017-07-17T16:03:43-07:00</updated>
  <id>http://blalbrit.github.io</id>
  <author>
    <name>Benjamin Albritton</name>
@@ -13,10 +13,486 @@
 
  
  <entry>
-   <title>2017-01-18 - Discussion Questions</title>
-   <link href="http://blalbrit.github.io/2017/01/18/Bedford-Questions"/>
+   <title>Re-uniting Palimpsest Pages in IIIF</title>
+   <link href="http://blalbrit.github.io/2017/07/07/palimpsest_pages"/>
+   <updated>2017-07-07T00:00:00-07:00</updated>
+   <id>http://blalbrit.github.io/2017/07/07/palimpsest_pages</id>
+   <content type="html">
+&lt;p&gt;#Re-uniting Palimpsest Pages in IIIF&lt;/p&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;In our work with the &lt;a href=&quot;http://digi.vatlib.it/&quot;&gt;Biblioteca Apostolica Vaticana&lt;/a&gt;, we have been experimenting with a particular use-case in the “digital manuscript reconstruction” space. Specifically, when a manuscript was scraped clean and then repurposed to receive new text, the original leaves were often folded and inserted into new quire structures. For a scholar working with the undertext of a palimpsest, it is extremely useful to be able to manipulate the disjunct leaves in order to virtually reconstruct the original writing surface. &lt;a href=&quot;http://iiif.io&quot;&gt;IIIF&lt;/a&gt; theoretically makes this possible, though in practice it is clear that additional tooling will be necessary to completely satisfy scholarly use-cases.&lt;/p&gt;
+
+&lt;p&gt;We’re very fortunate to be able to collaborate with Dr. András Németh and his colleagues at the Vatican, as their use-cases will help inform development work within the IIIF sphere that will be generalizable to other areas of study. Dr. Németh has provided four examples, drawn from the Vatican collection, of digital pages that need to be manipulated in various ways in order to support study of the undertext of several palimpsests.&lt;/p&gt;
+
+&lt;p&gt;In the four examples presented here, the issues of reconstruction and representation can be modeled in IIIF and, to greater or lesser success, viewed through existing software. I’ll start with two fairly simple examples, where two full images need to be fitted back together and rotated.&lt;/p&gt;
+
+&lt;h3 id=&quot;example-1-vatgr103---ff-142v-and-147r&quot;&gt;Example 1: Vat.gr.103 - ff. 142v and 147r&lt;/h3&gt;
+
+&lt;p&gt;In this instance, we need to create a single &lt;a href=&quot;http://iiif.io/api/presentation/2.1/#canvas&quot;&gt;canvas&lt;/a&gt; that includes the two surfaces (ff. 142v and 147r), and then rotate them by 90 degrees clockwise in order to see the two column undertext in its original configuration.&lt;/p&gt;
+
+&lt;p&gt;We can address each image separately thanks to IIIF as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://digi.vatlib.it/pub/digit/MSS_Vat.gr.103/iiif/Vat.gr.103_0298_fa_0142v.%5B02.wl.0000%5D.jp2/full/pct:10/0/native.jpg&quot; alt=&quot;alt text&quot; title=&quot;142v: http://digi.vatlib.it/pub/digit/MSS_Vat.gr.103/iiif/Vat.gr.103_0298_fa_0142v.%5B02.wl.0000%5D.jp2/full/pct:10/0/native.jpg&quot; /&gt;
+142v: “http://digi.vatlib.it/pub/digit/MSS_Vat.gr.103/iiif/Vat.gr.103_0298_fa_0142v.%5B02.wl.0000%5D.jp2/full/pct:10/0/native.jpg”&lt;/p&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://digi.vatlib.it/pub/digit/MSS_Vat.gr.103/iiif/Vat.gr.103_0308_fa_0147r.%5B02.wl.0000%5D.jp2/full/pct:10/0/native.jpg&quot; alt=&quot;alt text&quot; title=&quot;147r: http://digi.vatlib.it/pub/digit/MSS_Vat.gr.103/iiif/Vat.gr.103_0308_fa_0147r.%5B02.wl.0000%5D.jp2/full/pct:10/0/native.jpg&quot; /&gt;
+147r: “http://digi.vatlib.it/pub/digit/MSS_Vat.gr.103/iiif/Vat.gr.103_0308_fa_0147r.%5B02.wl.0000%5D.jp2/full/pct:10/0/native.jpg”&lt;/p&gt;
+
+&lt;p&gt;For demonstration purposes, I have limited the images to 10 percent of their overall size (“pct:10” in the URLs). However, we will be dealing with the full size image or, to be honest, the largest size that the Vatican will deliver. To determine the largest image size delivered from a IIIF server, we can use the image API pattern that delivers information about the image: “http://digi.vatlib.it/pub/digit/MSS_Vat.gr.103/iiif/Vat.gr.103_0298_fa_0142v.%5B02.wl.0000%5D.jp2/info.json”.&lt;/p&gt;
+
+&lt;p&gt;The results of this request, give us:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;tiles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;width&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;512&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;height&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;512&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;scaleFactors&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;protocol&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://iiif.io/api/image&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;sizes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;width&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;307&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;height&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;438&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;width&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;614&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;height&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;877&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;width&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1228&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;height&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1755&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;profile&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://iiif.io/api/image/2/level1.json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;formats&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;jpg&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;qualities&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;native&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;color&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;gray&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;supports&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;regionByPct&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sizeByForcedWh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sizeByWh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sizeAboveFull&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;rotationBy90s&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mirroring&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;gray&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;width&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2456&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@context&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://iiif.io/api/image/2/context.json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;height&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3510&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;From this, we see that the overall size delivered for this image is 2456w x 3510h. A quick check of the other image we are working with shows dimensions of 2456w x 3508h.&lt;/p&gt;
+
+&lt;p&gt;We know, then, that our composite canvas, which includes both images, will be 2456 x 2 = 4912w and 3510h (the larger of the two image heights). Per Dr. Németh’s instructions, this is what the composite canvas should look like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/palimpsest_example1.png&quot; alt=&quot;alt text&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Our task, then is to create a IIIF canvas that can accommodate both images. We’ll create a stand-alone &lt;a href=&quot;http://iiif.io/api/presentation/2.1/#manifest&quot;&gt;manifest&lt;/a&gt; for this example. See &lt;a href=&quot;http://dms-data.stanford.edu/data/manifests/test/test1/manifest.json&quot;&gt;here&lt;/a&gt; to examine the full manifest in detail. Ignoring the preamble, let’s look directly at the new canvas:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://dms-data.stanford.edu/data/manifests/BAV/palimp-test1/canvas/canvas-01&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sc:Canvas&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;label&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Example 1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;width&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4912&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;height&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3510&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;images&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+       &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://digi.vatlib.it/iiif/MSS_Vat.gr.103/res/anno0298&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;oa:Annotation&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;motivation&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sc:painting&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;resource&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+           &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://digi.vatlib.it/iiif/MSS_Vat.gr.103/res/img0298&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+           &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dctypes:Image&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+           &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;format&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;image/jpeg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+           &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;service&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+             &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@context&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://iiif.io/api/image/2/context.json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+             &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://digi.vatlib.it/iiifimage/MSS_Vat.gr.103/Vat.gr.103_0298_fa_0142v.%5B02.wl.0000%5D.jp2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+             &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;profile&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://iiif.io/api/image/2/level2.json&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+           &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+           &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;width&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2456&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+           &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;height&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3510&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;on&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://dms-data.stanford.edu/data/manifests/BAV/palimp-test1/canvas/canvas-01#xywh=0,0,2456,3510&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+       &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+       &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://digi.vatlib.it/iiif/MSS_Vat.gr.103/res/anno0308&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;oa:Annotation&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;motivation&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sc:painting&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;resource&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://digi.vatlib.it/iiif/MSS_Vat.gr.103/res/img0308&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;dctypes:Image&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;format&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;image/jpeg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;service&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@context&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://iiif.io/api/image/2/context.json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;@id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://digi.vatlib.it/iiifimage/MSS_Vat.gr.103/Vat.gr.103_0308_fa_0147r.%5B02.wl.0000%5D.jp2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;profile&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://iiif.io/api/image/2/level2.json&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+       &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+       &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;width&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2456&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+       &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;height&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3508&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;on&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://dms-data.stanford.edu/data/manifests/BAV/palimp-test1/canvas/canvas-01#xywh=2456,0,2456,3508&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;example-2-vatgr19---ff-ivv-and-1r&quot;&gt;Example 2: Vat.gr.19 - ff. IVv and 1r&lt;/h3&gt;
+
+&lt;h3 id=&quot;example-3-vatgr984---ff-162r-and-157v&quot;&gt;Example 3: Vat.gr.984 - ff. 162r and 157v&lt;/h3&gt;
+
+&lt;h3 id=&quot;example-4-vatgr984---ff-169av-and-169r&quot;&gt;Example 4: Vat.gr.984 - ff. 169av and 169r&lt;/h3&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-02-26 - Questions 9 (Dylan)</title>
+   <link href="http://blalbrit.github.io/2017/02/26/dylanquestions9"/>
+   <updated>2017-02-26T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2017/02/26/dylanquestions9</id>
+   <content type="html">&lt;p&gt;#Networks and Data Visualisation&lt;/p&gt;
+
+&lt;p&gt;These readings provided some useful information for working with data, connecting that data into networks, and also visualising those networks using different kinds of graphics. We’ve already begun to do much of this in class, for example with Voyant tools. 
+I think the point in Tooling Up about accountability is an important one; graphs and other visualisations present data in such a shiny, appealing way (if done correctly) that they can also be used to misdirect. This is because the veneer of the graph creates the impression that the data behind the graph is objective and collected without any bias–however, as we’ve seen, data selection and manipulation is a highly subjective process. The graph or visualisation offers another degree of separation from the data, so one must be even more aware of the fact that the original data is not necessarily infallible.&lt;/p&gt;
+
+&lt;p&gt;I had one question about data networks– in what situation would one use a self-loop?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-02-15 - Questions 8 (Dylan)</title>
+   <link href="http://blalbrit.github.io/2017/02/15/dylanquestions8"/>
+   <updated>2017-02-15T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2017/02/15/dylanquestions8</id>
+   <content type="html">&lt;p&gt;##Textual Analysis Readings
+The readings for this week all addressed a common topic: The applications of textual analysis, specifically stylistics.
+In the Burrows reading, we get a few examples of how quantitative text analysis can help us answer questions about texts, but also raise new ones. This analysis was mostly stylistic, focusing on counts of certain words across several texts. This reminded me of Franco Moretti’s ideas about a quantitative theory of genre. However, the Burrows reading approach seemed to encourage the use of text analysis not to make sweeping claims, but rather to view texts from a different perspective and use quantitative textual analysis in tandem with interpretative work. 
+This mixed approach was also emphasized in the Sinclair and Rockwell reading, in the idea of the “agile interpretive cycle:”&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“We read texts we enjoy, we then explore and study them with analytic tools and visualization interfaces, which then brings us back to rereading the texts differently.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This somewhat addresses the problem some humanists have with Franco Moretti’s ideas, namely that there’s a lack of real meaning and purpose as human interpretation takes a backseat to computer processes. We require both the speed and scale of Moretti’s distant reading, as well as the specificity and insight of close reading.&lt;/p&gt;
+
+&lt;p&gt;That’s all easily said, but implementing it is tough. When you want to do a project quickly, how do you ensure the data is up to the standards of close reading?&lt;br /&gt;
+In Linguistics 1 last quarter, we did a study of a collection of data from conversations in Palo Alto cafés. However, since our data wasn’t correctly formatted in a lot of cases, and we didn’t have time to go through and correct all of it, there were some inaccuracies that slipped through the cracks. &lt;br /&gt;
+The article on Google’s NGram viewer mentioned in the Sinclair and Rockwell reading (http://searchengineland.com/when-ocr-goes-bad-googles-ngram-viewer-the-f-word-59181) also mentions some potential pitfalls. What resources/strategies exist to tackle these problems?&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-02-13 - Questions 7 (Dylan)</title>
+   <link href="http://blalbrit.github.io/2017/02/13/dylanquestions7"/>
+   <updated>2017-02-13T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2017/02/13/dylanquestions7</id>
+   <content type="html">&lt;p&gt;##MSS Codex 0877 and Linked Data
+In the 2014 report by Smith et al., I noticed in the transcription it mentioned a [hole in the substrate between a and q prior to the moment of writing]. This led me to reflect on all the minute details necessitated by a study like this, and how difficult it is to translate those details into machine-readable data. My question then was: How do we mark up (and standardize marking up) a detail like  holes in the substrate prior to writing?&lt;/p&gt;
+
+&lt;p&gt;After the Linked Data reading, my question was: Do we need to? This has more to do with what we’re trying to accomplish in the field. I think Elaine has had some very apt questions about the purpose of digitial humanities; I get very excited about the prospect of interoperability and cross-platform tools, but there’s also the importance of what we do with those tools. The reading also seemed to suggest that XML provided &lt;em&gt;too much&lt;/em&gt; flexibility, to the point where it’d be difficult to standardize (a balance we’ve discussed before). 
+A question from this reading that interested me was:&lt;/p&gt;
+
+&lt;p&gt;“How can a system process information without regard to its meaning and simultaneously generate meaning in the experience of its users?”&lt;/p&gt;
+
+&lt;p&gt;This is essentially what we’re trying to do; we’re trying to have all the advantages of machine-readable data (quick processing and analysis, quantifiable, flexible, accessible) along with the advantages of traditional humanities (“control, provenance, transparency, reproducibility, and all the other elements of good research.”) Is this a correct assessment? (Have I been repeating this sentiment?)&lt;/p&gt;
+
+&lt;p&gt;Also, could we go over the difference between Linked Data and Semantic Mapping?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-02-13 - Exercise 3 (Dylan)</title>
+   <link href="http://blalbrit.github.io/2017/02/13/dylanexercise3"/>
+   <updated>2017-02-13T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2017/02/13/dylanexercise3</id>
+   <content type="html">&lt;p&gt;##Exercise 3: T-PEN and Dragmaticon 
+#####(Alternate title: T-PEN is mightier than T-SWORD)&lt;/p&gt;
+
+&lt;p&gt;I found T-PEN very easy to use in this application, for most of the text. The text that was not in a straight line posed an obvious problem, so I did not transcribe it. There were many abbreviations I didn’t know (most of them), and still many I’m unsure about, but the built-in abbreviation glossary helped immensely. There were many instances where text would be ambiguous (minims and the like) so I would go with what seemed more likely. It seems like there’s some degree of intuition involved in transcribing. That said, one must avoid the impulse to assume what the text must say; the importance is often in the differences and abnormalities.&lt;/p&gt;
+
+&lt;p&gt;My transcription of images 2 and 5 follows.&lt;/p&gt;
+
+&lt;p&gt;Image 2:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“Taurum aut[em] et [vir]ginem et capricornum&lt;br /&gt;
+frigidos esse et siccos. Geminos libram et&lt;br /&gt;
+aquarium calidos et humidos. Cancrum, Sco[r]&lt;br /&gt;
+pionem, pisces frigidos et humidos. Quedam&lt;br /&gt;
+e[s]t masculini sexus, quedam feminim esse di&lt;br /&gt;
+xerunt! que om[n]ia falsa et nugatoria pre&lt;br /&gt;
+terire, dignum duximus. Dux expecto quid de&lt;br /&gt;
+alio ?sibili circulo sentias. pbus Alter de visibi&lt;br /&gt;
+-lius a grecus[?] galaxias, idem Lacteus circulus&lt;br /&gt;
+nu[n]cupatur Galac e[n]im lac, nos e[s]enius Iste iux.&lt;br /&gt;
+Septentrione[m] a parte orientis i[n]cipit i[n] obliquu[m?]&lt;br /&gt;
+ad cancru[m] ascendens p[ro] medium tor[r?]ide ad cap[i]u[m?]&lt;br /&gt;
+descendit: exquo p[ro] i[n]?e?ius emisp[r]ium ad principiu[m]&lt;br /&gt;
+fini[s] ?euertitur . Nominatur aut[em] Lactus p[ro]p[ter] nobi&lt;br /&gt;
+-lem sui splendore[m]: Cuius rei causam si s[?]re de&lt;br /&gt;
+-sideras ma[?]xobium legas. Nouem alii c[?]ctuli &lt;br /&gt;
+sunt i[n]uisibiles: nihil e[n]im aliud sunt q[uae] linee&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Image 5:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“quas de statu et retrogradatione planetarum&lt;br /&gt;
+Legi. Nullam de hu[iu]s [effano ut] affirmo, ?oel&lt;br /&gt;
+danno. Secundum platone[m], quartus planeta[rum]&lt;br /&gt;
+est venus stella videlicit i[n]qualitatibus tempe&lt;br /&gt;
+-rata: Inde beni?nula dicitur: modo i[n]duodecim&lt;br /&gt;
+fere mensibus, modo i[n] undecim zodiatu[m] circu&lt;br /&gt;
+-iens. dicitur cu[m] marte adulterata quid superi&lt;br /&gt;
+-ori parte sui tituli[?] existens facta marti bi&lt;br /&gt;
+-tina minus [?] beniuola. Quintus e[x] metu[a?]&lt;br /&gt;
+fere in anno cursum suum p[ro]ficiens: cumquo be&lt;br /&gt;
+-nus adulterata dicitur: cum e[n]im est i[n] inferiori&lt;br /&gt;
+parte sui circuli illius se miscet qualitatibus.&lt;br /&gt;
+[Dux] Quare dicis venerem quartum, mercurium&lt;br /&gt;
+qiuntum, secundum platonem: dixere ne aliter aly[?]&lt;br /&gt;
+[p.bus] Egipty, quos sequtus est plato dixere sole[] statu&lt;br /&gt;
+-tum esse post Lunam: supra upm[] mercuriu[?] esse!&lt;br /&gt;
+Supra ipsum Venerem: Caldei quos sequ[i]tus e[x] tulli[?]&lt;br /&gt;
+volunt post Luna[] esse mercurium: supra quem&lt;br /&gt;
+est Venus! supra quam sol. Dux Mitu[?] est, tu[]&lt;br /&gt;
+de ordine ceterorum no[] dubitarint, qua?te de ordi&lt;br /&gt;
+-ne istatu[?] trium diuctsa sense[]ut. pbus Cirtulis&lt;br /&gt;
+isto[?] huc [9?]tingit de quibus hoc dicAm ut appa 
+-reat que sententia est potuus tenenda. de inde de&lt;br /&gt;
+motu utoru[m] dicam. Cirtuli igitur veneris et mer&lt;br /&gt;
+curi[i] sunt epiticule:idest supra ter[r]am existe[tes]!&lt;br /&gt;
+nihil de? ea concludentes!horum circulo[rum] centru[us]&lt;br /&gt;
+est i[n] sole: Sed mercurialis i[n] medio solis: ve&lt;br /&gt;
+neris, supra medium :quod ut melius i[n]telligas&lt;br /&gt;
+figuram e[x]pingam i[n] qua ter[r]am epuiculos veneris&lt;br /&gt;
+et mercury, utrumq[ue] i[n] suo epi[u?]iculo i[n] duobus&lt;br /&gt;
+Locis i[n] sum[m]o et imo depingam. Cum igit[ur?] ven[??]&lt;br /&gt;
+et mercuruis i[n] sup[er]ioribus partibus suor[um] circu&lt;br /&gt;
+lorum existunt [?]ere supra-solem sunt! tut [sp?]&lt;br /&gt;
+e[n] mercurius propinnq[u]or soli. Sed cum sint i[n] infe&lt;br /&gt;
+rioribus partibus earum circulo[rum] tunc e[n] sol&lt;br /&gt;
+supra illos: venus q[ua] propinquior soli. Caldei&lt;br /&gt;
+adhoc respicientes q[ua] quandoq[ue?] i[n]feriores su[n]t sole&lt;br /&gt;
+tunc q[uam] liberius apparent! Sol e[n]im no[n] t[u]m oculi subiecta,&lt;br /&gt;
+De Venere.&lt;br /&gt;
+De me[r]curio&lt;br /&gt;
+Saturnus&lt;br /&gt;
+Juppiter&lt;br /&gt;
+Mars&lt;br /&gt;
+Venus&lt;br /&gt;
+Mercury&lt;br /&gt;
+SoL&lt;br /&gt;
+Venus&lt;br /&gt;
+Terra”&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-02-08 - Questions 6 (Dylan)</title>
+   <link href="http://blalbrit.github.io/2017/02/08/dylanquestions6"/>
+   <updated>2017-02-08T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2017/02/08/dylanquestions6</id>
+   <content type="html">&lt;p&gt;###DigiPal reading&lt;br /&gt;
+DigiPal seems like a cool project. I’ve been thinking about automated transcription for a while (using computer recognition of paleography) and just figured it wasn’t yet possible. Stokes gives some reasons for why it isn’t–for instance, medieval manuscripts are really quite irregular. Even on formatted and more modern printed texts, OCR still requires human verification most of the time, so for medieval manuscripts it’d make all kinds of mistakes(I imagine)–hence the need for DigiPal and drawing boxes around a lot of letters. That said, will we ever reach the point where automated transcription is possible/viable?&lt;/p&gt;
+
+&lt;p&gt;###IIIF reading&lt;br /&gt;
+Fairly straightforward; IIIF arose out of a need for interopability(it’s right there on the tin), because image repositories were “walled gardens of technology, with institutions implementing similar solutions in vastly different ways with few mechanisms for easy exchange of data and little sharing of code or methodology” (1). I wondered about how progress is made. There’s a popular idea that progress requires some type of destruction–growing pains, revolution, etc.– but these types of projects seem to necessitate non-intrusive progress, where older systems can remain compatible. What different things does one have to consider when approaching progress/improvements this way?&lt;/p&gt;
+
+&lt;p&gt;###SharedCanvas reading&lt;br /&gt;
+Basically, this reading highlighted the considerations of being able to document even the oddest objects (use cases). It seems so simple, yet very important, that we have to be able to record information even about the &lt;em&gt;lack&lt;/em&gt; of a page. Also, how does one even go about transcribing a palimpsest?&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-02-04 - Questions 5 (Dylan)</title>
+   <link href="http://blalbrit.github.io/2017/02/04/dylanquestions5"/>
+   <updated>2017-02-04T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2017/02/04/dylanquestions5</id>
+   <content type="html">&lt;p&gt;##Readings for February 1 (Week 4)
+###Introduction to TEI and XML
+I found these introductions to be very, very gentle indeed–somewhat condescending, actually–but they definitely showed how simple markup languages really are. 
+(One note about the Mueller article: many of the links to examples are broken.)
+I remember how, in the Unsworth reading, he pointed out how the Web is a really sub-par implementation of hypertext. In the Introduction to TEI, Mueller expands on this, giving the example of the table element being used to jury-rig web page format. This is why HTML “always lives in sin because it constantly violates the cardinal rule of separating information from the mode of its display.”&lt;/p&gt;
+
+&lt;p&gt;To me, this was the most interesting point of the reading. The process of learning to write and writing is inherently graphical (cf. “graphein”), and we format parts of text without even being aware of it. To separate these things seems very strange. That’s why it took me a little while to realize that markup itself doesn’t necessarily dictate format–all it does is mark up. That’s it. You can then apply style sheets that will give rules to display the information, based on the indications of the markup.&lt;/p&gt;
+
+&lt;p&gt;This also relates to the Owens, Flanders, and Jannidis readings and the idea of “raw data.” Even when we mark things up, we make judgments about what parts should be demarcated into which categories. Can we ever have a data set that is independent from this subjectivity–and should we? We have TEI for some degree of standardization, at least, but as Hawkins notes:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“People sometimes find TEI more frustrating than markup languages used in other domains because it isn’t a finite standard but rather a framework that is designed to be customized for your needs, and because it often provides more than one way to do what appears to be the same thing in order to accommodate the needs of different scholars.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So, even with TEI, there’s some degree of flexibility–but perhaps that’s as it should be. There are always going to be edge cases and different types of scholarship that need to be accomodated for if we want the field to be inclusive.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-02-04 - Questions 3 (Dylan)</title>
+   <link href="http://blalbrit.github.io/2017/02/04/dylanquestions3"/>
+   <updated>2017-02-04T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2017/02/04/dylanquestions3</id>
+   <content type="html">&lt;p&gt;#Questions from Week 3’s Readings (Owens, Flanders &amp;amp; Jannidis) 
+These readings both explored how the field of digital humanities is a delicate balance. As we make strides in bringing textual media into the digital world, we must be cautious of pitfalls along the way.&lt;/p&gt;
+
+&lt;p&gt;###Owens: Defining Data for Humanists
+Owens’ short essay suggested an interpretation of data as both human-made and computer-processable. Data sets constructed by scholars will always have a subjective quality to them; decisions must be made about what data is selected, how it’s organized, etc. However, the result is (hopefully, given proper formatting) able to be processed by a computer, and analyzed in the most strict, literal way. This dual nature is tricky. Owens mentions Franco Moretti, whose ideas about “distant reading” caused much controversy among the literary community. His detached, data-driven method flew in the face of close reading (I checked out &lt;a href=&quot;http://www.nytimes.com/2011/06/26/books/review/the-mechanic-muse-what-is-distant-reading.html?pagewanted=all&quot;&gt;this NYT article on Moretti,&lt;/a&gt; as well as &lt;a href=&quot;https://nplusonemag.com/issue-3/reviews/adventures-of-a-man-of-science/&quot;&gt;this critical article&lt;/a&gt;, although, ironically enough, I only skimmed the latter). 
+The main criticism of Moretti seems to be that literature is far too complex to be quantified or organized into neat boxes (although that’s heavily simplifying it.) It’s a fair point. Perhaps it may be dangerous to believe that, just because we can analyze and quantify some aspects of some texts–such as certain word counts or character interactions–we can form vast overarching literary theories with this data.&lt;/p&gt;
+
+&lt;p&gt;###Flanders &amp;amp; Jannidis
+This reading connects well with the idea mentioned above, particularly in the final paragraph:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“Obviously there is a conflict of values here: the computer-science perspective makes us look for a good general description applicable to all entities, while the humanities perspective makes us look for those features which make this entity special: models conceal when they reveal (McCarty, 2005:52). As digital humanists we feel the pull in both directions, and simple solutions would only sacrifice one side to the other.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is the dual nature of digital humanities. This is also why human-computer interactions are so fascinating. Humans design things (data sets, code, models) to be read by computers. These creations have a touch of human subjectivity and individuality to them; everyone has their own coding style, everyone has their own ideas about what’s important when crafting a data set. Computers, on the other hand, don’t have any emotions at all, nor have they any need of them. This also happens to be why people are much easier to trick than computers, and why it’s not quite accurate to use computer metaphors to talk about the human brain. I agree with Flanders and Jannidis that navigating these different perspecitves will not be simple.&lt;/p&gt;
+
+&lt;p&gt;(Although, I must say, I disagree with their formatting choices–I kept having to re-read lines due to eyeskip.)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-01-31 - Exercise 2 (Dylan)</title>
+   <link href="http://blalbrit.github.io/2017/01/31/dylanexercise2"/>
+   <updated>2017-01-31T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2017/01/31/dylanexercise2</id>
+   <content type="html">&lt;p&gt;##Exercise 2: Thoughts on the Dragmaticon&lt;/p&gt;
+
+&lt;p&gt;This book intrigued me for several reasons, principally the eye-catching chimera on the first page. The illustrations are quite curious, but make sense for a textbook on science (not unlike modern textbooks.) I also wondered what science was being proposed along with these illustrations; it seemed like mostly astrology, with some astronomy and geography perhaps thrown in–these pages, then, concerned the movement of celestial bodies. The description notes that the Dragmaticon “attempts to reconcile discrepancies between church doctrine and scientific observation,” another intriguing snippet. It seems to me that church doctrine in the 1150s did view earth as a sphere (rather than flat), which we can see on page 4, 5, and 7. However, Copernicus’ heliocentric model didn’t come along until the 16th century, and it seems like the cosmology of the Dragmaticon is geocentric (cf. the page 6 illustration of the sun’s orbit around Earth). As I searched on of the pages, there was mention of a certain “galaxias idem Lacteus circulus.” They knew about the Milky Way galaxy? I suppose this isn’t completely incompatible with a geocentric view.&lt;/p&gt;
+
+&lt;p&gt;I was very curious about William of Conches’ thoughts on the astrological signs. Although astrology is total bunk, it still appeals to a certain urge to believe that one has a deep and personal relationship with the stars and planets. On the top of page 2, it reads:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“Arietem, Leonem, et Sagiptarium calidos esse ET SICCOS.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I looked into it, and these three signs are associated with fire; they are hot and dry. Not sure why this statement has such a prominent place on the page. I suppose it had to start somewhere, as the text below the diagram continues this pattern: Taurus and Virgo and Capricorn are cold and dry (earth), Gemini, Libra, and Aquarius are hot and wet (air), and Cancer, Scorpio, and Pisces are cold and wet (water). I continued reading: Some signs are masculine, some feminine–still in keeping with modern astrology–wait, what’s this?&lt;/p&gt;
+&lt;blockquote&gt;
+
+  &lt;p&gt;“qu[a]e om[n]ia, quasi falsi et nugatoria, praeterire
+dignum duximus.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;“Nugatoria” is the etymological root of a modern word (which I’m totally going to start using), “nugatory,” which means “trifling.” Apparently, all this stuff about signs being associated with elements is false and trifling? The question, then: what about astrology isn’t?&lt;/p&gt;
+
+&lt;p&gt;Perhaps the circle diagram provides an accurate introduction to astrology? Each of the 12 astrological signs are given a 30 degree sector of the diagram, which is also filled with concentric circles. I noted that Aries, Leo, and Saggitarius (the fire signs) were equidistantly spaced, and this holds true for each of the four elements (interesting coincidence for being “trifling”). There’s a great deal of empty space in the concentric circles, with the exception of the sectors of Pisces and Aquarius. To be honest, I wasn’t able to decipher much text in these sectors besides the word “cretulus” followed by the name of a planet, and “cretulus” isn’t a word I’m aware of (or was able to find in a dictionary). &lt;br /&gt;
+I was, however, able to find a similar chart from a 1549 work by Oronce Fine :
+&lt;img src=&quot;http://socks-studio.com/img/blog/celestial-mechanics-09.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+(&lt;a href=&quot;http://socks-studio.com/2012/02/13/celestial-mechanics-by-oronce-fine-1549/&quot;&gt;source&lt;/a&gt;)&lt;br /&gt;
+This also shows the different months associated with the signs.&lt;/p&gt;
+
+&lt;p&gt;I suppose I haven’t yet been able to answer my question–i.e., what is the Dragmaticon trying to tell us about astrology, specifically through its graphs? However, looking at this cosmology, I can see how people have used science over the years to try to discern the order of the world; these graphs and charts are so neatly geometrical, and looking at them it’s hard not to believe that the sun doesn’t orbit the earth or that astrology is real. It also makes one question what beliefs we hold today that future generations will see as amusingly inaccurate.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-01-29 - Questions 4 (Dylan)</title>
+   <link href="http://blalbrit.github.io/2017/01/29/dylanquestions4"/>
+   <updated>2017-01-29T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2017/01/29/dylanquestions4</id>
+   <content type="html">&lt;p&gt;###Questions from readings for Monday&lt;br /&gt;
+The Renear reading included many familiar concepts from computer science; for instance, “macros,” (a term drawn from assembly language programming,) which are abbreviations that refer to a long string of commands. In Java, you do basically the same thing with “methods,” which allow you to designate some lines of code into a reusable command; I’ve also heard them referred to as subroutines, functions, and procedures.&lt;/p&gt;
+
+&lt;p&gt;The need for these abbreviations is clear; you’d rather tell someone to pass you something (full method) than tell them which of their muscles to individually extend and contract (individual commands). These methods also have the advantage that, when you change the original instructions, it applies to all instances of that method/macro/subroutine, so you don’t have to change everything. Super simple stuff, but super important.&lt;/p&gt;
+
+&lt;p&gt;I wasn’t sure what to make of SGML, as I hadn’t heard of it before. What is its function as a “meta-language?” Also, is XML strictly better than HTML (from what I’ve heard, XML is phasing out HTML at least in webpage design.)&lt;/p&gt;
+
+&lt;p&gt;I was also glad to read more about TEI. My favorite quote was “One might say that the TEI is an agreement about how to express disagreement.” Because there are so many different ways to approach text encoding, one method of standardization might not be to say “everyone do it this way,” but to say “how do we reconcile all these different ways?”&lt;/p&gt;
+
+&lt;p&gt;In the Kerby-Fulton reading, I immediately noticed how the Eets edition capitalized “Godd,” “Fader,” “Crist,” “Sun,” and “Loeurd” when they weren’t capitalized in the manuscript. This distinction was immediately addressed: an &lt;em&gt;edition&lt;/em&gt; optimizes for ease of readibility for the modern reader, and conforms to the style of the times, whereas a &lt;em&gt;transcription&lt;/em&gt; intends to be as faithful to the original text as possible. Both have their place, but the Arundel example in particular showcases the importance of accurate transcription.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-01-25 - Questions 3 (May)</title>
+   <link href="http://blalbrit.github.io/2017/01/25/mayquestions3"/>
+   <updated>2017-01-25T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2017/01/25/mayquestions3</id>
+   <content type="html">&lt;h2 id=&quot;questions-from-wednesdays-readings-data-modeling&quot;&gt;Questions from Wednesday’s readings (Data Modeling)&lt;/h2&gt;
+
+&lt;p&gt;It seemed to me that the two articles were in direct contradiction about the point that any data set is shaped by human choice and subjectivity. The Flanders and Jannidis article stated that “we can draw a difference between the data itself and its information structure,” in the sense that the former is made up of objective facts and the latter is human-made.&lt;/p&gt;
+
+&lt;p&gt;The Owens article, on the other hand, described data as an artifact, something formed by human work, arguing that ‘raw data’ is a misnomer. “Data is not in and of itself a kind of evidence but a multifaced object which can be mobilized as evidence in support of an argument.”&lt;/p&gt;
+
+&lt;p&gt;What might be the consequences of each view?&lt;/p&gt;
+
+&lt;p&gt;I got the sense that Flanders and Jannidis were a bit more cheeky than Owens about humanists’ take on ‘raw data’ (e.g. “humanists commonly acknowledge that their models are social constructs”). Maybe that has something to do with the different viewpoints.&lt;/p&gt;
+
+&lt;p&gt;Also, I would love to just briefly get a rundown on what TEI and XML are, because they keep coming up and I only have a vague understanding of what their purposes are and what they do.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-01-23 - Questions 2 (May)</title>
+   <link href="http://blalbrit.github.io/2017/01/23/mayquestions2"/>
+   <updated>2017-01-23T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2017/01/23/mayquestions2</id>
+   <content type="html">&lt;p&gt;First of all, I loved learning about ‘syntactical glosses’ in Clemens and Graham - basically that scribes would mark up Latin texts with word order help for people who were learning Latin. I still do that! (In other words, Scribes: They’re Just Like Us!) It seems like Dylan and I both relate to this.&lt;/p&gt;
+
+&lt;p&gt;As far as I understood what Roberto Busa was writing about (which was admittedly not very far), it seemed like his model of the progress of the hermeneutic/interpretative current of textual informatics goes in reverse of what I would expect, in that the end goal is something like interoperability. For some reason, when I think of simple, standard tools, I imagine that they would start that way — e.g. in the beginning there was Mirador, and then lots of repositories used Mirador for their own purposes, etc. But actually, according to Busa, the &lt;em&gt;end&lt;/em&gt; goal is that simple standard tool: “It would be a sort of universal language, in binary alphabet, ‘antiBabel’, still in virtual reality … In input, therefore, everybody could use their own native disciplined language and have the desired translations in output.”&lt;/p&gt;
+
+&lt;p&gt;To be honest, I’m not sure I completely understand what he was proposing, but the fact that his posthumous end goal is something universal and interoperable sort of gives me hope for the current (somewhat scattered) state of manuscript repositories and digital tools.&lt;/p&gt;
+
+&lt;p&gt;In light of the Digital Mappaemundi project, too, it seems like the model is starting from raw information or materials, developing a tool to work with those, and &lt;em&gt;then&lt;/em&gt; making that tool interoperable. It seems to me that the benefit of that is allowing us to check our own assumptions about the material — if you start with an idea of what you want to get out of a type of material (e.g. maps), you might be misrepresenting that material (e.g. by assuming that medieval maps had the same purpose - portraying a geographical reality - as something like Google maps today).&lt;/p&gt;
+
+&lt;p&gt;In the words of the Mappaemundi reading:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;For digital projects focused on historical material to be fully realized, they must also grapple with material on its own terms, and acknowledge its particular concerns. Medieval maps are far more similar to literature or art in that they are representations that are not necessarily grounded in the specifics of our reality. They were not designed to correspond point for point with the globe—precision of distance and detail, a foundation of modern cartography, was irrelevant. Rather, medieval maps were aimed at helping their largely monastic audience understand their place in the world.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What do you all think of this model: &lt;strong&gt;materials —&amp;gt; tools —&amp;gt; simplicity and interoperability&lt;/strong&gt;? Am I just stating the obvious?&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-01-23 - Questions 2 (Dylan)</title>
+   <link href="http://blalbrit.github.io/2017/01/23/dylanquestions2"/>
+   <updated>2017-01-23T00:00:00-08:00</updated>
+   <id>http://blalbrit.github.io/2017/01/23/dylanquestions2</id>
+   <content type="html">&lt;p&gt;##Week 3 Discussion Thoughts &amp;amp; Questions&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First of all, I just wanted to say, I thought this quote from the Busa reading was fantastic:
+    &lt;blockquote&gt;
+      &lt;p&gt;“Speaking must thus be taken seriously; it is sacred, as is every human person. We are far from having exhausted the precept inscribed on Apollo’s temple at Delphi, “Know thyself.” It seems, therefore, that the problem must be attacked: in its totality – with comprehensive, i.e., global, research; collectively – by exploiting informatics with its enormous intrinsic possibilities, and not by rushing, just to save a few hours, into doing the same things which had been done before, more or less in the same way as they were done before.”&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In “Developing Digital Mappaemundi,” I thought it was great how they implemented Unsworth’s work on scholarly primitives into their design. This thing looks great! Only problem is…where is it? How do I use it? I tried to find the actual tool and came across a bunch of broken links–nothing beside remains. Has it since been supplanted by a more useful tool? Is there a standard tool people are using today for map annotation, analysis, etc., and will it too be replaced?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I really like the fact that mistakes, too, are recorded in manuscripts, and we can find evidence of them in the dots under certain phrases, or letters indicating corrected word order,etc. It gives a very human quality to the text, which you don’t get with the ability to just “backspace” everything.&lt;/li&gt;
+  &lt;li&gt;We’ve also seen how true it is that many historians (et al.) are more interested in the margins than the text itself.&lt;/li&gt;
+  &lt;li&gt;I wish I could have syntactical glossing for any written Latin. It’ be very useful.&lt;/li&gt;
+  &lt;li&gt;It seems like the meanings of the marks &lt;em&gt;hd&lt;/em&gt; and &lt;em&gt;hs&lt;/em&gt; changed meaning over time; from &lt;em&gt;hic deorsum&lt;/em&gt; and &lt;em&gt;hic sursum&lt;/em&gt; to &lt;em&gt;hic deficit&lt;/em&gt; and &lt;em&gt;hic supple&lt;/em&gt;. This reminds me of what I believe is one of the main questions of this course and the field of digital humanities: How do we establish standards?&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2017-01-18 - Questions 1 (Dylan)</title>
+   <link href="http://blalbrit.github.io/2017/01/18/dylanquestions1"/>
    <updated>2017-01-18T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2017/01/18/Bedford-Questions</id>
+   <id>http://blalbrit.github.io/2017/01/18/dylanquestions1</id>
    <content type="html">&lt;p&gt;###Discussion Questions / Thoughts
 Some thoughts on the readings:
 Can any online resource really be said to be “future-proof?” How can we tell what standards will survive, and which won’t?&lt;/p&gt;
@@ -209,262 +685,6 @@ This library also lacks the in-depth metadata that Cambridge provides. However, 
 &lt;p&gt;##Reflections&lt;br /&gt;
 Overall, I think the two repositories take two different and valid approaches; Cambridge seems to have relatively few books, placed in easily-perusable categories, with a great deal of data on most of them. The British library has more books, but with less data and therefore more difficulty in finding specific ones. It seems to me that the Cambridge database’s use of “collections” almost make the manuscripts into museum pieces rather than texts with which you’re invited to interact, whereas the British Library is more of a useful tool that provides a great deal of content easily.&lt;/p&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Liz's Discussion Questions, Week 7</title>
-   <link href="http://blalbrit.github.io/2016/02/16/lizweek7questions"/>
-   <updated>2016-02-16T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/02/16/lizweek7questions</id>
-   <content type="html">&lt;h1 id=&quot;discussion-questions-week-7&quot;&gt;Discussion Questions, Week 7&lt;/h1&gt;
-
-&lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;What’s the interplay between spatial analysis and textual analysis? (the metadata analysis examples given in Tooling Up seem more like spatial analysis to me)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;How quick to adopt has medeival studeis been in comparison to other areas of the humanities when it comes to “macroanalysis”?&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Christina's Discussion Questions, Week 7</title>
-   <link href="http://blalbrit.github.io/2016/02/16/ChristinaWeek7DiscussionQuestions"/>
-   <updated>2016-02-16T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/02/16/ChristinaWeek7DiscussionQuestions</id>
-   <content type="html">&lt;h1 id=&quot;week-7-discussion-questions--christina-sampling--illustrating&quot;&gt;Week 7 discussion questions–Christina (Sampling &amp;amp; Illustrating)&lt;/h1&gt;
-
-&lt;p&gt;1.) If Voyant is an “environment,” how might one carry what is used from it into papers?  (i.e.: in order to take advantage of Voyant’s capabilites, do you really have to always be in the program itself—or what does it look like exported?)&lt;/p&gt;
-
-&lt;p&gt;2.) Is it true that Voyant &lt;em&gt;only&lt;/em&gt; works with text? (copying and pasting text into a field–rather than Voyant being able to decipher a manuscript itself). This poses what challenges? Benefits?&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Liz's Blog Post, Exercise 4</title>
-   <link href="http://blalbrit.github.io/2016/02/14/lizblogpostE4"/>
-   <updated>2016-02-14T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/02/14/lizblogpostE4</id>
-   <content type="html">&lt;p&gt;#Exercise 4: Comparing&lt;/p&gt;
-
-&lt;p&gt;In this exercise, we were charged with the task of preparing two versions of a text for the Versioning Machine. The text I marked up was from a manuscript fragment of Rabanus Maurus’ “De rerum naturis”, which I previous transcribed in T-PEN. The second version of the text I used was an online edition which I used to assit my transcription. The turned out to be a mistake. Because I used the edition text to help expand the Latin abbreviations, and because the edition text was not at all abbreviated, the “differences” in the text were for the most part simply places where something had been abbreviated in the manuscript text. This is much less interesting than comparing two manuscript witnesses would be. So, I found the same fragment of text in a manuscript at the Parker library (CCCC MS 11) and transcribed &lt;em&gt;it&lt;/em&gt; in T-PEN, and finally adding a third witness to the TEI document for Versioning Machine.&lt;/p&gt;
-
-&lt;h3 id=&quot;document-structure&quot;&gt;Document Structure&lt;/h3&gt;
-
-&lt;p&gt;The fragment is from book 2, chapters 1 and 2. I used these as the top two levels of organization for the TEI encoding. Getting a breakdown smaller than that was not so clear, as there are no “paragraphs” in the Stanford manuscript. There are, however, periodic red-filled capital letters. The Stanford manuscript is the one I care about most, so I chose the red letters as a way to further decompose the text despite it seeming arbitrary from the point of view of the other two witnesses.&lt;/p&gt;
-
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;book&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;n=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;div2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;chapter&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;n=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-		&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;n=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-		&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-		&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;n=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-		&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;div2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;chapter&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;n=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;defining-difference&quot;&gt;Defining Difference&lt;/h3&gt;
-
-&lt;p&gt;As I first did the Stanford MS and the edition text before adding the second manuscript, the only differences in the texts were abbreviation, capitialization, and punctuation differences. In order to have differences to look at, I counted all three of these things as proper differences. When I added the second manuscript witness, it produced instances like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;app&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;rdg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;wit=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#stanfordMS&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; filius cham[.]&lt;span class=&quot;nt&quot;&gt;&amp;lt;/rdg&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;rdg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;wit=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#monumenta.ch&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;, filius Cham,&lt;span class=&quot;nt&quot;&gt;&amp;lt;/rdg&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;rdg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;wit=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#parkerMS&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;filius cham[.]&lt;span class=&quot;nt&quot;&gt;&amp;lt;/rdg&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/app&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;To me, this seemed pretty uninteresting. The abbreviation differences in the manuscripts was the truly interesting piece. Differences in capitialization and punctuation occured fairly frequently, and were detracting from the abbreviation differences. For example:&lt;/p&gt;
-&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;app&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;rdg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;wit=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#stanfordMS&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;iafeth dictus&lt;span class=&quot;nt&quot;&gt;&amp;lt;/rdg&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;rdg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;wit=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#monumenta.ch&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Iaphet dictus&lt;span class=&quot;nt&quot;&gt;&amp;lt;/rdg&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;rdg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;wit=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#parkerMS&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;iapheth dict[us]&lt;span class=&quot;nt&quot;&gt;&amp;lt;/rdg&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/app&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Due to time constraints, I have not yest revised the document to reflect my new feelings on what constitutes a textual difference in this text. That’s the other thing about TEI encoding– it takes &lt;em&gt;forever&lt;/em&gt; to do and, to the computer scientist in me, looks like something which cries out for automation.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Liz's Discussion Questions, Week 6</title>
-   <link href="http://blalbrit.github.io/2016/02/09/lizweek6questions"/>
-   <updated>2016-02-09T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/02/09/lizweek6questions</id>
-   <content type="html">&lt;h1 id=&quot;discussion-questions-week-6&quot;&gt;Discussion Questions, Week 6&lt;/h1&gt;
-
-&lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;What do we mean by “data”?&lt;/li&gt;
-  &lt;li&gt;“The first Linked Data principle advocates using URI references to identify, not just Web documents and digital content, but also real world objects and abstract concepts… This principle can be seen as extending the scope of the Web from online resources to encompass any object or concept in the world.” This doesn’t seem even remotely possible as I understand it– what is going on here?&lt;/li&gt;
-&lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Christina's Discussion Questions, Week 6</title>
-   <link href="http://blalbrit.github.io/2016/02/09/ChristinaWeek6discussionquestions"/>
-   <updated>2016-02-09T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/02/09/ChristinaWeek6discussionquestions</id>
-   <content type="html">&lt;h1 id=&quot;week-6----discussion-questions&quot;&gt;Week 6 – Discussion questions&lt;/h1&gt;
-
-&lt;p&gt;(1) How might we define “data”? Or, perhaps more productively, what does data not encompass?&lt;/p&gt;
-
-&lt;p&gt;(2) In the ‘conclusions’ section of this writing on ‘Linked Data,’ the author makes mention of major companies (Google, Yahoo, Facebook) who are “busy building such data spaces.” It says here that in contrast to the open Web–accessible to everyone–these “emerging data spaces are controlled by single companies which also decide how the data spaces are exploited.”  Isn’t this a bit worrisome?  What happens when certain companies have a ‘monopoly’ on information? (This may be a broad question, but it got me thinking about the limits of this…)&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Christina's Discussion Questions, Week 5</title>
-   <link href="http://blalbrit.github.io/2016/02/03/csmith-week5discussion-questions"/>
-   <updated>2016-02-03T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/02/03/csmith-week5discussion questions</id>
-   <content type="html">&lt;h1 id=&quot;week-5-discussion-questions&quot;&gt;Week 5 discussion questions&lt;/h1&gt;
-
-&lt;p&gt;1.) Does every major institution make their image avaliable via the IIIF image API? Your (Ben Albritton’s) post mentions that more and more institutions are supporting the IIIF image API. Just out of curiosity, which ones aren’t yet? What platforms other than Mirador are utilizing this IIIF image API, allowing for comparisons across manuscripts?&lt;/p&gt;
-
-&lt;p&gt;2.) On the “A very gentle introduction to the TEI markup language,” there’s a discussion of preservation and creating standards for “scholarly memory in an evolving digital culture.”  Since I am a ‘newbie’ to all this, is it correct that TEI is mainly used by humanities scholars?&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Liz's Discussion Questions, Week 5</title>
-   <link href="http://blalbrit.github.io/2016/01/31/lizdiscussionw5"/>
-   <updated>2016-01-31T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/01/31/lizdiscussionw5</id>
-   <content type="html">&lt;h1 id=&quot;discussion-questions-week-5&quot;&gt;Discussion Questions, Week 5&lt;/h1&gt;
-&lt;h2 id=&quot;monday&quot;&gt;Monday&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;What does it take for an institution to adpot IIIF? Are there economic considerations that might be slowing more adopting?&lt;/li&gt;
-  &lt;li&gt;Are there different versions of the TEI DTD? Do they vary significantly?&lt;/li&gt;
-  &lt;li&gt;In the examples in the Introduction to TEI, I noticed they use a link to a dtd file that doesn’t exist anymore in the doctype declaration. Advantages and disadvantages of hotlinking…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;wednesday&quot;&gt;Wednesday&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Who generates the content of DigiPal?&lt;/li&gt;
-  &lt;li&gt;How might IIIF (or a thing like it) work with tools that use polygons rather than rectangles?&lt;/li&gt;
-  &lt;li&gt;i.e. is there any value in selecting a polygonal region of an image? We’ve discussed non-rectangular selection in other areas… (though of course any non-rectangular image would secretly be living inside a transparent rectangle)&lt;/li&gt;
-&lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Laney's Blog Post Annotations and Transcriptions</title>
-   <link href="http://blalbrit.github.io/2016/01/26/laneymcg-BlogPost"/>
-   <updated>2016-01-26T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/01/26/laneymcg-BlogPost</id>
-   <content type="html">&lt;h2 id=&quot;blog-post-annotations-and-transcriptions&quot;&gt;Blog Post Annotations and Transcriptions&lt;/h2&gt;
-
-&lt;p&gt;For annotating and transcribing, I selected science and medicine manuscripts because the content peaked my interest.  Once I identified them for inclusion in the Mirador instance for class, I panicked, worried that selecting manuscripts for this task based upon the content might have been a bad idea. Turns out the reason for my worries was because I didn’t think I would be able to make useful annotations or be able to transcribe the text because of my inexperience.&lt;/p&gt;
-
-&lt;h1 id=&quot;annotating&quot;&gt;Annotating&lt;/h1&gt;
-&lt;p&gt;I selected a Medical treatise from the 13th century because the text has three different scripts.  I started annotating with tags indicating the script.  The manuscript is a  bi-folio with two columns per page so I wasn’t sure how to indicate which column the selected text was in.  Then I was trying to figure out if it was worth indicating which column and/or side of the bi-folio for tagging.  I did not create any annotations because I’m still not sure exactly what I am looking at in the text.  I believe once I start transcribing the text, I may have some information to add as annotation.&lt;/p&gt;
-
-&lt;h1 id=&quot;transcribing&quot;&gt;Transcribing&lt;/h1&gt;
-&lt;p&gt;I started looking at transcribing what I have indicated as script2 in the 13th century Medical treatise.  I selected this text because the font is bigger and easier to read.  However, my first attempt at transcribing was not successful.  I am finding that I still am looking at the text as I would an English language text.  It is going to take much more practice and help from others in the class to be able to complete the transcription.  Transcription is an art form and I have to remind myself that, like any new skill, it takes time to learn.  I was discouraged and my worries about not having Latin language skills surfaced along with my imposter syndrome.  But I will continue to work on improving my skills because I know I can.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Christina's Blog Post, Exercise 2</title>
-   <link href="http://blalbrit.github.io/2016/01/24/Christinablogpost2"/>
-   <updated>2016-01-24T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/01/24/Christinablogpost2</id>
-   <content type="html">&lt;p&gt;Christina’s Blog post on, jointly, exercise 2 and exercise 3 (updated to reflect this)&lt;/p&gt;
-
-&lt;p&gt;In embarking upon exercise 2—which involved utilizing Mirador to digitally annotate folia held in Stanford’s online repository—I was initially skeptical of the program’s benefits.  Indeed, it impressed me that you could store annotations for others to use, reference, or edit in future, but other than that I was unsure about the merits of Mirador.&lt;/p&gt;
-
-&lt;p&gt;However, after using it myself to begin digitally annotating the illuminated capitals of Stanford’s c.1450 Book of Hours and Psalter (with prayers ascribed to Saint Jerome and the Venerable Bede), my mind was changed!&lt;/p&gt;
-
-&lt;p&gt;As someone trained in rigorous visual analysis—something instilled in me by countless medieval art historians—Mirador allowed me to look at the mis-en-page and iconographic program of a codex’s folio in a new light.  For example, as I spent a fair bit of time looking at folio 13 (the first digitized folio of the MS), I was struck anew thinking about what—and how—I wanted to annotate.  Mirador’s relatively easy-to-use user interface permitted me to engage with the illuminated capitals of this folio in a way I had never done before.  Its easy ‘tag’ feature made me think about how I would characterize certain decoration, letter size, and style.  I had never before had to think about making annotations consistent and understandable to a viewer other than myself—for that is how one would interact with my annotations normally, since I wouldn’t be able to explain them in person!  Added to this is the idea that, with Mirador (like many digital technologies), my annotations remain long after I’m ‘gone.’ (Or so they should!) This gives me the responsibility and task of making sure that my annotations are consistent and can be read, understood, and reused by a myriad audience.&lt;/p&gt;
-
-&lt;p&gt;Additionally, Mirador’s side-by-side comparative feature is wonderfully useful.  In fact, I wish every digital repository allowed one to do this! Viewing annotations for various folia within one manuscript, or across differing manuscripts, holds immense value.&lt;/p&gt;
-
-&lt;p&gt;For me, one of the most difficult elements of trying to digitally annotate the illuminated capitals of this 1450 Book of Hours and Psalter was the fact that I didn’t know precisely how much information I should include.  At a certain point, tags (and even writing annotations within the text box) become no longer useful if there is simply &lt;em&gt;too&lt;/em&gt; much information to wade through.  In this, the ‘bold’ text feature in the text box can be used to usefully pull apart key words and terms for the casual viewer, as they engage with an illuminated initial you’ve spent much time with.  (The ‘italic’ option for text has its own problems, probably a bug—for it doesn’t allow you to make text italic and instead hides the annotation frame altogether).&lt;/p&gt;
-
-&lt;p&gt;In all, digitally annotating using the Mirador program made me rethink how I approach study of a medieval manuscript’s visual layout—down to its most basic level.  Digitally annotating on Mirador forces the annotator to make decisions about how they will categorize what they see so that it can be (hopefully) easily searchable and usable in contexts not just within a given manuscript…but also across manuscripts.  I look forward to using the Mirador tool a LOT more, not just in our projects for this class, but in my future work as a medievalist-in-training.  In fact, I think that using Mirador would be a good exercise whenever I engage in an essay or project in which I need to closely-look (which should be almost any visually-centered endeavor).  Through the very act of having to make decisions on what you mention (or do not mention) in annotations, one is forced to engage with the text and image in a more active manner.  Using Mirador, in conjunction with viewing the &lt;em&gt;real&lt;/em&gt; manuscript (if one can), can help us as medievalists not only track and utilize our obversations later on, but also help us to question why we make certain distinctions (or not) and why these may—or may not—be important.&lt;/p&gt;
-
-&lt;p&gt;Here, I add my thoughts on using T-PEN for online transcription. Prior to my using this program, I had done all annotations by hand. T-PEN not only (usually) sped up the process, but it also allowed me to more easily look up abbreviations on the fly.  In this, I appreciated the Latin dictionary linked to the transcription bar.  T-PEN also has excellent zoom-in features and tracking allowing you to clearly see where it is that you’re transcribing on the page (and how much you have left!).&lt;/p&gt;
-
-&lt;p&gt;One of my favorite features of T-PEN is the comment feature, allowing you to add a note which appears below your transcription.  I appreciated that I could do this as I went along line-by-line, rather than waiting at the end.  The only thing that could have made this more user-friendly, however, would be to not only note but highlight…allowing one to more clearly point out what letterform or feature of the MS line they were commenting on.  Maybe, though, this falls more along the lines of annotation and thus is better done on Mirador.  (Ben could answer this better, though, since he knows Mirador inside out!).&lt;/p&gt;
-
-&lt;p&gt;While these elements made T-PEN good to use, I have been struggling for a while with some bugs in the program.  For example, many &lt;em&gt;many&lt;/em&gt; times I would go back lines in my transcription (using the “previous line” feature), only to then go back to my original place (using “enter” multiple times) and find that it had grouped together lines of my text again and again.  I found this immensely frustrating!  Perhaps there is a solution to this, but I have tried to look up other users comments on T-PEN, and haven’t yet found an answer to it.  Unfortunately, this colored my appreciation of T-PEN, but I hope to figure out a way for this not to happen in the coming week(s). Overall, it speeds up the process of transcription and is quite enjoyable to use…making one feel quite productive at the end, when you see all the hard, densely-abbreviated lines you’ve ably (or not-so-ably) transcribed!&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Christina's Discussion Questions, Week 4</title>
-   <link href="http://blalbrit.github.io/2016/01/24/week4discussionquestions"/>
-   <updated>2016-01-24T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/01/24/week4discussionquestions</id>
-   <content type="html">&lt;p&gt;Week 4 Discussion Questions (continued from Week 3’s, which mention our other readings)–Transcription
-&lt;em&gt;Note: this deals with Middle English transcriptions, not Latin. Are there slightly different things we have to consider when transcribing Latin/languages that are *not&lt;/em&gt; in English? (This also leads to the question if T-PEN is meant mostly for OE/ME and Latin; It seems to be this way considering the “Latin dictionary” tool at the bottom of the transcription window and the fact that there are shortcuts for thorn, etc.).&lt;/p&gt;
-
-&lt;p&gt;1.) Is there a way that we can distinguish between transcribing glosses versues transcribing main text?  Perhaps this will become more clear to me as we use T-PEN in the following weeks.
-2.) How much do we describe letterforms and scribal hand when we transcribe? (cf. rubrication; making mention of a particuarly interesting abbreviation/macron before we expand it; explaining the particular characteristics of a series of serifs–those “lozenge-shaped decorative finishes”)? I assume this would go into what T-PEN calls the “notes” section. The main caveat, however, that I can think of is that we wouldn’t want the notes to come up in the same window as the pure transcription–for that could distract from the main body of the text proper.  Is there a way to ‘hide’ the “notes” feature in T-PEN? (Again, this may be an obvious question, but as someone new to using T-PEN this is on my mind!).&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Liz's Discussion Questions, Week 4</title>
-   <link href="http://blalbrit.github.io/2016/01/24/lizdiscussion-w4"/>
-   <updated>2016-01-24T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/01/24/lizdiscussion-w4</id>
-   <content type="html">&lt;p&gt;#Discussion Questions, Week 4
-##Monday&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;How does (or should) transcription handle non-textual elements of a page (filled intertextual space or illustrations, for example)? Should it address these at all?&lt;/li&gt;
-  &lt;li&gt;How do we transcribe abbreviations for which we do not know the expansion?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;##Wednesday
-No questions for today.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Liz's Blog Post, Exercise 2</title>
-   <link href="http://blalbrit.github.io/2016/01/23/lizblog2"/>
-   <updated>2016-01-23T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/01/23/lizblog2</id>
-   <content type="html">&lt;p&gt;#Exercise 2: Annotating&lt;/p&gt;
-
-&lt;p&gt;Recently my interests have turned toward marginalia in manuscripts and early print books. Writing and drawing in the margins keeps books alive, show active participation in the text by humans. I am interested in who writes what, and where. Is most marginal writing part of the text, written by the scribe? Do readers tend to write more in the outer or lower margins? When readers are writing, is it more often than not related to the text they are reading?&lt;/p&gt;
-
-&lt;p&gt;To begin exploring these questions, I browsed thorugh Stanford’s &lt;a href=&quot;https://exhibits.stanford.edu/mss/browse/browse-all&quot;&gt;digitized manuscript collection&lt;/a&gt;. Early on it became clear that legibility and my own paleographical experience would be a limiting factor, as often I found marginalia unreadable. I selected 10 items which appeared to have the most legible and interesting marginalia at a cursory glance.&lt;/p&gt;
-
-&lt;p&gt;My original plan was to use Mirador to tag instances of marginalia (and only tag– the only written description I might want would be a transcription of the marginalia, which will come in a later exercise), based on categorizations I encountered while reading Stephen Orgel’s &lt;em&gt;The Reader in the Book&lt;/em&gt;, plus a few of my own. These categories were active reading (a reader leaving comments on a text), correction (a scribe or reader correcting the text), recording (making note of something unrelated to the text, such as a business transaction), structural (text/symbols that are part of the structure of the text, such as section numbering), and illustration (doodles, maniculae, etc).&lt;/p&gt;
-
-&lt;p&gt;Satisfied with the coverage of my categories, I set off to tag. Right away I found it quite difficult to fit what I was seeing on the page into the categories, not because the categories were insufficient but because, as previously feared, my ability to read the text was limiting progress. While I had done well to choose the most legible examples I could find in the collection, making out characters was still a challenge, and my minimal knowledge of Latin was doing me no favors. Structural elements and illustration were easy to pick out, but corrections, recordings, and active reading I found near indistinguishable. Without writing out a full transcription of everything I found, I was getting nowhere fast. Since transcription is to be done in the coming weeks, I changed my strategy. Rather than tagging based on my original categories, I tagged (and re-tagged) based on whether the marginalia appeared to be scribal or non-scribal. This, too, was not as easy as it might be for someone with more paleographic experience; I am satisfied that what I have is &lt;em&gt;close enough&lt;/em&gt; for this initial step.&lt;/p&gt;
-
-&lt;p&gt;The outcome of this exerise is not quite what I desired before starting, but I have been able to make a couple of observations so far. First, that most of the marginal writing in these items appears to be non-scribal. This is in line with what I would have predicted– I would assume that more often than not if a scribe had something to say or correct, it would be in the body of the text. Second, what I did not expect to see (or did not think to expect) is that scribal writing appears more frequenty in the left and right margins, and is less likely to be written in a way that is not in line with the appearance of the page (upside down, or sideways, for example). After transcription I hope to be able to explore the reasons behind these observations, and inch closer to my original categorization scheme.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>DLCL122-2016 - Christina's Discussion Questions, Week 3</title>
-   <link href="http://blalbrit.github.io/2016/01/20/week3discussionquestions"/>
-   <updated>2016-01-20T00:00:00-08:00</updated>
-   <id>http://blalbrit.github.io/2016/01/20/week3discussionquestions</id>
-   <content type="html">&lt;h1 id=&quot;week-3-discussion-questions&quot;&gt;Week 3 discussion questions&lt;/h1&gt;
-
-&lt;p&gt;1) Clemens and Graham’s chapter on correction, glossing, and annotation talks about the scribal tools and techniques involved in the “nitty-gritty” elements of manuscript production. As someone new to digital renditions of manuscripts (having transcribed them solely by hand in the past) how do digital humanists usually account for erasures and re-writing over those marked-out areas?  If we believe a medieval scribe to have made the error of “eyeskip” (which C&amp;amp;G define as omitting the same word, phrase, or sequence of letters that appear twice in close succession) how can we make note of this in our digital annotation?&lt;br /&gt;
-—-And now a question of glossing: do we treat the location of where certain glosses are (cf. glossae collectae–those fully separate from the text itself; interlinear glosses; glosses in the main text) and what type they are (lexical/synonym vs. suppletive/omissions) &lt;em&gt;differently&lt;/em&gt; when we go into annotating them digitally?&lt;/p&gt;
-
-&lt;p&gt;2) Digital Mappaemundi (Maps of the World) disusses the use of digital ‘layers,’ whereby “different research questions involving a single image may be addressed separately through annotation (also allowing one to choose precisely how &lt;em&gt;many&lt;/em&gt; layers they would like to view at one time). This seems to present a solution to our frustration with the BL’s excess of metadata in lengthy, sometimes-bordering-upon-impenetrable, paragraphs. How common are digital layers in literary manuscripts?  As its name suggests, the Mappaemundi project focuses on maps mostly.
-—-Think more about: Geospatial bias and how it can relate to literary/biblical/philosophical texts too? (cf. C&amp;amp;G’s term “archaeology of the book” and idea of the book as a space)&lt;/p&gt;
 </content>
  </entry>
  
