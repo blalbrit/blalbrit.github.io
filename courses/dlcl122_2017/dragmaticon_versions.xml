@@ -1,0 +1,157 @@
+
+<?xml-stylesheet href="../src/vmachine.xsl" type="text/xsl" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Dragmaticon.</title>
+				<author>William of Conches</author>
+				<respStmt>
+					<resp>Text encoding by Dylan Bedford.</resp>
+					<name/>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<p>
+				</p>
+			</publicationStmt>
+			
+			<sourceDesc>
+				<p>See Witness List.</p>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				<p>Two versions of the Dragmaticon, Stanford MSS CODEX 0412 and Cologny, Cod. Bodmer 188 </p>
+			</projectDesc>
+			<variantEncoding location="internal" method="parallel-segmentation"/>
+		</encodingDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<div>
+				<listWit>
+					<witness xml:id="MSS0412"></witness>
+					<witness xml:id="Bodmer188"></witness>
+				</listWit>
+			</div>
+		</front>
+		<body>
+			<div1>
+				<p><said> 
+					<app>
+						<rdg wit="#MSS0412">Arietem, Leonem, et sagiptarum</rdg>
+						<rdg wit="#Bodmer188">
+							<choice>
+								<abbr>ariete, leone, ⁊ Saggitariu</abbr>
+								<expan>arietem, leonem, et Saggitarium</expan>
+							</choice></rdg>
+					</app> 
+					calidos 
+					<app>
+						<rdg wit="#MSS0412">esse et</rdg>
+						<rdg wit="#Bodmer188">
+							<choice>
+								<abbr>ee ⁊</abbr>
+								<expan>esse et</expan>
+							</choice></rdg>
+					</app>
+					<app>
+						<rdg wit ="#MSS0412">SICCOS.</rdg>
+						<rdg wit ="#Bodmer188">siccos.</rdg>
+					</app>
+					<app>
+						<rdg wit="#MSS0412">Taurum 
+							<choice>
+								<abbr>aut</abbr>
+								<expan>autem</expan>
+							</choice>
+							et 
+							<choice>
+								<abbr>Xginem</abbr>
+								<expan>Virginem</expan>
+							</choice> et capricornum 
+							frigidos esse et siccos.</rdg></app>
+					Geminos,
+					<app><rdg wit="#Bodmer188">
+						<choice>
+							<abbr>⁊ libm ⁊ aqriu</abbr>
+							<expan>et libram et aquarium</expan>
+						</choice>
+					</rdg>
+						<rdg wit="#MSS0412">libram et aquarium</rdg>
+					</app>
+					calidos 
+					<app>
+						<rdg wit="#Bodmer188">
+							<choice>
+								<abbr>⁊</abbr>
+								<expan>et</expan>
+							</choice></rdg>
+						<rdg wit="#MSS0412">et</rdg>
+					</app>
+					humidos. 
+					<app><rdg wit="#MSS0412">Cancrum,  
+						<choice>
+							<abbr>Scopionem</abbr>
+							<expan>Scorpionem</expan>
+						</choice> pisces frigidos et humidos.</rdg></app>
+					<app><rdg wit="#MSS0412">Quedam 
+						<choice>
+						<abbr>et</abbr>
+						<expan>est</expan>
+						</choice></rdg>
+						<rdg wit="#Bodmer188"><choice>
+							<abbr>queda ⁊</abbr>
+							<expan>quedam et</expan>
+						</choice></rdg>
+					</app> masculini 
+					<app><rdg wit="#MSS0412">sexus quedam</rdg>
+						<rdg wit="#Bodmer188"><choice>
+							<abbr>queda</abbr>
+							<expan>sexus quedam</expan>
+						</choice></rdg>
+						</app>feminimi
+					<app><rdg wit="#MSS0412">esse dixerunt!</rdg>
+						<rdg wit="#Bodmer188"><choice>
+							<abbr>ee dixerut</abbr>
+							<expan>esse dixerunt</expan>
+						</choice></rdg>
+					</app> que 
+					<app><rdg wit="#MSS0412"><choice>
+						<abbr>omia</abbr>
+						<expan>omnia</expan>
+					</choice></rdg>
+					<rdg wit="#Bodmer188"><choice>
+						<abbr>oia</abbr>
+						<expan>omnia</expan>
+					</choice></rdg>
+					</app>
+					<app><rdg wit="#MSS0412">quasi</rdg>
+						<rdg wit="#Bodmer188"><choice>
+							<abbr>qi</abbr>
+							<expan>quasi</expan>
+						</choice></rdg>
+					</app> falsa 
+					<app>
+						<rdg wit="#Bodmer188">
+							<choice>
+								<abbr>⁊</abbr>
+								<expan>et</expan>
+							</choice></rdg>
+						<rdg wit="#MSS0412">et</rdg>
+					</app> nugatoria 
+					<app>
+						<rdg wit="#Bodmer188">
+							<choice>
+								<abbr>dignu pterire</abbr>
+								<expan>dignum praeterire</expan>
+							</choice></rdg>
+						<rdg wit="#MSS0412">preterire dignum</rdg>
+					</app>
+					 duximus.
+				</said></p>	
+			</div1>
+		</body>
+	</text>
+</TEI>

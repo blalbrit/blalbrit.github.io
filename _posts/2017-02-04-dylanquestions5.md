@@ -6,8 +6,8 @@ tags: DLCL122-2017
 author: dbedford
 ---
 
-##Readings for February 1 (Week 4)
-###Introduction to TEI and XML
+## Readings for February 1 (Week 4)
+### Introduction to TEI and XML
 I found these introductions to be very, very gentle indeed--somewhat condescending, actually--but they definitely showed how simple markup languages really are. 
 (One note about the Mueller article: many of the links to examples are broken.)
 I remember how, in the Unsworth reading, he pointed out how the Web is a really sub-par implementation of hypertext. In the Introduction to TEI, Mueller expands on this, giving the example of the table element being used to jury-rig web page format. This is why HTML "always lives in sin because it constantly violates the cardinal rule of separating information from the mode of its display."
