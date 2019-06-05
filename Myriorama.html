@@ -1,0 +1,96 @@
+---
+layout: page
+title: The Creatively Named "Myriorama"
+header: Pages
+---
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body {
+	background-color: #000000;
+}
+
+#div1 {
+    width: 139px;
+    height: 400px;
+    padding: 0px;
+    border-left: 1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+}
+#div2 {
+	padding-top: 60px;
+}
+#div3 {
+	padding-bottom: 40px;
+}
+#spaces section {float:left;}
+.clear {clear:both;}
+</style>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+<article id="spaces">
+
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+
+
+    <div class="clear"> </div>
+
+</article>
+<div id="div2">
+<img id="drag1" src="https://iiif.bodleian.ox.ac.uk/iiif/image/3a289853-e76f-450e-8369-56b0d137dc29/245,184,1458,4153/full/0/default.jpg" draggable="true" ondragstart="drag(event)" height="400">
+<img id="drag3" src="https://iiif.bodleian.ox.ac.uk/iiif/image/3a289853-e76f-450e-8369-56b0d137dc29/1750,184,1458,4153/full/0/default.jpg" draggable="true" ondragstart="drag(event)" height="400">
+<img id="drag2" src="https://iiif.bodleian.ox.ac.uk/iiif/image/3a289853-e76f-450e-8369-56b0d137dc29/3240,196,1458,4196/full/0/default.jpg" draggable="true" ondragstart="drag(event)" height="400">
+<img id="drag4" src="https://iiif.bodleian.ox.ac.uk/iiif/image/3a289853-e76f-450e-8369-56b0d137dc29/4770,208,1458,4141/full/0/default.jpg" draggable="true" ondragstart="drag(event)" height="400">
+<img id="drag5" src="https://iiif.bodleian.ox.ac.uk/iiif/image/3a289853-e76f-450e-8369-56b0d137dc29/6300,196,1458,4153/full/0/default.jpg" draggable="true" ondragstart="drag(event)" height="400">
+<img id="drag7" src="https://iiif.bodleian.ox.ac.uk/iiif/image/3a289853-e76f-450e-8369-56b0d137dc29/7821,220,1458,4141/full/0/default.jpg" draggable="true" ondragstart="drag(event)" height="400">
+<img id="drag6" src="https://iiif.bodleian.ox.ac.uk/iiif/image/3a289853-e76f-450e-8369-56b0d137dc29/9315,220,1458,4153/full/0/default.jpg" draggable="true" ondragstart="drag(event)" height="400">
+<img id="drag8" src="https://iiif.bodleian.ox.ac.uk/iiif/image/3a289853-e76f-450e-8369-56b0d137dc29/10850,221,1458,4129/full/0/default.jpg" draggable="true" ondragstart="drag(event)" height="400">
+</div>
+</body>
+</html>
