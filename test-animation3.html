@@ -16,52 +16,45 @@
 	        var context;
 	        var photo;
 	        var timer;
-	        var count = 0;
+	        // var count = 0;
 			var images = [
-				'https://stacks.stanford.edu/image/iiif/xn380ht3997%2Fxn380ht3997/294,43,1722,1824/!600,400/0/default.jpg',
-				'https://stacks.stanford.edu/image/iiif/xn380ht3997%2Fxn380ht3997/2026,41,1722,1824/!600,400/0/default.jpg'
+				'https://stacks.stanford.edu/image/iiif/xn380ht3997%2Fxn380ht3997/225,43,1722,1824/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/xn380ht3997%2Fxn380ht3997/2026,43,1722,1824/!600,400/0/default.jpg'
 			];
 
 			// window.onload = function() {
 			//   var c = document.getElementById("Canvas1");
 			//   var ctx = c.getContext("2d");
 			//   var img = new Image();
-			//   img.src = images[1];
+			//   img.src = images[0];
 			// //  document.write(images[0]);
 			// img.onload = function() {
 			//   ctx.drawImage(img, 0, 0);
 			// 		  		}
 			// };
 
-	        function StartAnimation() {
+			function StartAnimation() {
 
-              img = new Image();
-              canvas = document.getElementById("Canvas1");
-              context = canvas.getContext("2d");
-              AnimateNow();
+			  img = new Image();
+			  canvas = document.getElementById("Canvas1");
+			  context = canvas.getContext("2d");
+			  AnimateNow();
 			//	timer = setInterval(AnimateNow, 100);
-				        }
+			  }
 
             function AnimateNow() {
 
-              count++;
-              img.src = images[count];
-			//	document.write(images[count])
-              img.onload = function() {
+			  var count = Math.round(Math.random());
+			  // document.write(count);
+			  img.src = images[count];
+			  // document.write(img.src);
+			  img.onload = function() {
 			    context.drawImage(img, 0, 0);
 			  };
 
-              timer = setTimeout(AnimateNow, 100);
+              timer = setTimeout(AnimateNow, 40);
 
-              if (count == 1) {
-                count = 0;
-	  		    }
-              }
-			  //
-	        function StopAnimation() {
-              count = 0;
-			  clearTimeout(timer);
-            }
+		    }
 
 			StartAnimation();
 	    </script>
