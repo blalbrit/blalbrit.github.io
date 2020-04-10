@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+
+  </head>
+  <body>
+    <canvas id="Canvas1" width="600" height="400" style="border:5px solid green;">
+        Canvas is not supported in your browser
+    </canvas>
+ 
+
+	<script>
+	        var canvas;
+	        var context;
+	        var photo;
+	        var timer;
+	        var count = 0;
+			var images = [
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0041/1560,1713,793,531/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0041/2336,1742,793,531/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0041/3129,1738,793,531/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0041/3910,1747,793,531/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0041/4690,1755,793,531/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0041/5462,1755,793,531/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0041/1543,2313,793,531/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0041/2341,2317,793,531/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0041/3129,2317,793,531/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0041/3918,2321,793,531/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0041/4694,2317,793,531/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0041/5462,2334,793,531/!600,400/0/default.jpg'
+			];
+
+			window.onload = function() {
+			  var c = document.getElementById("Canvas1");
+			  var ctx = c.getContext("2d");
+			  var img = new Image();
+			  img.src = images[0];
+			//  document.write(images[0]);
+			img.onload = function() {
+			  ctx.drawImage(img, 0, 0);
+		  		}
+			}; 
+
+	        function StartAnimation() {
+
+              img = new Image();
+              canvas = document.getElementById("Canvas1");
+              context = canvas.getContext("2d");
+              AnimateNow();
+			//	timer = setInterval(AnimateNow, 100);
+				        }
+
+            function AnimateNow() {
+
+              count++;
+              img.src = images[count];
+			//	document.write(images[count])
+              img.onload = function() {
+			    context.drawImage(img, 0, 0);
+			  };
+
+              timer = setTimeout(AnimateNow, 100);
+
+              if (count == 11) {
+                count = 0;
+	  		    }
+              }
+			  //
+	        function StopAnimation() {
+              count = 0;
+			  clearTimeout(timer);
+            }
+
+			StartAnimation();
+	    </script>
+  </body>
+</html>
+
+
+
