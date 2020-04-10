@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Muybridge IIIF Text</title>
+
+  </head>
+  <body>
+    <canvas id="Canvas1" width="600" height="400" style="border:5px solid green;">
+        Canvas is not supported in your browser
+    </canvas>
+ 
+
+	<script>
+	        var canvas;
+	        var context;
+	        var photo;
+	        var timer;
+	        var count = 0;
+			var images = [
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0097/1819,1389,880,918/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0097/2752,1389,880,918/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0097/3702,1401,880,918/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0097/4628,1407,880,918/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0097/1831,2345,880,918/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0097/2763,2386,880,918/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0097/3707,2392,880,918/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0097/4622,2380,880,918/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0097/1831,3336,880,918/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0097/2734,3336,880,918/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0097/3713,3347,880,918/!600,400/0/default.jpg',
+				'https://stacks.stanford.edu/image/iiif/ft521pv9259%2Fft521pv9259_00_0097/4611,3341,880,918/!600,400/0/default.jpg'
+			];
+
+			window.onload = function() {
+			  var c = document.getElementById("Canvas1");
+			  var ctx = c.getContext("2d");
+			  var img = new Image();
+			  img.src = images[0];
+			//  document.write(images[0]);
+			img.onload = function() {
+			  ctx.drawImage(img, 0, 0);
+		  		}
+			}; 
+
+	        function StartAnimation() {
+
+              img = new Image();
+              canvas = document.getElementById("Canvas1");
+              context = canvas.getContext("2d");
+              AnimateNow();
+			//	timer = setInterval(AnimateNow, 100);
+				        }
+
+            function AnimateNow() {
+
+              count++;
+              img.src = images[count];
+			//	document.write(images[count])
+              img.onload = function() {
+			    context.drawImage(img, 0, 0);
+			  };
+
+              timer = setTimeout(AnimateNow, 100);
+
+              if (count == 11) {
+                count = 0;
+	  		    }
+              }
+			  //
+	        function StopAnimation() {
+              count = 0;
+			  clearTimeout(timer);
+            }
+
+			StartAnimation();
+	    </script>
+  </body>
+</html>
+
+
+
