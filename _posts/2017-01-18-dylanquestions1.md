@@ -5,7 +5,7 @@ date: '2017-01-18'
 tags: DLCL122-2017
 author: dbedford
 ---
-###Discussion Questions / Thoughts
+### Discussion Questions / Thoughts
 Some thoughts on the readings:
 Can any online resource really be said to be "future-proof?" How can we tell what standards will survive, and which won't?
 
